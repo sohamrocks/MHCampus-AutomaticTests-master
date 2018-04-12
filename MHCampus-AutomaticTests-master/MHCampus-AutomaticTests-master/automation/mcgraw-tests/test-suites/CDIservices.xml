@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CDI Tests" verbose="1">
+
+	<test verbose="1" name="CDI Admin test">
+		<classes>
+			<class name="com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest" />
+		</classes>
+	</test>
+	
+		 
+</suite>
