@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Canvas Tests" verbose="1">
+
+	<test verbose="1" name="Canvas Instructor Level Token with Csv Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenCsvFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Canvas Instructor Level Token with Lti Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Canvas Instructor Level Token Gradebook">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenGradebook" />
+		</classes>
+	</test>
+
+</suite>

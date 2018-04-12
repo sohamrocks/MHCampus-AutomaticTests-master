@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-lazy-init="true">
+
+	<bean id="blackBoardApi"
+		class="com.mcgraw.test.automation.api.blackboard.serviceapi.BlackBoardApi">
+		<property name="serverURL" value="${blackboard.url}" />
+		<property name="rampartModulePath" value="${blackboard.api.rampart.path}" />
+		<property name="loginName" value="${blackboard.admin.login}" />
+		<property name="loginPassword" value="${blackboard.admin.password}" />
+		<property name="vendorId" value="${blackboard.api.vendorid}" />
+		<property name="programId" value="${blackboard.api.programid}" />
+		<property name="dataSourceId" value="${blackboard.api.datasourceid}" />
+	</bean>
+</beans>

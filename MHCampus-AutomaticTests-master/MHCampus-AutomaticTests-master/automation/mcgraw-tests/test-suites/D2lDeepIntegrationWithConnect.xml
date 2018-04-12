@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Configurations Tests" verbose="1">
+
+	<test verbose="1" name="D2L DeepIntegration With Connect">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.deepintegration.configurations.D2lDeepIntegrationWithConnect" />
+		</classes>
+	</test>
+	
+</suite>

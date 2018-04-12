@@ -1,0 +1,569 @@
+<html>
+<head>
+<title>TestNG:  Gradebook Services</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Gradebook Services</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 16 13:02:36 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>882 seconds (882540 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.lti.GradebookServices.testSuiteTearDown()'><b>testSuiteTearDown</b><br>Test class: com.mcgraw.test.automation.tests.lti.GradebookServices<br/>
+<a href="#Output-627004083" onClick='toggleBox("Output-627004083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-627004083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-627004083">
+2016-08-16 13:17:17,691  INFO root - Removing MH Campus instance with number 3QAG-0WU0-VMZL...<br>
+<br/>
+</div>
+</td>
+<td><div><pre>java.io.IOException: Cannot run program &quot;..\dependencies\DeleteInstance\DeleteInstance.exe&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at java.lang.Runtime.exec(Runtime.java:617)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.mcgraw.test.automation.ui.service.InstanceUtils.deleteInstance(InstanceUtils.java:45)
+	at com.mcgraw.test.automation.ui.applications.TegrityAdministrationApplication.deleteMhCampusInstance(TegrityAdministrationApplication.java:324)
+	at com.mcgraw.test.automation.tests.lti.GradebookServices.testSuiteTearDown(GradebookServices.java:98)
+	at com.mcgraw.test.automation.framework.core.runner.CommandLineRunner.run(CommandLineRunner.java:147)
+	at com.mcgraw.test.automation.tests.base.TestNgRunner.main(TestNgRunner.java:36)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:385)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 29 more
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace627004083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace627004083'><pre>java.io.IOException: Cannot run program &quot;..\dependencies\DeleteInstance\DeleteInstance.exe&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at java.lang.Runtime.exec(Runtime.java:617)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.mcgraw.test.automation.ui.service.InstanceUtils.deleteInstance(InstanceUtils.java:45)
+	at com.mcgraw.test.automation.ui.applications.TegrityAdministrationApplication.deleteMhCampusInstance(TegrityAdministrationApplication.java:324)
+	at com.mcgraw.test.automation.tests.lti.GradebookServices.testSuiteTearDown(GradebookServices.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.mcgraw.test.automation.framework.core.runner.CommandLineRunner.run(CommandLineRunner.java:147)
+	at com.mcgraw.test.automation.tests.base.TestNgRunner.main(TestNgRunner.java:36)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:385)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.lti.GradebookServices@25a01da2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.lti.GradebookServices.checkDisableGradebookServices()'><b>checkDisableGradebookServices</b><br>Test class: com.mcgraw.test.automation.tests.lti.GradebookServices<br>Test method: Check Disable Gradebook Services<br/>
+<a href="#Output-1538520555" onClick='toggleBox("Output-1538520555", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1538520555" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1538520555">
+2016-08-16 13:05:29,284  INFO root - Edit new MH Campus Instance...<br>
+<br/>
+2016-08-16 13:05:29,286  INFO root - Opening URL: http://login-aws-qa.tegrity.com/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:05:29,372  INFO root - Waiting for TegrityLoginScreen page...<br>
+<br/>
+2016-08-16 13:05:31,140  INFO root - Logging to Tegrity Service. Institution: MH Campus Accounts, name: Epam, password:8F54EAED597E<br>
+<br/>
+2016-08-16 13:05:31,634  INFO root - Type value 'MH Campus Accounts' to Input 'name=TextBoxInstitution'<br>
+<br/>
+2016-08-16 13:05:32,285  INFO root - Type value 'Epam' to Input 'name=TextBoxUsername'<br>
+<br/>
+2016-08-16 13:05:32,900  INFO root - Type value '8F54EAED597E' to Input 'name=TextBoxPassword'<br>
+<br/>
+2016-08-16 13:05:35,312  INFO root - Waiting for TegrityAccountsScreen page...<br>
+<br/>
+2016-08-16 13:05:35,511 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130535508.png'>screenshot-20160816-130535508.png</a><br>
+<br/>
+2016-08-16 13:05:35,515  INFO root - Searching Data by column...<br>
+<br/>
+2016-08-16 13:05:36,388  INFO root - Wait for first row...<br>
+<br/>
+2016-08-16 13:05:36,389  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-08-16 13:05:45,857 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130545855.png'>screenshot-20160816-130545855.png</a><br>
+<br/>
+2016-08-16 13:05:45,862  INFO root - Clicking 'Edit' button...<br>
+<br/>
+2016-08-16 13:05:45,864  INFO root - Wait for element By: By.xpath: .//a[contains(text(),'Edit')]<br>
+<br/>
+2016-08-16 13:05:46,204  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+<br/>
+2016-08-16 13:05:53,342  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxGradebookServices<br>
+<br/>
+2016-08-16 13:05:53,389  INFO root - Edit Gradebook Services checkbox...<br>
+<br/>
+2016-08-16 13:05:53,793  INFO root - The valeu of element was UNMARKED...<br>
+<br/>
+2016-08-16 13:05:54,075 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130554073.png'>screenshot-20160816-130554073.png</a><br>
+<br/>
+2016-08-16 13:05:56,604  INFO root - Waiting for TegrityAccountsScreen page...<br>
+<br/>
+2016-08-16 13:05:56,645  INFO root - Pause for '300000' millis<br>
+<br/>
+2016-08-16 13:10:56,637  INFO root - Gradebook Services enable: false<br>
+<br/>
+2016-08-16 13:10:56,645  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-08-16 13:10:56,726  INFO root - Opening URL: http://epamInstance-20160816-130248914.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:10:58,591  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-08-16 13:10:59,262  INFO root - Type value 'admin@epamInstance-20160816-130248914.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-08-16 13:10:59,867  INFO root - Type value 'mwibpjft' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-08-16 13:11:00,158 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131100155.png'>screenshot-20160816-131100155.png</a><br>
+<br/>
+2016-08-16 13:11:00,162  INFO root - Clicking Login button...<br>
+<br/>
+2016-08-16 13:11:03,561  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-08-16 13:11:03,595  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-08-16 13:11:03,839 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131103837.png'>screenshot-20160816-131103837.png</a><br>
+<br/>
+2016-08-16 13:11:03,844  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-08-16 13:11:04,263  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-08-16 13:11:08,377 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131108374.png'>screenshot-20160816-131108374.png</a><br>
+<br/>
+2016-08-16 13:11:08,383  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-08-16 13:11:08,411  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-08-16 13:11:08,542  INFO root - Check if container is available...<br>
+<br/>
+2016-08-16 13:11:08,694 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131108692.png'>screenshot-20160816-131108692.png</a><br>
+<br/>
+2016-08-16 13:11:08,785 ERROR root - Cannot find any elements with locators '[By.id: GRADES_SORTABLE]'. Please, check your definitions.<br>
+<br/>
+2016-08-16 13:11:08,793 ERROR root - Making screenshoot for error 'Cannot find any elements with locators '[By.id: GRADES_SORTABLE]'. Please, check your definitions.<br>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'<br>
+System info: host: 'Elvira-Lap', ip: '192.168.2.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'<br>
+Driver info: driver.version: unknown'<br>
+<br/>
+2016-08-16 13:11:08,952 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131108949.png'>screenshot-20160816-131108949.png</a><br>
+<br/>
+2016-08-16 13:11:08,981  INFO root - Filling TestScorableItem form...<br>
+<br/>
+2016-08-16 13:11:09,003  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:11:09,628  INFO root - Waiting for TestScoreItemsScreen page...<br>
+<br/>
+2016-08-16 13:11:10,096  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-08-16 13:11:10,464  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-08-16 13:11:10,843  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+<br/>
+2016-08-16 13:11:11,221  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+<br/>
+2016-08-16 13:11:11,585  INFO root - Type value '347411' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-08-16 13:11:11,942  INFO root - Type value 'title_654781' to Input 'name=txtAssignmentTitle'<br>
+<br/>
+2016-08-16 13:11:12,299  INFO root - Type value 'Blog' to Input 'name=txtCategory'<br>
+<br/>
+2016-08-16 13:11:12,653  INFO root - Type value 'description_25155' to Input 'name=txtDescription'<br>
+<br/>
+2016-08-16 13:11:13,043  INFO root - Type value '11/22/2006' to Input 'name=txtStartDateTime'<br>
+<br/>
+2016-08-16 13:11:13,408  INFO root - Type value '11/19/2029' to Input 'name=txtDueDateTime'<br>
+<br/>
+2016-08-16 13:11:13,974  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+<br/>
+2016-08-16 13:11:14,623 OPERATION root - Unchecking 'name=cbIsStudentViewable' checkbox.<br>
+<br/>
+2016-08-16 13:11:14,888 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+<br/>
+2016-08-16 13:11:15,919  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;GRADEBOOK_NOT_ENABLED&quot;,&quot;ErrorDescription&quot;:&quot;Gradebook serivces are not enabled for this customer&quot;,&quot;Name&quot;:&quot;&quot;,&quot;Status&quot;:&quot;failed&quot;}],&quot;Message&quot;:&quot;&quot;,&quot;RequestID&quot;:&quot;Req0803mo0e03j1wf6m365&quot;,&quot;Status&quot;:&quot;Failure&quot;}<br>
+<br/>
+2016-08-16 13:11:16,669  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtAssignmentID&quot;:&quot;347411&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_654781&quot;,&quot;txtCategory&quot;:&quot;Blog&quot;,&quot;txtDescription&quot;:&quot;description_25155&quot;,&quot;txtStartDateTime&quot;:&quot;11/22/2006&quot;,&quot;txtDueDateTime&quot;:&quot;11/19/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;False&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;assignmentTitle=title_654781&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4NzY1MzYyMTA0&amp;oauth_timestamp=1471342277&amp;oauth_signature=L5rK360%2Bkl7UubfkiflXX2lP0Oo%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;assignmentTitle=title_654781&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4NzY1MzYyMTA0&amp;oauth_timestamp=1471342277&amp;oauth_signature=L5rK360%2Bkl7UubfkiflXX2lP0Oo%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;GRADEBOOK_NOT_ENABLED\&quot;,\&quot;ErrorDescription\&quot;:\&quot;Gradebook serivces are not enabled for this customer\&quot;,\&quot;Name\&quot;:\&quot;\&quot;,\&quot;Status\&quot;:\&quot;failed\&quot;}],\&quot;Message\&quot;:\&quot;\&quot;,\&quot;RequestID\&quot;:\&quot;Req0803mo0e03j1wf6m365\&quot;,\&quot;Status\&quot;:\&quot;Failure\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2016-08-16 13:11:16,902 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131116900.png'>screenshot-20160816-131116900.png</a><br>
+<br/>
+2016-08-16 13:11:16,980  INFO root - Filling TestScore form...<br>
+<br/>
+2016-08-16 13:11:17,003  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:11:17,503  INFO root - Waiting for TestScoreScreen page...<br>
+<br/>
+2016-08-16 13:11:17,862  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-08-16 13:11:18,228  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-08-16 13:11:18,601  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+<br/>
+2016-08-16 13:11:18,970  INFO root - Type value '347411' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-08-16 13:11:19,330  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+<br/>
+2016-08-16 13:11:19,697  INFO root - Type value 'student05201' to Input 'name=txtUserID'<br>
+<br/>
+2016-08-16 13:11:20,191  INFO root - Type value 'comment_23629' to Input 'name=txtComment'<br>
+<br/>
+2016-08-16 13:11:20,577  INFO root - Type value '11/25/2016' to Input 'name=txtDatetimeSubmitted'<br>
+<br/>
+2016-08-16 13:11:20,946  INFO root - Type value '20' to Input 'name=txtScoreReceived'<br>
+<br/>
+2016-08-16 13:11:22,090  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;GRADEBOOK_NOT_ENABLED&quot;,&quot;ErrorDescription&quot;:&quot;Gradebook serivces are not enabled for this customer&quot;,&quot;Name&quot;:&quot;&quot;,&quot;Status&quot;:&quot;failed&quot;}],&quot;Message&quot;:&quot;&quot;,&quot;RequestID&quot;:&quot;Req04s04le02g03j1wgdntzm&quot;,&quot;Status&quot;:&quot;Failure&quot;}<br>
+<br/>
+2016-08-16 13:11:23,012  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtAssignmentID&quot;:&quot;347411&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtUserID&quot;:&quot;student05201&quot;,&quot;txtComment&quot;:&quot;comment_23629&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;11/25/2016&quot;,&quot;txtScoreReceived&quot;:&quot;20&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4ODI3MjM4Njg4&amp;oauth_timestamp=1471342283&amp;oauth_signature=PkRMOPT8GYZcpze1kOx0dj6M%2FMI%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4ODI3MjM4Njg4&amp;oauth_timestamp=1471342283&amp;oauth_signature=PkRMOPT8GYZcpze1kOx0dj6M%2FMI%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;GRADEBOOK_NOT_ENABLED\&quot;,\&quot;ErrorDescription\&quot;:\&quot;Gradebook serivces are not enabled for this customer\&quot;,\&quot;Name\&quot;:\&quot;\&quot;,\&quot;Status\&quot;:\&quot;failed\&quot;}],\&quot;Message\&quot;:\&quot;\&quot;,\&quot;RequestID\&quot;:\&quot;Req04s04le02g03j1wgdntzm\&quot;,\&quot;Status\&quot;:\&quot;Failure\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2016-08-16 13:11:23,224 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131123222.png'>screenshot-20160816-131123222.png</a><br>
+<br/>
+2016-08-16 13:11:23,299 METHOD_SUCCESS root - GradebookServices.checkDisableGradebookServices<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>354</td>
+<td>com.mcgraw.test.automation.tests.lti.GradebookServices@25a01da2</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.lti.GradebookServices.checkEnableGradebookServicesAfterChanging()'><b>checkEnableGradebookServicesAfterChanging</b><br>Test class: com.mcgraw.test.automation.tests.lti.GradebookServices<br>Test method: Check Enable Gradebook Services AFTER Changing<br/>
+<a href="#Output-1337571487" onClick='toggleBox("Output-1337571487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1337571487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1337571487">
+2016-08-16 13:11:23,449  INFO root - Edit new MH Campus Instance...<br>
+<br/>
+2016-08-16 13:11:23,451  INFO root - Opening URL: http://login-aws-qa.tegrity.com/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:11:23,530  INFO root - Waiting for TegrityLoginScreen page...<br>
+<br/>
+2016-08-16 13:11:25,170  INFO root - Logging to Tegrity Service. Institution: MH Campus Accounts, name: Epam, password:8F54EAED597E<br>
+<br/>
+2016-08-16 13:11:25,510  INFO root - Type value 'MH Campus Accounts' to Input 'name=TextBoxInstitution'<br>
+<br/>
+2016-08-16 13:11:26,052  INFO root - Type value 'Epam' to Input 'name=TextBoxUsername'<br>
+<br/>
+2016-08-16 13:11:26,777  INFO root - Type value '8F54EAED597E' to Input 'name=TextBoxPassword'<br>
+<br/>
+2016-08-16 13:11:29,183  INFO root - Waiting for TegrityAccountsScreen page...<br>
+<br/>
+2016-08-16 13:11:29,382 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131129376.png'>screenshot-20160816-131129376.png</a><br>
+<br/>
+2016-08-16 13:11:29,387  INFO root - Searching Data by column...<br>
+<br/>
+2016-08-16 13:11:30,038  INFO root - Wait for first row...<br>
+<br/>
+2016-08-16 13:11:30,040  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-08-16 13:11:39,476 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131139474.png'>screenshot-20160816-131139474.png</a><br>
+<br/>
+2016-08-16 13:11:39,481  INFO root - Clicking 'Edit' button...<br>
+<br/>
+2016-08-16 13:11:39,482  INFO root - Wait for element By: By.xpath: .//a[contains(text(),'Edit')]<br>
+<br/>
+2016-08-16 13:11:39,956  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+<br/>
+2016-08-16 13:11:46,469  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxGradebookServices<br>
+<br/>
+2016-08-16 13:11:46,518  INFO root - Edit Gradebook Services checkbox...<br>
+<br/>
+2016-08-16 13:11:46,931  INFO root - The valeu of element was MARKED...<br>
+<br/>
+2016-08-16 13:11:47,213 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131147210.png'>screenshot-20160816-131147210.png</a><br>
+<br/>
+2016-08-16 13:11:50,219  INFO root - Waiting for TegrityAccountsScreen page...<br>
+<br/>
+2016-08-16 13:11:50,258  INFO root - Pause for '300000' millis<br>
+<br/>
+2016-08-16 13:16:50,249  INFO root - Gradebook Services enable: true<br>
+<br/>
+2016-08-16 13:16:50,256  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-08-16 13:16:50,322  INFO root - Opening URL: http://epamInstance-20160816-130248914.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:16:52,046  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-08-16 13:16:52,694  INFO root - Type value 'admin@epamInstance-20160816-130248914.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-08-16 13:16:53,464  INFO root - Type value 'mwibpjft' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-08-16 13:16:53,799 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131653797.png'>screenshot-20160816-131653797.png</a><br>
+<br/>
+2016-08-16 13:16:53,804  INFO root - Clicking Login button...<br>
+<br/>
+2016-08-16 13:16:56,879  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-08-16 13:16:56,919  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-08-16 13:16:57,177 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131657174.png'>screenshot-20160816-131657174.png</a><br>
+<br/>
+2016-08-16 13:16:57,181  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-08-16 13:16:57,633  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-08-16 13:17:01,450 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131701448.png'>screenshot-20160816-131701448.png</a><br>
+<br/>
+2016-08-16 13:17:01,455  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-08-16 13:17:01,487  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-08-16 13:17:01,622  INFO root - Check if container is available...<br>
+<br/>
+2016-08-16 13:17:01,766 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131701764.png'>screenshot-20160816-131701764.png</a><br>
+<br/>
+2016-08-16 13:17:01,909  INFO root - Filling TestScorableItem form...<br>
+<br/>
+2016-08-16 13:17:01,930  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:17:02,556  INFO root - Waiting for TestScoreItemsScreen page...<br>
+<br/>
+2016-08-16 13:17:03,024  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-08-16 13:17:03,432  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-08-16 13:17:03,826  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+<br/>
+2016-08-16 13:17:04,221  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+<br/>
+2016-08-16 13:17:04,602  INFO root - Type value '347412' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-08-16 13:17:04,965  INFO root - Type value 'title_654782' to Input 'name=txtAssignmentTitle'<br>
+<br/>
+2016-08-16 13:17:05,332  INFO root - Type value 'Blog' to Input 'name=txtCategory'<br>
+<br/>
+2016-08-16 13:17:05,705  INFO root - Type value 'description_25155' to Input 'name=txtDescription'<br>
+<br/>
+2016-08-16 13:17:06,086  INFO root - Type value '11/22/2006' to Input 'name=txtStartDateTime'<br>
+<br/>
+2016-08-16 13:17:06,457  INFO root - Type value '11/19/2029' to Input 'name=txtDueDateTime'<br>
+<br/>
+2016-08-16 13:17:06,823  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+<br/>
+2016-08-16 13:17:07,708 OPERATION root - Unchecking 'name=cbIsStudentViewable' checkbox.<br>
+<br/>
+2016-08-16 13:17:08,000 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+<br/>
+2016-08-16 13:17:09,599  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:&quot;&quot;,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req0804tq0u03j1ycfi9vu&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2016-08-16 13:17:10,367  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtAssignmentID&quot;:&quot;347412&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_654782&quot;,&quot;txtCategory&quot;:&quot;Blog&quot;,&quot;txtDescription&quot;:&quot;description_25155&quot;,&quot;txtStartDateTime&quot;:&quot;11/22/2006&quot;,&quot;txtDueDateTime&quot;:&quot;11/19/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;False&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;assignmentTitle=title_654782&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMjk2NzAyNTA0&amp;oauth_timestamp=1471342630&amp;oauth_signature=rMzay%2BktF5x0lhh8yeCD5T759lo%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;assignmentTitle=title_654782&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMjk2NzAyNTA0&amp;oauth_timestamp=1471342630&amp;oauth_signature=rMzay%2BktF5x0lhh8yeCD5T759lo%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:\&quot;\&quot;,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req0804tq0u03j1ycfi9vu\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2016-08-16 13:17:10,622 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131710619.png'>screenshot-20160816-131710619.png</a><br>
+<br/>
+2016-08-16 13:17:10,710  INFO root - Filling TestScore form...<br>
+<br/>
+2016-08-16 13:17:10,733  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:17:11,162  INFO root - Waiting for TestScoreScreen page...<br>
+<br/>
+2016-08-16 13:17:11,527  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-08-16 13:17:11,926  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-08-16 13:17:12,367  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+<br/>
+2016-08-16 13:17:12,746  INFO root - Type value '347412' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-08-16 13:17:13,117  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+<br/>
+2016-08-16 13:17:13,495  INFO root - Type value 'student05201' to Input 'name=txtUserID'<br>
+<br/>
+2016-08-16 13:17:14,306  INFO root - Type value 'comment_23629' to Input 'name=txtComment'<br>
+<br/>
+2016-08-16 13:17:14,702  INFO root - Type value '11/25/2016' to Input 'name=txtDatetimeSubmitted'<br>
+<br/>
+2016-08-16 13:17:15,077  INFO root - Type value '20' to Input 'name=txtScoreReceived'<br>
+<br/>
+2016-08-16 13:17:16,369  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req04s038602803j1ydsryyq&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2016-08-16 13:17:17,243  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtAssignmentID&quot;:&quot;347412&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtUserID&quot;:&quot;student05201&quot;,&quot;txtComment&quot;:&quot;comment_23629&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;11/25/2016&quot;,&quot;txtScoreReceived&quot;:&quot;20&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMzY4NzM1NTk4&amp;oauth_timestamp=1471342637&amp;oauth_signature=1Jn2qQ%2BEPCJvvAk00IYNHGNOfxA%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMzY4NzM1NTk4&amp;oauth_timestamp=1471342637&amp;oauth_signature=1Jn2qQ%2BEPCJvvAk00IYNHGNOfxA%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req04s038602803j1ydsryyq\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2016-08-16 13:17:17,466 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131717463.png'>screenshot-20160816-131717463.png</a><br>
+<br/>
+2016-08-16 13:17:17,540 METHOD_SUCCESS root - GradebookServices.checkEnableGradebookServicesAfterChanging<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>354</td>
+<td>com.mcgraw.test.automation.tests.lti.GradebookServices@25a01da2</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.lti.GradebookServices.checkEnableGradebookServicesBeforeChanging()'><b>checkEnableGradebookServicesBeforeChanging</b><br>Test class: com.mcgraw.test.automation.tests.lti.GradebookServices<br>Test method: Check Enable Gradebook Services BEFORE Changing<br/>
+<a href="#Output-1214950392" onClick='toggleBox("Output-1214950392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1214950392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1214950392">
+2016-08-16 13:05:12,253  INFO root - Gradebook Services enable: true<br>
+<br/>
+2016-08-16 13:05:12,255  INFO root - Filling TestScorableItem form...<br>
+<br/>
+2016-08-16 13:05:12,281  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:05:13,477  INFO root - Waiting for TestScoreItemsScreen page...<br>
+<br/>
+2016-08-16 13:05:14,018  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-08-16 13:05:14,470  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-08-16 13:05:14,901  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+<br/>
+2016-08-16 13:05:15,314  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+<br/>
+2016-08-16 13:05:15,731  INFO root - Type value '34741' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-08-16 13:05:16,143  INFO root - Type value 'title_65478' to Input 'name=txtAssignmentTitle'<br>
+<br/>
+2016-08-16 13:05:16,580  INFO root - Type value 'Blog' to Input 'name=txtCategory'<br>
+<br/>
+2016-08-16 13:05:16,987  INFO root - Type value 'description_25155' to Input 'name=txtDescription'<br>
+<br/>
+2016-08-16 13:05:17,639  INFO root - Type value '11/22/2006' to Input 'name=txtStartDateTime'<br>
+<br/>
+2016-08-16 13:05:18,066  INFO root - Type value '11/19/2029' to Input 'name=txtDueDateTime'<br>
+<br/>
+2016-08-16 13:05:18,483  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+<br/>
+2016-08-16 13:05:19,195 OPERATION root - Unchecking 'name=cbIsStudentViewable' checkbox.<br>
+<br/>
+2016-08-16 13:05:19,538 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+<br/>
+2016-08-16 13:05:20,757  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:&quot;&quot;,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req04s04le0z03j1uhkbx56&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2016-08-16 13:05:21,580  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtAssignmentID&quot;:&quot;34741&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_65478&quot;,&quot;txtCategory&quot;:&quot;Blog&quot;,&quot;txtDescription&quot;:&quot;description_25155&quot;,&quot;txtStartDateTime&quot;:&quot;11/22/2006&quot;,&quot;txtDueDateTime&quot;:&quot;11/19/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;False&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;assignmentTitle=title_65478&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1MjEyNzcxMTYw&amp;oauth_timestamp=1471341921&amp;oauth_signature=M%2FXceFIaBwcBCTfUM1pdjngc0fQ%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;assignmentTitle=title_65478&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1MjEyNzcxMTYw&amp;oauth_timestamp=1471341921&amp;oauth_signature=M%2FXceFIaBwcBCTfUM1pdjngc0fQ%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:\&quot;\&quot;,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req04s04le0z03j1uhkbx56\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2016-08-16 13:05:21,813 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130521811.png'>screenshot-20160816-130521811.png</a><br>
+<br/>
+2016-08-16 13:05:21,903  INFO root - Filling TestScore form...<br>
+<br/>
+2016-08-16 13:05:21,927  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+<br/>
+2016-08-16 13:05:22,438  INFO root - Waiting for TestScoreScreen page...<br>
+<br/>
+2016-08-16 13:05:22,860  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-08-16 13:05:23,307  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-08-16 13:05:23,956  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+<br/>
+2016-08-16 13:05:24,397  INFO root - Type value '34741' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-08-16 13:05:24,829  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+<br/>
+2016-08-16 13:05:25,272  INFO root - Type value 'student05201' to Input 'name=txtUserID'<br>
+<br/>
+2016-08-16 13:05:25,704  INFO root - Type value 'comment_23629' to Input 'name=txtComment'<br>
+<br/>
+2016-08-16 13:05:26,124  INFO root - Type value '11/25/2016' to Input 'name=txtDatetimeSubmitted'<br>
+<br/>
+2016-08-16 13:05:26,528  INFO root - Type value '20' to Input 'name=txtScoreReceived'<br>
+<br/>
+2016-08-16 13:05:27,922  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req0804tq04d03j1uiw8ulu&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2016-08-16 13:05:28,826  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtAssignmentID&quot;:&quot;34741&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtUserID&quot;:&quot;student05201&quot;,&quot;txtComment&quot;:&quot;comment_23629&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;11/25/2016&quot;,&quot;txtScoreReceived&quot;:&quot;20&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1Mjg0ODA0MjU0&amp;oauth_timestamp=1471341928&amp;oauth_signature=TQHfrpr9GgDT0KkoNQUMovPy30o%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1Mjg0ODA0MjU0&amp;oauth_timestamp=1471341928&amp;oauth_signature=TQHfrpr9GgDT0KkoNQUMovPy30o%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req0804tq04d03j1uiw8ulu\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2016-08-16 13:05:29,039 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130529037.png'>screenshot-20160816-130529037.png</a><br>
+<br/>
+2016-08-16 13:05:29,130 METHOD_SUCCESS root - GradebookServices.checkEnableGradebookServicesBeforeChanging<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.mcgraw.test.automation.tests.lti.GradebookServices@25a01da2</td></tr>
+</table><p>
+</body>
+</html>

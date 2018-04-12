@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Angel Tests" verbose="1">
+
+	<test verbose="1" name="Angel SSO Link Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.angel.TegritySsoLinks" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Angel Direct Login Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.angel.TegrityDirectLogin" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Angel Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.angel.TegrityGradebook" />
+		</classes>
+	</test>	
+		 
+</suite>

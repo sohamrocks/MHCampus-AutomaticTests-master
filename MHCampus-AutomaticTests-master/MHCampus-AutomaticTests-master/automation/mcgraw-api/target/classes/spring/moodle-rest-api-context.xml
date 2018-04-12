@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-lazy-init="true">
+
+	<bean id="moodleJsonSerializer"
+		class="com.mcgraw.test.automation.api.rest.endpoint.Jackson2Serializer">
+		<constructor-arg name="objectMapper">
+			<bean class="com.fasterxml.jackson.databind.ObjectMapper" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="serverError"
+		class=" com.mcgraw.test.automation.api.rest.moodle.rsmodel.MoodleServerError" />
+
+	<bean id="restEndpoint"
+		class="com.mcgraw.test.automation.api.rest.endpoint.HttpClientRestEndpoint">
+		<constructor-arg name="baseUrl" value="${moodle.baseurl}" />
+		<constructor-arg name="serializer" ref="moodleJsonSerializer" />
+		<constructor-arg name="errorHandler">
+			<bean class="com.mcgraw.test.automation.api.rest.base.RestErrorHandler">
+			</bean>
+		</constructor-arg>
+		<constructor-arg name="credentials">
+			<null />
+		</constructor-arg>
+		<constructor-arg name="additionalHeaders">
+			<null />
+		</constructor-arg>
+	</bean>
+
+	<bean id ="moodleRestApi"
+		class="com.mcgraw.test.automation.api.rest.moodle.service.MoodleRestApi">
+		<constructor-arg name="endpoint" ref="restEndpoint" />
+		<constructor-arg name="resourceUrl" value="${moodle.api.resourceurl}" />
+		<constructor-arg name="uriParams" ref="moodleUriParamsMap" />
+
+	</bean>
+
+	<bean id="moodleUriParamsMap" class="java.util.HashMap">
+		<constructor-arg>
+			<map key-type="java.lang.String" value-type="java.lang.String">
+				<entry key="wstoken" value="${moodle.api.wstoken}" />
+				<entry key="moodlewsrestformat" value="json" />
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean id="moodleApiRequestsFactory"
+		class="com.mcgraw.test.automation.api.rest.moodle.factory.MoodleRequestsFactory" />
+
+	<bean class="com.mcgraw.test.automation.api.rest.moodle.service.MoodleApiUtils">
+		<constructor-arg name="moodleRestApi" ref="moodleRestApi" />
+		<constructor-arg name="moodleRequestsFactory" ref="moodleApiRequestsFactory" />
+		</bean>
+</beans>

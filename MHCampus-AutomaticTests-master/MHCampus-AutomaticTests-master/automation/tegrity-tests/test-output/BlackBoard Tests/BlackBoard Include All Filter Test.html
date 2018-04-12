@@ -1,0 +1,497 @@
+<html>
+<head>
+<title>TestNG:  BlackBoard Include All Filter Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlackBoard Include All Filter Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 07 16:08:01 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1222 seconds (1222436 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter.checkTegrityLinkBahavesCorrectlyForBlackBoardInstructor()'><b>checkTegrityLinkBahavesCorrectlyForBlackBoardInstructor</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter<br>Test method: For BlackBoard instructor Tegrity link bahaves correctly<br/>
+<a href="#Output-198405665" onClick='toggleBox("Output-198405665", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-198405665" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-198405665">
+2016-11-07 16:26:19,271  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-07 16:26:19,298  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-07 16:26:19,298  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-07 16:26:19,317  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-07 16:26:19,317  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-07 16:26:19,318  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@16490912<br>
+<br/>
+2016-11-07 16:26:20,227  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-07 16:26:20,389  INFO root - Type value 'InstructorQe5aP' to Input 'name=user_id'<br>
+<br/>
+2016-11-07 16:26:20,631  INFO root - Type value 'InstructorQe5aP' to Input 'name=password'<br>
+<br/>
+2016-11-07 16:26:20,932 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162620930.png'>screenshot-20161107-162620930.png</a><br>
+<br/>
+2016-11-07 16:26:22,695  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:26:22,728  INFO root - Going to the created course Course5CjJq...<br>
+<br/>
+2016-11-07 16:26:22,729  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:26:33,410 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162633408.png'>screenshot-20161107-162633408.png</a><br>
+<br/>
+2016-11-07 16:26:33,410  INFO root - Wait for element By: By.linkText: Course5CjJq<br>
+<br/>
+2016-11-07 16:26:33,814  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:26:36,561  INFO root - Clicking Tegrity link...<br>
+<br/>
+2016-11-07 16:26:36,960  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:26:38,972  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-07 16:26:39,046  INFO root - Can't swith to window, because current title: Home Page &ndash; Course5CjJq doesn't contais : Tegrity - <br>
+<br/>
+2016-11-07 16:26:39,811  INFO root - Can't swith to window, because current title:  doesn't contais : Tegrity - <br>
+<br/>
+2016-11-07 16:26:39,812  INFO root - Waiting for TegrityCourseDetailsScreen page...<br>
+<br/>
+2016-11-07 16:26:42,542 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162642540.png'>screenshot-20161107-162642540.png</a><br>
+<br/>
+2016-11-07 16:26:42,605  INFO root - User name text is: 'InstructorNameQe5aP InstructorSurnameQe5aP'<br>
+<br/>
+2016-11-07 16:26:42,605  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-07 16:26:42,643  INFO root - Checking if course Course5CjJq is present on the page<br>
+<br/>
+2016-11-07 16:26:42,658  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter@3c3d8fcd</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter.checkTegrityLinkBahavesCorrectlyForBlackBoardStudent()'><b>checkTegrityLinkBahavesCorrectlyForBlackBoardStudent</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter<br>Test method: For BlackBoard student Tegrity link bahaves correctly<br/>
+<a href="#Output-689423541" onClick='toggleBox("Output-689423541", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689423541" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689423541">
+2016-11-07 16:26:45,748  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-07 16:26:45,777  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-07 16:26:45,777  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-07 16:26:45,796  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-07 16:26:45,796  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-07 16:26:45,796  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@16490912<br>
+<br/>
+2016-11-07 16:26:46,679  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-07 16:26:46,850  INFO root - Type value 'Studentz9dWi' to Input 'name=user_id'<br>
+<br/>
+2016-11-07 16:26:47,088  INFO root - Type value 'Studentz9dWi' to Input 'name=password'<br>
+<br/>
+2016-11-07 16:26:47,387 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162647385.png'>screenshot-20161107-162647385.png</a><br>
+<br/>
+2016-11-07 16:26:49,241  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:26:49,268  INFO root - Going to the created course Course5CjJq...<br>
+<br/>
+2016-11-07 16:26:49,269  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:26:59,855 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162659852.png'>screenshot-20161107-162659852.png</a><br>
+<br/>
+2016-11-07 16:26:59,855  INFO root - Wait for element By: By.linkText: Course5CjJq<br>
+<br/>
+2016-11-07 16:27:00,271  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:27:02,870  INFO root - Clicking Tegrity link...<br>
+<br/>
+2016-11-07 16:27:03,231  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:27:05,242  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-07 16:27:05,379  INFO root - Can't swith to window, because current title: Home Page &ndash; Course5CjJq doesn't contais : Tegrity - <br>
+<br/>
+2016-11-07 16:27:06,440  INFO root - Can't swith to window, because current title: Tegrity doesn't contais : Tegrity - <br>
+<br/>
+2016-11-07 16:27:06,441  INFO root - Waiting for TegrityCourseDetailsScreen page...<br>
+<br/>
+2016-11-07 16:27:06,753 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162706749.png'>screenshot-20161107-162706749.png</a><br>
+<br/>
+2016-11-07 16:27:06,857  INFO root - User name text is: 'StudentNamez9dWi StudentSurnamez9dWi'<br>
+<br/>
+2016-11-07 16:27:06,858  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-07 16:27:17,221  INFO root - Checking if course Course5CjJq is present on the page<br>
+<br/>
+2016-11-07 16:27:17,266  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter@3c3d8fcd</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter.checkTegrityLinkIsPresentInInstructorsCoursesForIncludeAllFilter()'><b>checkTegrityLinkIsPresentInInstructorsCoursesForIncludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter<br>Test method: For BlackBoard instructor Tegrity link is present for all courses<br/>
+<a href="#Output-1447959211" onClick='toggleBox("Output-1447959211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1447959211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1447959211">
+2016-11-07 16:25:01,756  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-07 16:25:01,869  INFO root - Before deletion cookies size = 2<br>
+<br/>
+2016-11-07 16:25:01,869  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-07 16:25:01,905  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-07 16:25:01,905  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-07 16:25:01,905  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@16490912<br>
+<br/>
+2016-11-07 16:25:03,913  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-07 16:25:04,063  INFO root - Type value 'InstructorQe5aP' to Input 'name=user_id'<br>
+<br/>
+2016-11-07 16:25:04,286  INFO root - Type value 'InstructorQe5aP' to Input 'name=password'<br>
+<br/>
+2016-11-07 16:25:04,591 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162504589.png'>screenshot-20161107-162504589.png</a><br>
+<br/>
+2016-11-07 16:25:06,431  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:25:06,454  INFO root - Going to the created course Course5CjJq...<br>
+<br/>
+2016-11-07 16:25:06,455  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:25:06,786  INFO root - Wait for element By: By.linkText: Course5CjJq<br>
+<br/>
+2016-11-07 16:25:07,265  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:25:12,030  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:25:14,390 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162514389.png'>screenshot-20161107-162514389.png</a><br>
+<br/>
+2016-11-07 16:25:14,420  INFO root - Clicking Institution link...<br>
+<br/>
+2016-11-07 16:25:14,656  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-07 16:25:20,656  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:25:20,717  INFO root - Going to the created course Course6ZS5R...<br>
+<br/>
+2016-11-07 16:25:20,717  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:25:31,367 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162531366.png'>screenshot-20161107-162531366.png</a><br>
+<br/>
+2016-11-07 16:25:31,368  INFO root - Wait for element By: By.linkText: Course6ZS5R<br>
+<br/>
+2016-11-07 16:25:31,784  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:25:36,825  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:25:39,134 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162539132.png'>screenshot-20161107-162539132.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter@3c3d8fcd</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter.checkTegrityLinkIsPresentInStudentsCoursesForIncludeAllFilter()'><b>checkTegrityLinkIsPresentInStudentsCoursesForIncludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter<br>Test method: For BlackBoard student Tegrity link is present for all courses<br/>
+<a href="#Output-773135540" onClick='toggleBox("Output-773135540", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-773135540" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-773135540">
+2016-11-07 16:25:41,678  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-07 16:25:41,702  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-07 16:25:41,703  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-07 16:25:41,720  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-07 16:25:41,720  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-07 16:25:41,720  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@16490912<br>
+<br/>
+2016-11-07 16:25:42,598  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-07 16:25:42,746  INFO root - Type value 'Studentz9dWi' to Input 'name=user_id'<br>
+<br/>
+2016-11-07 16:25:43,109  INFO root - Type value 'Studentz9dWi' to Input 'name=password'<br>
+<br/>
+2016-11-07 16:25:43,400 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162543399.png'>screenshot-20161107-162543399.png</a><br>
+<br/>
+2016-11-07 16:25:45,360  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:25:45,381  INFO root - Going to the created course Course5CjJq...<br>
+<br/>
+2016-11-07 16:25:45,381  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:25:45,850  INFO root - Wait for element By: By.linkText: Course5CjJq<br>
+<br/>
+2016-11-07 16:25:46,282  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:25:50,493  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:25:52,799 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162552798.png'>screenshot-20161107-162552798.png</a><br>
+<br/>
+2016-11-07 16:25:52,818  INFO root - Clicking Institution link...<br>
+<br/>
+2016-11-07 16:25:53,032  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-07 16:25:59,032  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:25:59,066  INFO root - Going to the created course Course6ZS5R...<br>
+<br/>
+2016-11-07 16:25:59,067  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:26:09,633 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162609632.png'>screenshot-20161107-162609632.png</a><br>
+<br/>
+2016-11-07 16:26:09,633  INFO root - Wait for element By: By.linkText: Course6ZS5R<br>
+<br/>
+2016-11-07 16:26:10,034  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:26:14,444  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:26:16,738 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162616735.png'>screenshot-20161107-162616735.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter@3c3d8fcd</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter.checkTegrityWelcomePageIsCorrectForInstructor()'><b>checkTegrityWelcomePageIsCorrectForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter<br>Test method: Check Tegrity Welcome page for BlackBoard instructor<br/>
+<a href="#Output-1842870230" onClick='toggleBox("Output-1842870230", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1842870230" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1842870230">
+2016-11-07 16:27:20,371  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-07 16:27:20,399  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-07 16:27:20,399  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-07 16:27:20,418  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-07 16:27:20,419  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-07 16:27:20,419  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@16490912<br>
+<br/>
+2016-11-07 16:27:21,374  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-07 16:27:21,539  INFO root - Type value 'InstructorQe5aP' to Input 'name=user_id'<br>
+<br/>
+2016-11-07 16:27:21,768  INFO root - Type value 'InstructorQe5aP' to Input 'name=password'<br>
+<br/>
+2016-11-07 16:27:22,112 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162722110.png'>screenshot-20161107-162722110.png</a><br>
+<br/>
+2016-11-07 16:27:24,095  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:27:24,114  INFO root - Going to the created course Course5CjJq...<br>
+<br/>
+2016-11-07 16:27:24,114  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:27:34,737 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162734735.png'>screenshot-20161107-162734735.png</a><br>
+<br/>
+2016-11-07 16:27:34,737  INFO root - Wait for element By: By.linkText: Course5CjJq<br>
+<br/>
+2016-11-07 16:27:35,130  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:27:37,889  INFO root - Clicking Tegrity link...<br>
+<br/>
+2016-11-07 16:27:38,357  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:27:40,467  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-07 16:27:40,668  INFO root - Can't swith to window, because current title: Home Page &ndash; Course5CjJq doesn't contais : Tegrity - <br>
+<br/>
+2016-11-07 16:27:41,261  INFO root - Swith to window with title: Tegrity - Course5CjJq which contais : Tegrity - <br>
+<br/>
+2016-11-07 16:27:41,540 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162741538.png'>screenshot-20161107-162741538.png</a><br>
+<br/>
+2016-11-07 16:27:41,540  INFO root - Waiting for TegrityCourseDetailsScreen page...<br>
+<br/>
+2016-11-07 16:27:41,726 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162741724.png'>screenshot-20161107-162741724.png</a><br>
+<br/>
+2016-11-07 16:27:41,726  INFO root - Going to list of courses...<br>
+<br/>
+2016-11-07 16:27:41,994  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:27:43,994  INFO root - Waiting for TegrityIntroductionScreen page...<br>
+<br/>
+2016-11-07 16:27:44,202 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162744200.png'>screenshot-20161107-162744200.png</a><br>
+<br/>
+2016-11-07 16:27:44,259  INFO root - User name text is: 'InstructorNameQe5aP InstructorSurnameQe5aP'<br>
+<br/>
+2016-11-07 16:27:44,259  INFO root - Checking if course Course5CjJq is present on the page<br>
+<br/>
+2016-11-07 16:27:44,273  INFO root - Checking if course Course6ZS5R is present on the page<br>
+<br/>
+2016-11-07 16:27:44,284  INFO root - Checking if course InstructorNameQe5aP InstructorSurnameQe5aP sandbox course is present on the page<br>
+<br/>
+2016-11-07 16:27:44,294  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-07 16:27:44,333  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter@3c3d8fcd</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter.checkTegrityWelcomePageIsCorrectForStudent()'><b>checkTegrityWelcomePageIsCorrectForStudent</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter<br>Test method: Check Tegrity Welcome page for BlackBoard student<br/>
+<a href="#Output-2007978058" onClick='toggleBox("Output-2007978058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2007978058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2007978058">
+2016-11-07 16:27:47,698  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-07 16:27:47,732  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-07 16:27:47,732  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-07 16:27:47,751  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-07 16:27:47,752  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-07 16:27:47,752  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@16490912<br>
+<br/>
+2016-11-07 16:27:48,643  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-07 16:27:48,809  INFO root - Type value 'Studentz9dWi' to Input 'name=user_id'<br>
+<br/>
+2016-11-07 16:27:49,035  INFO root - Type value 'Studentz9dWi' to Input 'name=password'<br>
+<br/>
+2016-11-07 16:27:49,340 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162749338.png'>screenshot-20161107-162749338.png</a><br>
+<br/>
+2016-11-07 16:27:51,128  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-07 16:27:51,170  INFO root - Going to the created course Course5CjJq...<br>
+<br/>
+2016-11-07 16:27:51,171  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-07 16:28:01,764 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162801762.png'>screenshot-20161107-162801762.png</a><br>
+<br/>
+2016-11-07 16:28:01,764  INFO root - Wait for element By: By.linkText: Course5CjJq<br>
+<br/>
+2016-11-07 16:28:02,178  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-07 16:28:04,800  INFO root - Clicking Tegrity link...<br>
+<br/>
+2016-11-07 16:28:05,288  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:28:07,315  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-07 16:28:07,396  INFO root - Can't swith to window, because current title: Home Page &ndash; Course5CjJq doesn't contais : Tegrity - <br>
+<br/>
+2016-11-07 16:28:08,321  INFO root - Swith to window with title: Tegrity - Course5CjJq which contais : Tegrity - <br>
+<br/>
+2016-11-07 16:28:08,495 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162808493.png'>screenshot-20161107-162808493.png</a><br>
+<br/>
+2016-11-07 16:28:08,495  INFO root - Waiting for TegrityCourseDetailsScreen page...<br>
+<br/>
+2016-11-07 16:28:08,728 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162808726.png'>screenshot-20161107-162808726.png</a><br>
+<br/>
+2016-11-07 16:28:08,728  INFO root - Going to list of courses...<br>
+<br/>
+2016-11-07 16:28:09,096  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-07 16:28:11,096  INFO root - Waiting for TegrityIntroductionScreen page...<br>
+<br/>
+2016-11-07 16:28:11,289 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-162811287.png'>screenshot-20161107-162811287.png</a><br>
+<br/>
+2016-11-07 16:28:11,351  INFO root - User name text is: 'StudentNamez9dWi StudentSurnamez9dWi'<br>
+<br/>
+2016-11-07 16:28:11,351  INFO root - Checking if course Course5CjJq is present on the page<br>
+<br/>
+2016-11-07 16:28:11,362  INFO root - Checking if course Course6ZS5R is present on the page<br>
+<br/>
+2016-11-07 16:28:11,377  INFO root - Checking if course sandbox course is present on the page<br>
+<br/>
+2016-11-07 16:28:11,409  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-07 16:28:16,565  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter@3c3d8fcd</td></tr>
+</table><p>
+</body>
+</html>

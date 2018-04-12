@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuccessFactors Tests" verbose="1">
+
+	<test verbose="1" name="Success Factors Stub Connector Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sfconnector.SFConnectorStubScoreTest" />
+		</classes>
+	</test>
+</suite>

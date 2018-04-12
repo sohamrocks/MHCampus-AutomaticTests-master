@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-lazy-init="true">
+
+	<bean id="angelXmlSerializer"
+		class="com.mcgraw.test.automation.api.rest.endpoint.JaxbSerializer" />
+
+	<bean id="angelServerError"
+		class="com.mcgraw.test.automation.api.rest.angel.xml.AngelServerError" />
+
+	<bean id="angelRestEndpoint"
+		class="com.mcgraw.test.automation.api.rest.endpoint.HttpClientRestEndpoint">
+		<constructor-arg name="baseUrl" value="${angel.baseurl}" />
+		<constructor-arg name="serializer" ref="angelXmlSerializer" />
+		<constructor-arg name="errorHandler">
+			<bean class="com.mcgraw.test.automation.api.rest.base.RestErrorHandler">
+			</bean>
+		</constructor-arg>
+		<constructor-arg name="credentials">
+			<null />
+		</constructor-arg>
+		<constructor-arg name="additionalHeaders">
+			<null />
+		</constructor-arg>
+	</bean>
+
+	<bean id="angelApi" class="com.mcgraw.test.automation.api.rest.angel.service.AngelRestApi">
+		<constructor-arg name="endpoint" ref="angelRestEndpoint" />
+		<constructor-arg name="resourceUrl" value="${angel.api.resourceurl}" />
+		<constructor-arg name="creds" ref="angelCredentials" />
+	</bean>
+
+	<bean id="angelCredentials" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="angelUserName" />
+				<ref bean="angelPassword" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="angelUserName" class="org.apache.http.message.BasicNameValuePair">
+		<constructor-arg name="name" value="APIUSER" />
+		<constructor-arg name="value" value="${angel.api.username}" />
+	</bean>
+
+	<bean id="angelPassword" class="org.apache.http.message.BasicNameValuePair">
+		<constructor-arg name="name" value="APIPWD" />
+		<constructor-arg name="value" value="${angel.api.password}" />
+	</bean>
+
+	<bean id="angelApiRequestsFactory"
+		class="com.mcgraw.test.automation.api.rest.angel.factory.AngelRequestsFactory" />
+		
+		
+	<bean id="angelApiUtils" class="com.mcgraw.test.automation.api.rest.angel.service.AngelApiUtils">
+		<constructor-arg name="angelRestApi" ref="angelApi" />
+		<constructor-arg name="angelRequestsFactory" ref="angelApiRequestsFactory"/>
+	</bean>
+</beans>

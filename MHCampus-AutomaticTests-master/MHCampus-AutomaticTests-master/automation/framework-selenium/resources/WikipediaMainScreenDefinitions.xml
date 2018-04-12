@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:elements
+	xmlns:tns="http://www.krux.com/selenium2-framework/elements.locators.map.schema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.krux.com/selenium2-framework/elements.locators.map.schema elements.locators.map.schema.xsd ">
+	<tns:element name="searchInput">
+		<tns:locator priority="1" type="XPath"><![CDATA[
+			//input[@id='searchInput']]]>
+		</tns:locator>
+	</tns:element>
+</tns:elements>

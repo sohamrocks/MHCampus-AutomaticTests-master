@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>TestNG:  BlackBoard Direct Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlackBoard Direct Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 07 15:07:51 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>195 seconds (195074 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest.checkAuthenticationAndAuthorizationConnectorsAreAvailable()'><b>checkAuthenticationAndAuthorizationConnectorsAreAvailable</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest<br>Test method: Check connectors are availiable<br/>
+<a href="#Output-620334246" onClick='toggleBox("Output-620334246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-620334246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-620334246">
+2016-11-07 15:10:34,720  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-07 15:10:35,571  INFO root - Wait for element By: By.xpath: .//div[@id='GRADES_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-07 15:10:38,551 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-151038549.png'>screenshot-20161107-151038549.png</a><br>
+<br/>
+2016-11-07 15:10:38,551  INFO root - Waiting for TegrityInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-07 15:10:38,562  INFO root - Wait for element By: By.id: aairsManagementFrame<br>
+<br/>
+2016-11-07 15:10:38,781  INFO root - Logging out...<br>
+<br/>
+2016-11-07 15:10:38,948  INFO root - Waiting for TegrityInstanceLoginScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest@3a55b9b</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest.checkTegrityLinkBahavesCorrectlyForBlackBoardInstructor()'><b>checkTegrityLinkBahavesCorrectlyForBlackBoardInstructor</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest<br>Test method: For BlackBoard instructor Tegrity link bahaves correctly<br/>
+<a href="#Output-54816306" onClick='toggleBox("Output-54816306", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-54816306" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-54816306">
+2016-11-07 15:10:41,699  INFO root - Logging in to Tegtity instance: URL=http://uiautomation1.tegrity.com as user: username=InstructorNQOox, password=InstructorNQOox<br>
+<br/>
+2016-11-07 15:10:41,708  INFO root - Opening URL: http://uiautomation1.tegrity.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@186ebdb9<br>
+<br/>
+2016-11-07 15:10:42,652  INFO root - Waiting for TegrityInstanceLoginScreen page...<br>
+<br/>
+2016-11-07 15:10:44,589  INFO root - Type value 'InstructorNQOox' to Input 'name=UserName'<br>
+<br/>
+2016-11-07 15:10:44,948  INFO root - Type value 'InstructorNQOox' to Input 'name=Password'<br>
+<br/>
+2016-11-07 15:10:45,509 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-151045508.png'>screenshot-20161107-151045508.png</a><br>
+<br/>
+2016-11-07 15:10:45,509  INFO root - Waiting for TegrityIntroductionScreen page...<br>
+<br/>
+2016-11-07 15:10:46,972  INFO root - User name text is: 'InstructorNameNQOox InstructorSurnameNQOox'<br>
+<br/>
+2016-11-07 15:10:46,973  INFO root - Checking if course CourselDbUb is present on the page<br>
+<br/>
+2016-11-07 15:10:46,985  INFO root - Checking if course CourseOBkEk is present on the page<br>
+<br/>
+2016-11-07 15:10:46,996  INFO root - Checking if course InstructorNameNQOox InstructorSurnameNQOox sandbox course is present on the page<br>
+<br/>
+2016-11-07 15:10:47,007  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-07 15:10:47,085  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+2016-11-07 15:10:47,101  INFO root - Logging out...<br>
+<br/>
+2016-11-07 15:10:47,275  INFO root - Waiting for TegrityInstanceLoginScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest@3a55b9b</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest.checkTegrityLinkBahavesCorrectlyForBlackBoardStudent()'><b>checkTegrityLinkBahavesCorrectlyForBlackBoardStudent</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest<br>Test method: For BlackBoard student Tegrity link bahaves correctly<br/>
+<a href="#Output-1996829900" onClick='toggleBox("Output-1996829900", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1996829900" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1996829900">
+2016-11-07 15:10:49,609  INFO root - Logging in to Tegtity instance: URL=http://uiautomation1.tegrity.com as user: username=Student1krOO, password=Student1krOO<br>
+<br/>
+2016-11-07 15:10:49,629  INFO root - Opening URL: http://uiautomation1.tegrity.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@186ebdb9<br>
+<br/>
+2016-11-07 15:10:50,402  INFO root - Waiting for TegrityInstanceLoginScreen page...<br>
+<br/>
+2016-11-07 15:10:52,377  INFO root - Type value 'Student1krOO' to Input 'name=UserName'<br>
+<br/>
+2016-11-07 15:10:52,875  INFO root - Type value 'Student1krOO' to Input 'name=Password'<br>
+<br/>
+2016-11-07 15:10:53,417 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161107-151053415.png'>screenshot-20161107-151053415.png</a><br>
+<br/>
+2016-11-07 15:10:53,417  INFO root - Waiting for TegrityIntroductionScreen page...<br>
+<br/>
+2016-11-07 15:10:54,574  INFO root - User name text is: 'StudentName1krOO StudentSurname1krOO'<br>
+<br/>
+2016-11-07 15:10:54,574  INFO root - Checking if course CourselDbUb is present on the page<br>
+<br/>
+2016-11-07 15:10:54,585  INFO root - Checking if course CourseOBkEk is present on the page<br>
+<br/>
+2016-11-07 15:10:54,595  INFO root - Checking if course sandbox course is present on the page<br>
+<br/>
+2016-11-07 15:10:54,605  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-07 15:10:59,753  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+2016-11-07 15:10:59,771  INFO root - Logging out...<br>
+<br/>
+2016-11-07 15:10:59,994  INFO root - Waiting for TegrityInstanceLoginScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest@3a55b9b</td></tr>
+</table><p>
+</body>
+</html>

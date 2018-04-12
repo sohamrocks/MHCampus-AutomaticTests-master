@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>TestNG:  Canvas Exclude Filter Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Canvas Exclude Filter Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 04 17:57:36 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>225 seconds (225293 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.ExcludeAllFilter.checkMHCampusLinkIsAbsentInInstructorsCoursesForExcludeAllFilter()'><b>checkMHCampusLinkIsAbsentInInstructorsCoursesForExcludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.canvas.ExcludeAllFilter<br>Test method: For Canvas instructor MH Campus link is absent<br/>
+<a href="#Output-1330287261" onClick='toggleBox("Output-1330287261", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1330287261" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1330287261">
+2016-04-04 17:59:55,809  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-04-04 18:00:00,824  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@6d0433ee<br>
+<br/>
+2016-04-04 18:00:05,411  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-04-04 18:00:07,549  INFO root - Type value 'instructorxHZvh' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-04-04 18:00:07,855  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-04-04 18:00:08,523 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180008521.png'>screenshot-20160404-180008521.png</a><br>
+<br/>
+2016-04-04 18:00:16,291  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-04-04 18:00:16,313  INFO root - Going to the created course CourseName19ikYn...<br>
+<br/>
+2016-04-04 18:00:18,401  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName19ikYn')]<br>
+<br/>
+2016-04-04 18:00:18,721  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-04-04 18:00:22,611 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180022608.png'>screenshot-20160404-180022608.png</a><br>
+<br/>
+2016-04-04 18:00:22,781 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180022779.png'>screenshot-20160404-180022779.png</a><br>
+<br/>
+2016-04-04 18:00:22,794  INFO root - Going to the created course CourseName2hX2rr...<br>
+<br/>
+2016-04-04 18:00:24,847  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName2hX2rr')]<br>
+<br/>
+2016-04-04 18:00:34,181  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-04-04 18:00:34,386 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180034384.png'>screenshot-20160404-180034384.png</a><br>
+<br/>
+2016-04-04 18:00:34,566 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180034565.png'>screenshot-20160404-180034565.png</a><br>
+<br/>
+2016-04-04 18:00:34,583  INFO root - Logout from Canvas...<br>
+<br/>
+2016-04-04 18:00:34,583  INFO root - Wait for element By: By.xpath: //*/a[contains(text(),'Logout')]<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.mcgraw.test.automation.tests.canvas.ExcludeAllFilter@5c8b9a98</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.ExcludeAllFilter.checkMHCampusLinkIsAbsentInStudentsCoursesForExcludeAllFilter()'><b>checkMHCampusLinkIsAbsentInStudentsCoursesForExcludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.canvas.ExcludeAllFilter<br>Test method: For Canvas student MH Campus link is absent<br/>
+<a href="#Output-2075536150" onClick='toggleBox("Output-2075536150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2075536150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2075536150">
+2016-04-04 18:00:38,238  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-04-04 18:00:43,254  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@6d0433ee<br>
+<br/>
+2016-04-04 18:00:45,314  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-04-04 18:00:47,468  INFO root - Type value 'studentkdlcz' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-04-04 18:00:47,770  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-04-04 18:00:48,436 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180048434.png'>screenshot-20160404-180048434.png</a><br>
+<br/>
+2016-04-04 18:00:55,713  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-04-04 18:00:55,752  INFO root - Going to the created course CourseName19ikYn...<br>
+<br/>
+2016-04-04 18:00:57,833  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName19ikYn')]<br>
+<br/>
+2016-04-04 18:00:58,084  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-04-04 18:01:01,118 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180101116.png'>screenshot-20160404-180101116.png</a><br>
+<br/>
+2016-04-04 18:01:01,289 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180101287.png'>screenshot-20160404-180101287.png</a><br>
+<br/>
+2016-04-04 18:01:01,308  INFO root - Going to the created course CourseName2hX2rr...<br>
+<br/>
+2016-04-04 18:01:03,358  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName2hX2rr')]<br>
+<br/>
+2016-04-04 18:01:12,561  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-04-04 18:01:12,727 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180112725.png'>screenshot-20160404-180112725.png</a><br>
+<br/>
+2016-04-04 18:01:12,876 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160404-180112874.png'>screenshot-20160404-180112874.png</a><br>
+<br/>
+2016-04-04 18:01:12,889  INFO root - Logout from Canvas...<br>
+<br/>
+2016-04-04 18:01:12,890  INFO root - Wait for element By: By.xpath: //*/a[contains(text(),'Logout')]<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.mcgraw.test.automation.tests.canvas.ExcludeAllFilter@5c8b9a98</td></tr>
+</table><p>
+</body>
+</html>

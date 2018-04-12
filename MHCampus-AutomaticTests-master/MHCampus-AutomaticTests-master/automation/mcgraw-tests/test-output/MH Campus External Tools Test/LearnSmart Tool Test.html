@@ -1,0 +1,298 @@
+<html>
+<head>
+<title>TestNG:  LearnSmart Tool Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LearnSmart Tool Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 10 14:42:22 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>195 seconds (195292 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest.testAddLearnSmartForStudent()'><b>testAddLearnSmartForStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest<br>Test method: Add 'Learn Smart' for student<br/>
+<a href="#Output-2145975120" onClick='toggleBox("Output-2145975120", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2145975120" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2145975120">
+2016-04-10 14:43:11,841  INFO root - Perform steps to adopt LearnSmart for course courseName40595<br>
+<br/>
+2016-04-10 14:43:11,841  INFO root - Expand course name=courseName40595<br>
+<br/>
+2016-04-10 14:43:11,841  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:43:11,974  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 14:43:13,988  INFO root - Open LearnSmart<br>
+<br/>
+2016-04-10 14:43:14,097  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME40595')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='LearnSmart']<br>
+<br/>
+2016-04-10 14:43:14,628  INFO root - Create new account...<br>
+<br/>
+2016-04-10 14:43:14,819 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144314815.png'>screenshot-20160410-144314815.png</a><br>
+<br/>
+2016-04-10 14:43:14,819  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 14:43:16,218 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144316216.png'>screenshot-20160410-144316216.png</a><br>
+<br/>
+2016-04-10 14:43:16,815 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144316814.png'>screenshot-20160410-144316814.png</a><br>
+<br/>
+2016-04-10 14:43:16,815  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 14:43:17,312 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144317311.png'>screenshot-20160410-144317311.png</a><br>
+<br/>
+2016-04-10 14:43:17,527  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 14:43:17,527  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 14:43:18,725  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 14:43:18,898  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 14:43:19,172  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 14:43:19,440  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 14:43:19,923 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144319920.png'>screenshot-20160410-144319920.png</a><br>
+<br/>
+2016-04-10 14:43:19,923  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 14:43:19,956  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 14:43:21,422  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 14:43:22,664  INFO root - Pause for '30000' millis<br>
+<br/>
+2016-04-10 14:43:52,699  INFO root - Current URL before switching is : http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewLearnSmart.aspx?isbn=0000011111&amp;course=id40595<br>
+<br/>
+2016-04-10 14:43:52,713  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:43:52,737  INFO root - Switched to Last window with URL: http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewLearnSmart.aspx?isbn=0000011111&amp;course=id40595<br>
+<br/>
+2016-04-10 14:43:52,873 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144352872.png'>screenshot-20160410-144352872.png</a><br>
+<br/>
+2016-04-10 14:43:52,929  INFO root - Waiting for MhCampusLearnSmartScreen page...<br>
+<br/>
+2016-04-10 14:43:53,015  INFO root - Click iWantThisForMyStudentsButton<br>
+<br/>
+2016-04-10 14:43:53,550  INFO root - Click adoptLearnSmartButton<br>
+<br/>
+2016-04-10 14:43:56,778  INFO root - No alerts appeared<br>
+<br/>
+2016-04-10 14:43:56,778  INFO root - Pause browser for 30 seconds to wait flash elements<br>
+<br/>
+2016-04-10 14:43:56,779  INFO root - Pause for '30000' millis<br>
+<br/>
+2016-04-10 14:44:26,778  INFO root - Waiting for MhCampusLearnSmartScreenWithOutBar page...<br>
+<br/>
+2016-04-10 14:44:27,674 HTML_OUTPUT root - Taken screenshoot using java robot <a href='screenshoots/screenshot-20160410-144426796.png'>screenshot-20160410-144426796.png</a><br>
+<br/>
+2016-04-10 14:44:27,704  INFO root - Close the window with URL: http://www.mhlearnsmart.com/flow/learnsmart.html?isbn=0077821505&amp;paris_uid=19851562&amp;external_user_id=e9c5fe07ca11799eefad78d1321cc1a94079a487362a9ca2&amp;first_name=instructorFirstname91011&amp;last_name=instructorLastname91011&amp;type=I&amp;section_name=id40595&amp;school=2&amp;installation_id=a8dcbe31d14d409aa2a0e3e7aa0ab66d&amp;salt=Cfq8K5sQz&amp;key=43dc294415c16ff4c2c23eab87052b09&amp;campus=1<br>
+<br/>
+2016-04-10 14:44:27,704  INFO root - Closing browser...<br>
+<br/>
+2016-04-10 14:44:28,090  WARN root - NoSuchWindowException occured on alert processing.<br>
+<br/>
+2016-04-10 14:44:28,130  INFO root - Opened one window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>76</td>
+<td>com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest@289b54b</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest.testLearnSmartAvailableUnderStudent()'><b>testLearnSmartAvailableUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest<br>Test method: Test if 'Learn Smart' available under student<br/>
+<a href="#Output-371838444" onClick='toggleBox("Output-371838444", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-371838444" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-371838444">
+2016-04-10 14:44:28,318  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20160403-125112826.mhcampus.com as user: username=student79556, password=123qweA@<br>
+<br/>
+2016-04-10 14:44:28,326  INFO root - Opening URL: http://epamInstance-20160403-125112826.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@70db4e1d<br>
+<br/>
+2016-04-10 14:44:29,352  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-10 14:44:30,015  INFO root - Type value 'student79556' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-10 14:44:30,269  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-10 14:44:30,479 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144430477.png'>screenshot-20160410-144430477.png</a><br>
+<br/>
+2016-04-10 14:44:30,479  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-10 14:44:32,032  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:44:32,401 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144432400.png'>screenshot-20160410-144432400.png</a><br>
+<br/>
+2016-04-10 14:44:32,448  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-04-10 14:44:38,448  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-04-10 14:44:38,511  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:44:38,522  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 14:44:38,551  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:44:40,883 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-04-10 14:44:43,071  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:44:43,150  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 14:44:44,443  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:44:44,672  INFO root - Expand course name=courseName40595<br>
+<br/>
+2016-04-10 14:44:44,673  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:44:44,817  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 14:44:46,830  INFO root - Check elements present LearnSmart  for course: courseName40595<br>
+<br/>
+2016-04-10 14:44:47,001 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144446999.png'>screenshot-20160410-144446999.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest@289b54b</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest.testLearnSmartStudentRegistrationOpenedUnderStudent()'><b>testLearnSmartStudentRegistrationOpenedUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest<br>Test method: Test if 'Learn Smart' student registration opened<br/>
+<a href="#Output-296458919" onClick='toggleBox("Output-296458919", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-296458919" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-296458919">
+2016-04-10 14:44:47,158  INFO root - Expand course name=courseName40595<br>
+<br/>
+2016-04-10 14:44:47,158  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:44:47,273  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 14:44:49,288  INFO root - Open LearnSmart Student registration<br>
+<br/>
+2016-04-10 14:44:49,328  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME40595')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='LearnSmart']<br>
+<br/>
+2016-04-10 14:44:49,979  INFO root - Create new account...<br>
+<br/>
+2016-04-10 14:44:50,151 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144450150.png'>screenshot-20160410-144450150.png</a><br>
+<br/>
+2016-04-10 14:44:50,151  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 14:44:51,630 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144451628.png'>screenshot-20160410-144451628.png</a><br>
+<br/>
+2016-04-10 14:44:52,168 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144452166.png'>screenshot-20160410-144452166.png</a><br>
+<br/>
+2016-04-10 14:44:52,168  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 14:44:52,596 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144452595.png'>screenshot-20160410-144452595.png</a><br>
+<br/>
+2016-04-10 14:44:52,864  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 14:44:52,864  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 14:44:54,131  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 14:44:54,303  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 14:44:54,588  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 14:44:54,860  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 14:44:55,341 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144455339.png'>screenshot-20160410-144455339.png</a><br>
+<br/>
+2016-04-10 14:44:55,341  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 14:44:55,363  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 14:44:56,999  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 14:45:36,574  INFO root - No alerts appeared<br>
+<br/>
+2016-04-10 14:45:36,606  INFO root - Current URL before switching is : http://paris.mheducation.com/paris/externaluserregistration.do?productid=0077821505&amp;sessionId=19851563146028871396946463690bedf4427a9759e15e39f89e2&amp;entityid=a8dcbe31d14d409aa2a0e3e7aa0ab66d&amp;externaluserid=4d6cb4ef8431af7c8cc9f843a7d9175e49d53f8e28d5bd66&amp;externalrole=urn:lti:instrole:ims/lis/Student,Learner&amp;userType=student&amp;email=user7519850@gmail.com&amp;gotourl=http%3A%2F%2Fwww.mhlearnsmart.com%2Fflow%2Flearnsmart.html%3F%26name%3Dlearnsmart%26key%3D43dc294415c16ff4c2c23eab87052b09%26school%3D2%26isbn%3D0077821505%26type%3DS%26paris_uid%3D19851563%26external_user_id%3D4d6cb4ef8431af7c8cc9f843a7d9175e49d53f8e28d5bd66%26first_name%3DstudentFirstname79556%26last_name%3DstudentLastname79556%26salt%3DyzHPZtKJ7%26installation_id%3Da8dcbe31d14d409aa2a0e3e7aa0ab66d%26section_name%3Did40595%26campus%3D1&amp;<br>
+<br/>
+2016-04-10 14:45:36,618  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:45:36,646  INFO root - Switched to Last window with URL: http://paris.mheducation.com/paris/externaluserregistration.do?productid=0077821505&amp;sessionId=19851563146028871396946463690bedf4427a9759e15e39f89e2&amp;entityid=a8dcbe31d14d409aa2a0e3e7aa0ab66d&amp;externaluserid=4d6cb4ef8431af7c8cc9f843a7d9175e49d53f8e28d5bd66&amp;externalrole=urn:lti:instrole:ims/lis/Student,Learner&amp;userType=student&amp;email=user7519850@gmail.com&amp;gotourl=http%3A%2F%2Fwww.mhlearnsmart.com%2Fflow%2Flearnsmart.html%3F%26name%3Dlearnsmart%26key%3D43dc294415c16ff4c2c23eab87052b09%26school%3D2%26isbn%3D0077821505%26type%3DS%26paris_uid%3D19851563%26external_user_id%3D4d6cb4ef8431af7c8cc9f843a7d9175e49d53f8e28d5bd66%26first_name%3DstudentFirstname79556%26last_name%3DstudentLastname79556%26salt%3DyzHPZtKJ7%26installation_id%3Da8dcbe31d14d409aa2a0e3e7aa0ab66d%26section_name%3Did40595%26campus%3D1&amp;<br>
+<br/>
+2016-04-10 14:45:36,875 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144536873.png'>screenshot-20160410-144536873.png</a><br>
+<br/>
+2016-04-10 14:45:37,145  INFO root - Waiting for MhCampusLearnSmartStudentRegistrationScreen page...<br>
+<br/>
+2016-04-10 14:45:37,201  INFO root - Check if 'You are currently logged in with' message is present<br>
+<br/>
+2016-04-10 14:45:37,468 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-144537466.png'>screenshot-20160410-144537466.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest@289b54b</td></tr>
+</table><p>
+</body>
+</html>

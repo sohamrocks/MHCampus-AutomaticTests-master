@@ -1,0 +1,626 @@
+<html>
+<head>
+<title>TestNG:  CanvasDeepIntegrationWithConnect 5</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CanvasDeepIntegrationWithConnect 5</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/10</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 18 17:56:31 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>327 seconds (327237 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkAssagmentsWereCreatedForCourseInConnect()'><b>checkAssagmentsWereCreatedForCourseInConnect</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: For Canvas instructor were created assignments of course in Connect<br/>
+<a href="#Output-587380434" onClick='toggleBox("Output-587380434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-587380434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-587380434">
+2016-10-18 17:59:33,780  INFO root - Add assignment to course...<br>
+<br/>
+2016-10-18 17:59:38,153  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 17:59:43,153  INFO root - Wait for element By: By.xpath: .//*[@id='sourcessection']/li[1]/a<br>
+<br/>
+2016-10-18 17:59:43,588  INFO root - Wait for element By: By.xpath: //*[@id='sourcessection']/li[1]//span[contains(text(),'select')]<br>
+<br/>
+2016-10-18 17:59:43,738  INFO root - Clicking element by using Javascript: 'select'<br>
+<br/>
+2016-10-18 17:59:43,924  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 17:59:46,924  INFO root - Wait for element By: By.id: title<br>
+<br/>
+2016-10-18 17:59:48,076 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175948075.png'>screenshot-20161018-175948075.png</a><br>
+<br/>
+2016-10-18 17:59:48,076  INFO root - Wait for element By: By.id: pool_info<br>
+<br/>
+2016-10-18 17:59:53,709  INFO root - Mark question with type: Multiple Choice<br>
+<br/>
+2016-10-18 17:59:54,132  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 17:59:59,433 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175959432.png'>screenshot-20161018-175959432.png</a><br>
+<br/>
+2016-10-18 17:59:59,434  INFO root - Wait for element By: By.id: addthisQuestion<br>
+<br/>
+2016-10-18 17:59:59,521  INFO root - Clicking element by using Javascript: 'add this question  <br>
+ '<br>
+<br/>
+2016-10-18 17:59:59,634  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 18:00:04,634  INFO root - Wait for element By: By.xpath: //a[contains(text(),'add as an individual question')]<br>
+<br/>
+2016-10-18 18:00:04,863  INFO root - Clicking element by using Javascript: 'add as an individual question'<br>
+<br/>
+2016-10-18 18:00:05,154  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 18:00:10,154  INFO root - Wait for element By: By.id: create_Cont<br>
+<br/>
+2016-10-18 18:00:12,943  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 18:00:16,177 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180016174.png'>screenshot-20161018-180016174.png</a><br>
+<br/>
+2016-10-18 18:00:16,177  INFO root - Create start date of assignment...<br>
+<br/>
+2016-10-18 18:00:16,177  INFO root - Wait for element By: By.id: assignment_availablity<br>
+<br/>
+2016-10-18 18:00:16,459  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 18:00:19,459  INFO root - Wait for element By: By.id: scheduleDateStart<br>
+<br/>
+2016-10-18 18:00:19,770  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-10-18 18:00:20,770  INFO root - Wait for element By: By.id: startHourMin<br>
+<br/>
+2016-10-18 18:00:21,238  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 18:00:24,489 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180024487.png'>screenshot-20161018-180024487.png</a><br>
+<br/>
+2016-10-18 18:00:24,489  INFO root - Create due date of assignment...<br>
+<br/>
+2016-10-18 18:00:24,489  INFO root - Wait for element By: By.id: scheduleDateEnd<br>
+<br/>
+2016-10-18 18:00:24,705  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-10-18 18:00:25,706  INFO root - Wait for element By: By.id: dueHourMin<br>
+<br/>
+2016-10-18 18:00:26,040  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-10-18 18:00:27,308 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180027306.png'>screenshot-20161018-180027306.png</a><br>
+<br/>
+2016-10-18 18:00:27,308  INFO root - Wait for element By: By.id: reviewAndAssignBtn<br>
+<br/>
+2016-10-18 18:00:31,813 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180031811.png'>screenshot-20161018-180031811.png</a><br>
+<br/>
+2016-10-18 18:00:34,972  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-10-18 18:00:46,050 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180046048.png'>screenshot-20161018-180046048.png</a><br>
+<br/>
+2016-10-18 18:00:46,050  INFO root - Add assignment to course...<br>
+<br/>
+2016-10-18 18:00:49,002  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 18:00:54,003  INFO root - Wait for element By: By.xpath: .//*[@id='sourcessection']/li[1]/a<br>
+<br/>
+2016-10-18 18:00:54,605  INFO root - Wait for element By: By.xpath: //*[@id='sourcessection']/li[1]//span[contains(text(),'select')]<br>
+<br/>
+2016-10-18 18:00:54,742  INFO root - Clicking element by using Javascript: 'select'<br>
+<br/>
+2016-10-18 18:00:54,927  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 18:00:57,927  INFO root - Wait for element By: By.id: title<br>
+<br/>
+2016-10-18 18:00:59,023 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180059022.png'>screenshot-20161018-180059022.png</a><br>
+<br/>
+2016-10-18 18:00:59,023  INFO root - Wait for element By: By.id: pool_info<br>
+<br/>
+2016-10-18 18:01:04,728  INFO root - Mark question with type: Multiple Choice<br>
+<br/>
+2016-10-18 18:01:05,104  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 18:01:10,416 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180110414.png'>screenshot-20161018-180110414.png</a><br>
+<br/>
+2016-10-18 18:01:10,580  INFO root - Wait for element By: By.id: addthisQuestion<br>
+<br/>
+2016-10-18 18:01:10,648  INFO root - Clicking element by using Javascript: 'add this question  <br>
+ '<br>
+<br/>
+2016-10-18 18:01:10,735  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 18:01:15,735  INFO root - Wait for element By: By.xpath: //a[contains(text(),'add as an individual question')]<br>
+<br/>
+2016-10-18 18:01:15,971  INFO root - Clicking element by using Javascript: 'add as an individual question'<br>
+<br/>
+2016-10-18 18:01:16,270  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 18:01:21,271  INFO root - Wait for element By: By.id: create_Cont<br>
+<br/>
+2016-10-18 18:01:22,953  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 18:01:26,189 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180126187.png'>screenshot-20161018-180126187.png</a><br>
+<br/>
+2016-10-18 18:01:26,189  INFO root - Create due date of assignment...<br>
+<br/>
+2016-10-18 18:01:26,189  INFO root - Wait for element By: By.id: scheduleDateEnd<br>
+<br/>
+2016-10-18 18:01:26,461  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-10-18 18:01:27,462  INFO root - Wait for element By: By.id: dueHourMin<br>
+<br/>
+2016-10-18 18:01:27,795  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-10-18 18:01:28,999 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180128997.png'>screenshot-20161018-180128997.png</a><br>
+<br/>
+2016-10-18 18:01:28,999  INFO root - Wait for element By: By.id: reviewAndAssignBtn<br>
+<br/>
+2016-10-18 18:01:32,738 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180132737.png'>screenshot-20161018-180132737.png</a><br>
+<br/>
+2016-10-18 18:01:34,949  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-10-18 18:01:47,516 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-180147514.png'>screenshot-20161018-180147514.png</a><br>
+<br/>
+2016-10-18 18:01:47,516  INFO root - Check assignment name is present...<br>
+<br/>
+2016-10-18 18:01:47,516  INFO root - Wait for element By: By.xpath: //span[contains(text(),'Assignment1wZP4D')]<br>
+<br/>
+2016-10-18 18:01:47,564  INFO root - Check assignment name is present...<br>
+<br/>
+2016-10-18 18:01:47,564  INFO root - Wait for element By: By.xpath: //span[contains(text(),'Assignment2Xed15')]<br>
+<br/>
+2016-10-18 18:01:47,605  INFO root - Get counter of deployed assignments...<br>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Count of Deployed assignments doesn&apos;t right expected [2] but found [1]
+	at com.mcgraw.test.automation.framework.core.testng.Assert.verifyEquals(Assert.java:135)
+	at com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkAssagmentsWereCreatedForCourseInConnect(CanvasDeepIntegrationWithConnect.java:169)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace587380434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace587380434'><pre>java.lang.AssertionError: Count of Deployed assignments doesn&apos;t right expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at com.mcgraw.test.automation.framework.core.testng.Assert.verifyEquals(Assert.java:135)
+	at com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkAssagmentsWereCreatedForCourseInConnect(CanvasDeepIntegrationWithConnect.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>133</td>
+<td>com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect@d4185ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkApplicationLinkIsPresentForInstructorInConnect()'><b>checkApplicationLinkIsPresentForInstructorInConnect</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: For Canvas instructor, application link was created in Connect <br/>
+<a href="#Output-481678016" onClick='toggleBox("Output-481678016", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-481678016" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-481678016">
+2016-10-18 17:56:40,385  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-10-18 17:56:40,385  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 17:56:43,424  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@6931ae4c<br>
+<br/>
+2016-10-18 17:56:47,617  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-10-18 17:56:47,830  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-10-18 17:56:50,053  INFO root - Type value 'instructorRSQ26' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-10-18 17:56:50,992  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-10-18 17:56:51,250 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175651248.png'>screenshot-20161018-175651248.png</a><br>
+<br/>
+2016-10-18 17:56:51,251  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-10-18 17:56:55,942 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175655940.png'>screenshot-20161018-175655940.png</a><br>
+<br/>
+2016-10-18 17:56:58,671  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-10-18 17:56:58,792  INFO root - Going to the created course CourseNameqGj09...<br>
+<br/>
+2016-10-18 17:56:58,792  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2016-10-18 17:56:59,430  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseNameqGj09')]<br>
+<br/>
+2016-10-18 17:56:59,639  INFO root - Clicking element by using Javascript: 'CourseNameqGj09'<br>
+<br/>
+2016-10-18 17:56:59,689  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-10-18 17:57:02,732 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175702731.png'>screenshot-20161018-175702731.png</a><br>
+<br/>
+2016-10-18 17:57:02,733  INFO root - Creating application with name: AConnectDI<br>
+<br/>
+2016-10-18 17:57:02,733  INFO root - Create application for Connect<br>
+<br/>
+2016-10-18 17:57:02,924  INFO root - Wait for element By: By.id: tab-tools-link<br>
+<br/>
+2016-10-18 17:57:06,162  INFO root - Wait for element By: By.xpath: //a[contains(text(),'View App Configurations')]<br>
+<br/>
+2016-10-18 17:57:06,695  INFO root - Wait for element By: By.xpath: //*[@id = 'external_tools']/div/div/div[1]/h2/div/span/a<br>
+<br/>
+2016-10-18 17:57:07,829 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175707827.png'>screenshot-20161018-175707827.png</a><br>
+<br/>
+2016-10-18 17:57:07,829  INFO root - Fill the form for application...<br>
+<br/>
+2016-10-18 17:57:07,829  INFO root - Wait for element By: By.id: configuration_type_selector<br>
+<br/>
+2016-10-18 17:57:08,095  INFO root - Choose option: Paste XML<br>
+<br/>
+2016-10-18 17:57:08,474  INFO root - Wait for element By: By.xpath: //*[@class = 'ConfigurationFormXml']/div[1]/label/input<br>
+<br/>
+2016-10-18 17:57:08,963  INFO root - Wait for element By: By.xpath: //*[@class = 'ConfigurationFormXml']/div[2]/div[1]/div[1]/label/input<br>
+<br/>
+2016-10-18 17:57:09,344  INFO root - Wait for element By: By.xpath: //*[@class = 'ConfigurationFormXml']/div[2]/div[2]/div[1]/label/input<br>
+<br/>
+2016-10-18 17:57:09,642  INFO root - Wait for element By: By.id: xml<br>
+<br/>
+2016-10-18 17:57:18,810 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175718808.png'>screenshot-20161018-175718808.png</a><br>
+<br/>
+2016-10-18 17:57:18,810  INFO root - Wait for element By: By.xpath: //button[contains(text(),'Submit')]<br>
+<br/>
+2016-10-18 17:57:19,044  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-10-18 17:57:24,308 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175724306.png'>screenshot-20161018-175724306.png</a><br>
+<br/>
+2016-10-18 17:57:24,308  INFO root - Check, that application with name: AConnectDI was added...<br>
+<br/>
+2016-10-18 17:57:24,308  INFO root - Wait for element By: By.xpath: //*[@id = 'external-tools-table']/tbody/tr[1]/td[2]/span<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect@d4185ac</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkCourseHomePageForInstructorInConnect()'><b>checkCourseHomePageForInstructorInConnect</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: For Canvas instructor check course Home Page details  in Connect<br/>
+<a href="#Output-1938199749" onClick='toggleBox("Output-1938199749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1938199749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1938199749">
+2016-10-18 17:59:27,589  INFO root - Click 'Go to home page' link<br>
+<br/>
+2016-10-18 17:59:32,851  INFO root - Waiting for CanvasConnectCourseDetailsScreen page...<br>
+<br/>
+2016-10-18 17:59:33,209 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175933208.png'>screenshot-20161018-175933208.png</a><br>
+<br/>
+2016-10-18 17:59:33,248  INFO root - User full name is: instructorRSQ26 instructorRSQ26<br>
+<br/>
+2016-10-18 17:59:33,313  INFO root - Course name is: CourseForConnectDI<br>
+<br/>
+2016-10-18 17:59:33,383  INFO root - Section name is: SectionForConnectDI<br>
+<br/>
+2016-10-18 17:59:33,450  INFO root - Book name is: SectionForConnectDI<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect@d4185ac</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkCourseWasCreatedForInstructorInConnect()'><b>checkCourseWasCreatedForInstructorInConnect</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: For Canvas instructor the course was created in Connect<br/>
+<a href="#Output-793974350" onClick='toggleBox("Output-793974350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-793974350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-793974350">
+2016-10-18 17:57:28,331  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-10-18 17:57:28,331  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 17:57:31,371  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@6931ae4c<br>
+<br/>
+2016-10-18 17:57:33,367  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-10-18 17:57:33,380  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-10-18 17:57:35,660  INFO root - Type value 'instructorRSQ26' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-10-18 17:57:35,900  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-10-18 17:57:36,220 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175736218.png'>screenshot-20161018-175736218.png</a><br>
+<br/>
+2016-10-18 17:57:36,221  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-10-18 17:57:40,562  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-10-18 17:57:40,624  INFO root - Going to the created course CourseNameqGj09...<br>
+<br/>
+2016-10-18 17:57:40,624  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2016-10-18 17:57:41,299  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseNameqGj09')]<br>
+<br/>
+2016-10-18 17:57:41,444  INFO root - Clicking element by using Javascript: 'CourseNameqGj09'<br>
+<br/>
+2016-10-18 17:57:41,497  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-10-18 17:57:44,027 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175744025.png'>screenshot-20161018-175744025.png</a><br>
+<br/>
+2016-10-18 17:57:44,027  INFO root - Check application link: AConnectDI present in Canvas<br>
+<br/>
+2016-10-18 17:57:44,027  INFO root - Wait for element By: By.xpath: //a[contains(text(),'AConnectDI')]<br>
+<br/>
+2016-10-18 17:57:44,055  INFO root - Create course in Connect<br>
+<br/>
+2016-10-18 17:57:44,055  INFO root - Begin with Connect<br>
+<br/>
+2016-10-18 17:57:44,055  INFO root - Clicking Application Link...<br>
+<br/>
+2016-10-18 17:57:44,056  INFO root - Wait for element By: By.xpath: //a[contains(text(),'AConnectDI')]<br>
+<br/>
+2016-10-18 17:57:46,227  INFO root - Pause for '10000' millis<br>
+<br/>
+2016-10-18 17:57:56,455 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175756453.png'>screenshot-20161018-175756453.png</a><br>
+<br/>
+2016-10-18 17:57:56,763  INFO root - Pause for '10000' millis<br>
+<br/>
+2016-10-18 17:58:06,811  INFO root - Clicking Application Link...<br>
+<br/>
+2016-10-18 17:58:06,812  INFO root - Wait for element By: By.xpath: //a[contains(text(),'AConnectDI')]<br>
+<br/>
+2016-10-18 17:58:08,676  INFO root - Pause for '10000' millis<br>
+<br/>
+2016-10-18 17:58:18,853 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175818851.png'>screenshot-20161018-175818851.png</a><br>
+<br/>
+2016-10-18 17:58:18,853  INFO root - Wait for element By: By.xpath: //a[contains(text(),'Begin')]<br>
+<br/>
+2016-10-18 17:58:20,077 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175820076.png'>screenshot-20161018-175820076.png</a><br>
+<br/>
+2016-10-18 17:58:20,365  INFO root - Pause for '7000' millis<br>
+<br/>
+2016-10-18 17:58:27,411  INFO root - Current URL before switching is : https://mcgraw-hill2.instructure.com/courses/2032288/external_tools/270167<br>
+<br/>
+2016-10-18 17:58:27,425  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-10-18 17:58:27,453  INFO root - Switched to Last window with URL: https://lmsqastg.mheducation.com/mghmiddleware/mheproducts/lti/launchprovider/CONNECT.htm;JSESSIONID_MIDDLEWARE=t2Q0YG4XN7G2SvnnhLSPnLbPyqGCfNVhGSmgfpLK1Jn59c2kCLhh!-1890908681!NONE!1476802679661<br>
+<br/>
+2016-10-18 17:58:27,453  INFO root - Waiting for CanvasConnectCreateAccountScreen page...<br>
+<br/>
+2016-10-18 17:58:27,674 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175827672.png'>screenshot-20161018-175827672.png</a><br>
+<br/>
+2016-10-18 17:58:27,674  INFO root - Create 'Connect' account for user: instructorRSQ26<br>
+<br/>
+2016-10-18 17:58:27,870  INFO root - Pause for '3000' millis<br>
+<br/>
+2016-10-18 17:58:31,099 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175831097.png'>screenshot-20161018-175831097.png</a><br>
+<br/>
+2016-10-18 17:58:31,511  INFO root - Filling the form for creating account...<br>
+<br/>
+2016-10-18 17:58:32,032 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175832030.png'>screenshot-20161018-175832030.png</a><br>
+<br/>
+2016-10-18 17:58:32,032  INFO root - Wait for element By: By.id: new_user_first_name_e<br>
+<br/>
+2016-10-18 17:58:32,574  INFO root - Wait for element By: By.id: new_user_last_name_e<br>
+<br/>
+2016-10-18 17:58:32,951  INFO root - Wait for element By: By.id: new_user_email_e<br>
+<br/>
+2016-10-18 17:58:33,476  INFO root - Wait for element By: By.id: new_user_password_e<br>
+<br/>
+2016-10-18 17:58:33,859  INFO root - Wait for element By: By.id: new_user_password_retype_e<br>
+<br/>
+2016-10-18 17:58:34,258  INFO root - Wait for element By: By.id: new_user_last_name_e<br>
+<br/>
+2016-10-18 17:58:34,511  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-10-18 17:58:34,773  INFO root - Wait for element By: By.id: new_user_sec_ans_e<br>
+<br/>
+2016-10-18 17:58:35,110  INFO root - Wait for element By: By.id: chk_agree_terms_e<br>
+<br/>
+2016-10-18 17:58:35,570 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175835568.png'>screenshot-20161018-175835568.png</a><br>
+<br/>
+2016-10-18 17:58:35,570  INFO root - Wait for element By: By.xpath: //span[contains(text(),'Finish')]<br>
+<br/>
+2016-10-18 17:58:35,766  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-10-18 17:58:42,002 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175842001.png'>screenshot-20161018-175842001.png</a><br>
+<br/>
+2016-10-18 17:58:42,002  INFO root - Create cource in 'Connect' with name: CourseForConnectDI under section: SectionForConnectDI<br>
+<br/>
+2016-10-18 17:58:42,003  INFO root - Wait for element By: By.xpath: //div[@class='textbook-category-container large-5 columns']/input<br>
+<br/>
+2016-10-18 17:58:42,350  INFO root - Wait for element By: By.xpath: //strong[contains(text(),'Economics')]<br>
+<br/>
+2016-10-18 17:58:43,964 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175843962.png'>screenshot-20161018-175843962.png</a><br>
+<br/>
+2016-10-18 17:58:43,964  INFO root - Wait for element By: By.id: searchBox<br>
+<br/>
+2016-10-18 17:58:44,270  INFO root - Wait for element By: By.xpath: //a[@class='ui-corner-all']/div[contains(text(),'Economics - BAT')]<br>
+<br/>
+2016-10-18 17:58:46,053  INFO root - Pause for '30000' millis<br>
+<br/>
+2016-10-18 17:59:16,342 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175916340.png'>screenshot-20161018-175916340.png</a><br>
+<br/>
+2016-10-18 17:59:16,342  INFO root - Wait for element By: By.xpath: //div[@class='module-list-container']/ul/li[1]/span<br>
+<br/>
+2016-10-18 17:59:23,316  INFO root - Wait for element By: By.id: next-button<br>
+<br/>
+2016-10-18 17:59:24,009 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175924008.png'>screenshot-20161018-175924008.png</a><br>
+<br/>
+2016-10-18 17:59:24,009  INFO root - Create cource in 'Connect' with name: CourseForConnectDI under section: SectionForConnectDI<br>
+<br/>
+2016-10-18 17:59:24,010  INFO root - Wait for element By: By.id: courseNameValue<br>
+<br/>
+2016-10-18 17:59:24,318  INFO root - Wait for element By: By.id: sectionName<br>
+<br/>
+2016-10-18 17:59:24,667  INFO root - Wait for element By: By.xpath: //*[@id='selectedTimezone']/span[1]<br>
+<br/>
+2016-10-18 17:59:24,978 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175924977.png'>screenshot-20161018-175924977.png</a><br>
+<br/>
+2016-10-18 17:59:24,979  INFO root - Wait for element By: By.id: create-button<br>
+<br/>
+2016-10-18 17:59:27,064  INFO root - Waiting for CanvasConnectScreen page...<br>
+<br/>
+2016-10-18 17:59:27,226 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161018-175927224.png'>screenshot-20161018-175927224.png</a><br>
+<br/>
+2016-10-18 17:59:27,251  INFO root - User full name is: instructorRSQ26 instructorRSQ26<br>
+<br/>
+2016-10-18 17:59:27,290  INFO root - Section name is: SectionForConnectDI<br>
+<br/>
+2016-10-18 17:59:27,333  INFO root - Course name is: (CourseForConnectDI)<br>
+<br/>
+2016-10-18 17:59:27,355  INFO root - Check if success message present<br>
+<br/>
+2016-10-18 17:59:27,401  INFO root - Check if lock image present<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>119</td>
+<td>com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect@d4185ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkConnectLinksPresentInCanvasAndResetConnectionForInstructor()'><b>checkConnectLinksPresentInCanvasAndResetConnectionForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Check Connect links are present in Canvas and reset connection for instructor</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkConnectLinksPresentInCanvasAndResetConnectionForStudent()'><b>checkConnectLinksPresentInCanvasAndResetConnectionForStudent</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Check Connect links are present in Canvas and reset the connection for student</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkCourseDetailsForStudentAfterRegistrationToConnect()'><b>checkCourseDetailsForStudentAfterRegistrationToConnect</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Check the course details are right under student AFTER registration to Connect</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkCourseDetailsForStudentBeforeRegistrationToConnect()'><b>checkCourseDetailsForStudentBeforeRegistrationToConnect</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Check the course details are right under student BEFORE registration to Connect</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkFirstAssagmentInCanvasForInstructor()'><b>checkFirstAssagmentInCanvasForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: For Canvas instructor check the details of FIRST Assignment in Canvas</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkFirstAssagmentInCanvasForStudent()'><b>checkFirstAssagmentInCanvasForStudent</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Check FIRST Assignment for student</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkGradeIsCorrectForStudentInAssignment2()'><b>checkGradeIsCorrectForStudentInAssignment2</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Answer the question as student of second assignmentand check, that Grade is correct</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkSecondAssagmentInCanvasForInstructor()'><b>checkSecondAssagmentInCanvasForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: For Canvas instructor check the details if SECOND Assignment in Canvas</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkSecondAssagmentInCanvasForStudent()'><b>checkSecondAssagmentInCanvasForStudent</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Check SECOND Assignment for student</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect.checkTheDetailsOfCourseInConnectUnderStudent()'><b>checkTheDetailsOfCourseInConnectUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect<br>Test method: Check the course details are right under student in Connect</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

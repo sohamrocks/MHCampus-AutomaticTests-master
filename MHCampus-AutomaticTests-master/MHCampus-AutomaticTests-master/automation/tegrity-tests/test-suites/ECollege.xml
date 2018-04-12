@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="eCollege Tests" verbose="1">
+
+	<test verbose="1" name="SSO Link Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.ecollege.TegritySSOlink" />
+		</classes>
+	</test>
+	<test verbose="1" name="Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.ecollege.TegrityGradebook" />
+		</classes>
+	</test>
+	
+</suite>

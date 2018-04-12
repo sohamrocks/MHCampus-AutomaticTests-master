@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[2017-08-31 11:37:42,188  WARN root - Suite not found: C:\Work\MHCampus\automation\mcgraw-tests\target\mcgraw-tests-1.0-McGraw Selenium Tests\test-suites\SuccessFactors.xml<br>
+]]>
+    </line>
+  </reporter-output>
+</testng-results>

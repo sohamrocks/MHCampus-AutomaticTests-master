@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>TestNG:  Integration Tegrity with Connect Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Integration Tegrity with Connect Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 09 16:12:07 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>451 seconds (451179 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect.checkDirectLoginIntoConnectforInstructor()'><b>checkDirectLoginIntoConnectforInstructor</b><br>Test class: com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect<br>Test method: checkDirectLoginIntoConnectforInstructor<br/>
+<a href="#Output-2047841873" onClick='toggleBox("Output-2047841873", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2047841873" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2047841873">
+2016-11-09 16:17:20,015  INFO root - Open Connect Login Screen<br>
+<br/>
+2016-11-09 16:17:20,168  INFO root - Opening URL: http://connectqastg.mheducation.com/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@490c14ce<br>
+<br/>
+2016-11-09 16:17:24,174  INFO root - Waiting for ConnectLoginScreen page...<br>
+<br/>
+2016-11-09 16:17:24,361  INFO root - login into Connect<br>
+<br/>
+2016-11-09 16:17:28,996  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-09 16:17:35,219 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161735212.png'>screenshot-20161109-161735212.png</a><br>
+<br/>
+2016-11-09 16:17:35,940  INFO root - Waiting for ConnectWelcomeScreen page...<br>
+<br/>
+2016-11-09 16:17:36,119 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161736117.png'>screenshot-20161109-161736117.png</a><br>
+<br/>
+2016-11-09 16:17:36,179  INFO root - User full name is: MCUI Instructor<br>
+<br/>
+2016-11-09 16:17:36,320  INFO root - Course name is: UI Testing<br>
+<br/>
+2016-11-09 16:17:36,387  INFO root - Go to course: UI Testing<br>
+<br/>
+2016-11-09 16:17:36,881  INFO root - Waiting for ConnectCourseDetailsScreen page...<br>
+<br/>
+2016-11-09 16:17:42,693 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161742691.png'>screenshot-20161109-161742691.png</a><br>
+<br/>
+2016-11-09 16:17:42,693  INFO root - Check instructor MCUI Instructor present in Connect in the current course<br>
+<br/>
+2016-11-09 16:17:42,761  INFO root - Check course UI Testing present in Connect under instructor<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect@771a1d97</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect.checkDirectLoginIntoConnectforStudent()'><b>checkDirectLoginIntoConnectforStudent</b><br>Test class: com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect<br>Test method: checkDirectLoginIntoConnectforStudent<br/>
+<a href="#Output-1530722347" onClick='toggleBox("Output-1530722347", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1530722347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1530722347">
+2016-11-09 16:17:58,010  INFO root - Open Student Register Screen<br>
+<br/>
+2016-11-09 16:17:58,034  INFO root - Opening URL: http://connectqastg.mheducation.com/class/m-instructor-ui-testing. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@490c14ce<br>
+<br/>
+2016-11-09 16:18:00,538  INFO root - Waiting for ConnectStudentRegistrationScreen page...<br>
+<br/>
+2016-11-09 16:18:03,009  INFO root - Check instructor MCUI Instructor present in Connect under student<br>
+<br/>
+2016-11-09 16:18:03,087  INFO root - Check section UI Testing present in Connect under student<br>
+<br/>
+2016-11-09 16:18:03,162  INFO root - Check course UI Testing present in Connect under student<br>
+<br/>
+2016-11-09 16:18:03,224  INFO root - Register as student to Connect...<br>
+<br/>
+2016-11-09 16:18:03,224  INFO root - Wait for element By: By.xpath: //input[@class = 'font-regularIt large-text login-form-input   ember-view ember-text-field']<br>
+<br/>
+2016-11-09 16:18:04,128 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161804126.png'>screenshot-20161109-161804126.png</a><br>
+<br/>
+2016-11-09 16:18:04,129  INFO root - Wait for element By: By.xpath: //button[contains(text(), 'BEGIN')]<br>
+<br/>
+2016-11-09 16:18:04,511  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-09 16:18:11,642 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161811639.png'>screenshot-20161109-161811639.png</a><br>
+<br/>
+2016-11-09 16:18:11,642  INFO root - Wait for element By: By.id: confirmEmailAddress<br>
+<br/>
+2016-11-09 16:18:12,447  INFO root - Wait for element By: By.id: passwd<br>
+<br/>
+2016-11-09 16:18:13,171  INFO root - Wait for element By: By.id: confirmPasswd<br>
+<br/>
+2016-11-09 16:18:14,134  INFO root - Wait for element By: By.id: firstName<br>
+<br/>
+2016-11-09 16:18:14,912  INFO root - Wait for element By: By.id: lastName<br>
+<br/>
+2016-11-09 16:18:15,632  INFO root - Wait for element By: By.xpath: //*[@id='securityQuestion']/option[2]<br>
+<br/>
+2016-11-09 16:18:16,049  INFO root - Wait for element By: By.id: securityAnswer<br>
+<br/>
+2016-11-09 16:18:16,841  INFO root - Wait for element By: By.id: terms<br>
+<br/>
+2016-11-09 16:18:17,563 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161817560.png'>screenshot-20161109-161817560.png</a><br>
+<br/>
+2016-11-09 16:18:17,563  INFO root - Wait for element By: By.id: ca-submit-btn<br>
+<br/>
+2016-11-09 16:18:21,648 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161821644.png'>screenshot-20161109-161821644.png</a><br>
+<br/>
+2016-11-09 16:18:21,649  INFO root - Wait for element By: By.xpath: //a[contains(text(), 'Get')]<br>
+<br/>
+2016-11-09 16:18:24,611 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161824608.png'>screenshot-20161109-161824608.png</a><br>
+<br/>
+2016-11-09 16:18:24,611  INFO root - Wait for element By: By.id: place_order_btn<br>
+<br/>
+2016-11-09 16:18:27,092  INFO root - Waiting for ConnectStudentCompleteRegistrationScreen page...<br>
+<br/>
+2016-11-09 16:18:28,495 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161828493.png'>screenshot-20161109-161828493.png</a><br>
+<br/>
+2016-11-09 16:18:28,495  INFO root - Check course 'Success' message present in Connect under student<br>
+<br/>
+2016-11-09 16:18:28,559  INFO root - Check course UI Testing present in Connect under student<br>
+<br/>
+2016-11-09 16:18:28,621  INFO root - Check section UI Testing present in Connect under student<br>
+<br/>
+2016-11-09 16:18:28,686  INFO root - Check instructor MCUI Instructor present in Connect under student<br>
+<br/>
+2016-11-09 16:18:28,757  INFO root - Click 'Go to Connect' button<br>
+<br/>
+2016-11-09 16:18:29,180  INFO root - Pause for '15000' millis<br>
+<br/>
+2016-11-09 16:18:44,180  INFO root - Waiting for ConnectStudentCourseDetailsScreen page...<br>
+<br/>
+2016-11-09 16:18:44,422 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161844420.png'>screenshot-20161109-161844420.png</a><br>
+<br/>
+2016-11-09 16:18:44,423  INFO root - Check assignment studentLogin_uhFo0 studentLogin_uhFo0 present in Connect under student<br>
+<br/>
+2016-11-09 16:18:45,362 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161845360.png'>screenshot-20161109-161845360.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect@771a1d97</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect.checkTegrityLinkBehavesCorrectlyForInstructor()'><b>checkTegrityLinkBehavesCorrectlyForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect<br>Test method: checkTegrityLinkBehavesCorrectlyForInstructor<br/>
+<a href="#Output-1060602861" onClick='toggleBox("Output-1060602861", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1060602861" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1060602861">
+2016-11-09 16:17:43,274  INFO root - Go to Tegrity<br>
+<br/>
+2016-11-09 16:17:44,008  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-09 16:17:50,047  INFO root - Current URL before switching is : http://connectqastg.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=515785045<br>
+<br/>
+2016-11-09 16:17:50,064  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-09 16:17:52,978  INFO root - Switched to Last window with URL: https://qastagingmyclasses.tegrity.com/#/course/7002cc12-05ac-45ef-be26-8bbde0b54e47<br>
+<br/>
+2016-11-09 16:17:52,979  INFO root - Waiting for TegrityCourseDetailsScreen page...<br>
+<br/>
+2016-11-09 16:17:53,188 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161753185.png'>screenshot-20161109-161753185.png</a><br>
+<br/>
+2016-11-09 16:17:53,370  INFO root - User name text is: 'MCUI Instructor'<br>
+<br/>
+2016-11-09 16:17:53,370  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-09 16:17:53,484  INFO root - Checking if course UI Testing is present on the page<br>
+<br/>
+2016-11-09 16:17:53,514  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+2016-11-09 16:17:53,541  INFO root - Checking if reports link is present on the page<br>
+<br/>
+2016-11-09 16:17:53,693  INFO root - Checking if Course Settings option is present on the page<br>
+<br/>
+2016-11-09 16:17:54,255  INFO root - Going to list of courses...<br>
+<br/>
+2016-11-09 16:17:54,780  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-09 16:17:56,781  INFO root - Waiting for TegrityIntroductionScreen page...<br>
+<br/>
+2016-11-09 16:17:57,042 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161757040.png'>screenshot-20161109-161757040.png</a><br>
+<br/>
+2016-11-09 16:17:57,201  INFO root - User name text is: 'MCUI Instructor'<br>
+<br/>
+2016-11-09 16:17:57,201  INFO root - Checking if course UI Testing is present on the page<br>
+<br/>
+2016-11-09 16:17:57,231  INFO root - Checking if course MCUI Instructor sandbox course is present on the page<br>
+<br/>
+2016-11-09 16:17:57,261  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-09 16:17:57,370  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect@771a1d97</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect.checkTegrityLinkBehavesCorrectlyForStudent()'><b>checkTegrityLinkBehavesCorrectlyForStudent</b><br>Test class: com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect<br>Test method: checkTegrityLinkBehavesCorrectlyForStudent<br/>
+<a href="#Output-1792887380" onClick='toggleBox("Output-1792887380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1792887380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1792887380">
+2016-11-09 16:18:45,701  INFO root - Check assignment UI Testing present in Connect under student<br>
+<br/>
+2016-11-09 16:18:46,201  INFO root - Wait for element By: By.xpath: //li/ul/li[contains(.,'UI Testing')]<br>
+<br/>
+2016-11-09 16:18:46,354  INFO root - Clicking element by using Javascript: 'UI Testing'<br>
+<br/>
+2016-11-09 16:18:46,544  INFO root - Wait for element By: By.xpath: //div[@class = 'border-top large-text margin-top pointer']/a<br>
+<br/>
+2016-11-09 16:18:48,438  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-09 16:18:54,489  INFO root - Current URL before switching is : https://newconnectqastg.mheducation.com/flow/connect.html<br>
+<br/>
+2016-11-09 16:18:54,502  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-09 16:18:54,543  INFO root - Switched to Last window with URL: https://qastagingmyclasses.tegrity.com/#/course/7002cc12-05ac-45ef-be26-8bbde0b54e47<br>
+<br/>
+2016-11-09 16:18:54,543  INFO root - Waiting for TegrityCourseDetailsScreen page...<br>
+<br/>
+2016-11-09 16:18:54,735 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161854732.png'>screenshot-20161109-161854732.png</a><br>
+<br/>
+2016-11-09 16:18:54,939  INFO root - User name text is: 'studentLogin_uhFo0 studentLogin_uhFo0'<br>
+<br/>
+2016-11-09 16:18:54,940  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-09 16:19:05,698  INFO root - Checking if course UI Testing is present on the page<br>
+<br/>
+2016-11-09 16:19:05,759  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+2016-11-09 16:19:05,792  INFO root - Checking if reports link is present on the page<br>
+<br/>
+2016-11-09 16:19:16,653 ERROR root - Cannot find any elements with locators '[By.id: ReportsLink]'. Please, check your definitions.<br>
+<br/>
+2016-11-09 16:19:16,672 ERROR root - Making screenshoot for error 'Cannot find any elements with locators '[By.id: ReportsLink]'. Please, check your definitions.<br>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'<br>
+System info: host: 'Elvira-Lap', ip: '192.168.2.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'<br>
+Driver info: driver.version: unknown'<br>
+<br/>
+2016-11-09 16:19:16,832 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161916826.png'>screenshot-20161109-161916826.png</a><br>
+<br/>
+2016-11-09 16:19:16,832  INFO root - Checking if Course Settings option is present on the page<br>
+<br/>
+2016-11-09 16:19:28,314 ERROR root - Cannot find any elements with locators '[By.id: CourseSettings]'. Please, check your definitions.<br>
+<br/>
+2016-11-09 16:19:28,315 ERROR root - Making screenshoot for error 'Cannot find any elements with locators '[By.id: CourseSettings]'. Please, check your definitions.<br>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'<br>
+System info: host: 'Elvira-Lap', ip: '192.168.2.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'<br>
+Driver info: driver.version: unknown'<br>
+<br/>
+2016-11-09 16:19:28,469 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161928466.png'>screenshot-20161109-161928466.png</a><br>
+<br/>
+2016-11-09 16:19:28,469  INFO root - Going to list of courses...<br>
+<br/>
+2016-11-09 16:19:29,025  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-09 16:19:31,026  INFO root - Waiting for TegrityIntroductionScreen page...<br>
+<br/>
+2016-11-09 16:19:31,241 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161109-161931238.png'>screenshot-20161109-161931238.png</a><br>
+<br/>
+2016-11-09 16:19:31,241  INFO root - Checking if course UI Testing is present on the page<br>
+<br/>
+2016-11-09 16:19:31,268  INFO root - Checking if course sandbox course is present on the page<br>
+<br/>
+2016-11-09 16:19:31,297  INFO root - Check if 'Start Recording' button is present<br>
+<br/>
+2016-11-09 16:19:36,747  INFO root - Checking if 'SEAFCH' option is present on the page<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.mcgraw.test.automation.tests.myclasses.IntegrationTegrityWithConnect@771a1d97</td></tr>
+</table><p>
+</body>
+</html>

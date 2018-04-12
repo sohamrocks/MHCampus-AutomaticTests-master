@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+  <link rel='stylesheet' type='text/css' href='css/global.css' />
+  <script src='js/jquery.js'></script>
+  <script src='js/global.js'></script>
+  <title></title>
+</head>
+<body>
+    <div id='mainHeading'>
+        <h1>Grouped Failures</h1>
+    </div>
+    <div id='mainWrapper'>
+        #foreach ($failure in $failures.keySet())
+        <div class='group'>
+            <div class='group_title'>
+                <h3>$failure [$failures.getCollection($failure).size() failures]</h3>
+            </div>
+            <div class='group_body'>
+                #foreach ($sauceJobInfoObject in $failures.getCollection($failure))
+                <div class='grouped_failure'>
+                    <ul class='row'>
+                        <li class='detail_btn first'><a>Details</a>&nbsp;<span class='plus'>+</span><span class='minus'>-</span></li>
+                        #if( "$sauceJobInfoObject.browserName" != "" )
+                        	<li class='browser'>$sauceJobInfoObject.browserName</li>
+                        #end
+                        #if( "$sauceJobInfoObject.sauceJobUrl" != "" )
+                        	<li class='sauce_link'><a target='_blank' href="$sauceJobInfoObject.sauceJobUrl">sauce</a></li>
+                        #end
+                        #if( "$sauceJobInfoObject.testUrl" != "" )
+                        	<li class='url last'><a href="$sauceJobInfoObject.testUrl" target='_blank'>$sauceJobInfoObject.testUrl</a></li>
+                        #end
+                    </ul>
+                    <div class='details'>
+                        #if(  "$sauceJobInfoObject.systemInformation" != "" )
+                        <span style='font-size:9.0pt;color:#7F7F7F'>System Information:<br />
+                            $sauceJobInfoObject.systemInformation.replaceAll("\n", "<br>")
+                        </span>
+                        #end
+                        #if(  "$sauceJobInfoObject.failureMessage" != "" )
+                        <span style='font-size:9.0pt;color:#7F7F7F'>Failure
+                        Message:<br />
+                       $sauceJobInfoObject.failureMessage.replaceAll("\n", "<br>")
+                       </span>
+                       #end
+                    </div><!-- .details -->
+                </div><!-- .grouped_failure -->
+                #end
+            </div><!-- .group_body -->
+        </div><!-- .group -->
+	#end
+</div><!-- #mainWrapper -->
+
+
+
+</body>
+</html>

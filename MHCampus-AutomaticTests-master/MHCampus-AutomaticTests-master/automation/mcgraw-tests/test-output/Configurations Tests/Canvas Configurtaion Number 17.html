@@ -1,0 +1,359 @@
+<html>
+<head>
+<title>TestNG:  Canvas Configurtaion Number 17</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Canvas Configurtaion Number 17</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 01 19:01:08 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>248 seconds (248708 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17.testSSOasInstructorDI()'><b>testSSOasInstructorDI</b><br>Test class: com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17<br>Test method: Test SSO to MHCampus as instructor DI<br/>
+<a href="#Output-578284810" onClick='toggleBox("Output-578284810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-578284810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-578284810">
+2018-01-01 19:02:49,741  INFO root - Logging in to Canvas...<br>
+<br/>
+2018-01-01 19:02:49,741  INFO root - Pause for '3000' millis<br>
+<br/>
+2018-01-01 19:02:52,759  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@fa8de42<br>
+<br/>
+2018-01-01 19:02:55,291  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2018-01-01 19:02:55,312  INFO root - Pause for '2000' millis<br>
+<br/>
+2018-01-01 19:02:57,462  INFO root - Type value 'instructorK5Nik' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2018-01-01 19:02:57,769  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2018-01-01 19:02:58,093 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190258091.png'>screenshot-20180101-190258091.png</a><br>
+<br/>
+2018-01-01 19:02:58,094  INFO root - Pause for '2000' millis<br>
+<br/>
+2018-01-01 19:03:03,155 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190303132.png'>screenshot-20180101-190303132.png</a><br>
+<br/>
+2018-01-01 19:03:06,401  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2018-01-01 19:03:06,436  INFO root - Going to the created course CourseName2EFX9k...<br>
+<br/>
+2018-01-01 19:03:06,437  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2018-01-01 19:03:06,922  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseName2EFX9k')]<br>
+<br/>
+2018-01-01 19:03:08,028  INFO root - Clicking element by using Javascript: 'CourseName2EFX9k'<br>
+<br/>
+2018-01-01 19:03:08,139  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2018-01-01 19:03:11,811 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190311786.png'>screenshot-20180101-190311786.png</a><br>
+<br/>
+2018-01-01 19:03:11,811  INFO root - Check application link: AConnectDI present in Canvas<br>
+<br/>
+2018-01-01 19:03:11,905  INFO root - Begin with Connect<br>
+<br/>
+2018-01-01 19:03:11,905  INFO root - Clicking Application Link...<br>
+<br/>
+2018-01-01 19:03:11,905  INFO root - Wait for element By: By.xpath: //a[contains(text(),'AConnectDI')]<br>
+<br/>
+2018-01-01 19:03:14,464  INFO root - Pause for '10000' millis<br>
+<br/>
+2018-01-01 19:03:24,686 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190324683.png'>screenshot-20180101-190324683.png</a><br>
+<br/>
+2018-01-01 19:03:25,132  INFO root - Pause for '10000' millis<br>
+<br/>
+2018-01-01 19:03:35,185  INFO root - Waiting for CanvasConnectCreateAccountScreen page...<br>
+<br/>
+2018-01-01 19:03:35,481 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190335479.png'>screenshot-20180101-190335479.png</a><br>
+<br/>
+2018-01-01 19:03:35,548  INFO root - Logout from Canvas...<br>
+<br/>
+2018-01-01 19:03:35,548  INFO root - Wait for element By: By.id: global_nav_profile_link<br>
+<br/>
+2018-01-01 19:03:45,980 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190345977.png'>screenshot-20180101-190345977.png</a><br>
+<br/>
+2018-01-01 19:03:45,994  INFO root - Wait for element By: By.id: global_nav_profile_link<br>
+<br/>
+2018-01-01 19:03:46,349  INFO root - Pause for '1000' millis<br>
+<br/>
+2018-01-01 19:03:47,540 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190347522.png'>screenshot-20180101-190347522.png</a><br>
+<br/>
+2018-01-01 19:03:47,540  INFO root - Wait for element By: By.xpath: //button[contains(text(),'Logout')]<br>
+<br/>
+2018-01-01 19:03:47,603  INFO root - Clicking element by using Javascript: 'Logout'<br>
+<br/>
+2018-01-01 19:03:47,687  INFO root - Pause for '1000' millis<br>
+<br/>
+2018-01-01 19:03:48,687  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>59</td>
+<td>com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17@79d38dae</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17.testSSOasStudentDI()'><b>testSSOasStudentDI</b><br>Test class: com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17<br>Test method: Test SSO to MHCampus as student DI<br/>
+<a href="#Output-1754502408" onClick='toggleBox("Output-1754502408", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1754502408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1754502408">
+2018-01-01 19:03:49,773  INFO root - Logging in to Canvas...<br>
+<br/>
+2018-01-01 19:03:49,773  INFO root - Pause for '3000' millis<br>
+<br/>
+2018-01-01 19:03:52,795  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@fa8de42<br>
+<br/>
+2018-01-01 19:03:54,891  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2018-01-01 19:03:54,913  INFO root - Pause for '2000' millis<br>
+<br/>
+2018-01-01 19:03:57,060  INFO root - Type value 'studentp7Arh' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2018-01-01 19:03:57,355  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2018-01-01 19:03:57,666 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190357641.png'>screenshot-20180101-190357641.png</a><br>
+<br/>
+2018-01-01 19:03:57,666  INFO root - Pause for '2000' millis<br>
+<br/>
+2018-01-01 19:04:02,421 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190402419.png'>screenshot-20180101-190402419.png</a><br>
+<br/>
+2018-01-01 19:04:05,500  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2018-01-01 19:04:05,526  INFO root - Going to the created course CourseName2EFX9k...<br>
+<br/>
+2018-01-01 19:04:05,526  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2018-01-01 19:04:06,385  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseName2EFX9k')]<br>
+<br/>
+2018-01-01 19:04:07,493  INFO root - Clicking element by using Javascript: 'CourseName2EFX9k'<br>
+<br/>
+2018-01-01 19:04:07,569  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2018-01-01 19:04:10,538 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190410485.png'>screenshot-20180101-190410485.png</a><br>
+<br/>
+2018-01-01 19:04:10,539  INFO root - Check application link: AConnectDI present in Canvas<br>
+<br/>
+2018-01-01 19:04:10,580  INFO root - Begin with Connect<br>
+<br/>
+2018-01-01 19:04:10,580  INFO root - Clicking Application Link...<br>
+<br/>
+2018-01-01 19:04:10,580  INFO root - Wait for element By: By.xpath: //a[contains(text(),'AConnectDI')]<br>
+<br/>
+2018-01-01 19:04:12,756  INFO root - Pause for '10000' millis<br>
+<br/>
+2018-01-01 19:04:22,943 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190422941.png'>screenshot-20180101-190422941.png</a><br>
+<br/>
+2018-01-01 19:04:33,179  INFO root - Pause for '10000' millis<br>
+<br/>
+2018-01-01 19:04:43,229  INFO root - Waiting for CanvasConnectCreateAccountScreen page...<br>
+<br/>
+2018-01-01 19:04:43,443 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190443428.png'>screenshot-20180101-190443428.png</a><br>
+<br/>
+2018-01-01 19:04:43,507  INFO root - Logout from Canvas...<br>
+<br/>
+2018-01-01 19:04:43,507  INFO root - Wait for element By: By.id: global_nav_profile_link<br>
+<br/>
+2018-01-01 19:04:53,914 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190453911.png'>screenshot-20180101-190453911.png</a><br>
+<br/>
+2018-01-01 19:04:53,926  INFO root - Wait for element By: By.id: global_nav_profile_link<br>
+<br/>
+2018-01-01 19:04:54,225  INFO root - Pause for '1000' millis<br>
+<br/>
+2018-01-01 19:04:55,396 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190455393.png'>screenshot-20180101-190455393.png</a><br>
+<br/>
+2018-01-01 19:04:55,396  INFO root - Wait for element By: By.xpath: //button[contains(text(),'Logout')]<br>
+<br/>
+2018-01-01 19:04:55,458  INFO root - Clicking element by using Javascript: 'Logout'<br>
+<br/>
+2018-01-01 19:04:55,531  INFO root - Pause for '1000' millis<br>
+<br/>
+2018-01-01 19:04:56,531  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17@79d38dae</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17.testScorableItemSuccessSubmitDI()'><b>testScorableItemSuccessSubmitDI</b><br>Test class: com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17<br>Test method: Check TestScorableItem form is submitted successfully in Deep<br/>
+<a href="#Output-654885304" onClick='toggleBox("Output-654885304", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-654885304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-654885304">
+2018-01-01 19:04:57,677  INFO root - Filling TestScorableItem form...<br>
+<br/>
+2018-01-01 19:04:57,688  INFO root - Opening URL: http://login-aws-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@fa8de42<br>
+<br/>
+2018-01-01 19:04:58,396  INFO root - Waiting for TestScoreItemsScreen page...<br>
+<br/>
+2018-01-01 19:04:58,659  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2018-01-01 19:04:58,911  INFO root - Type value 'IHDK-NQFB-U8BQ' to Input 'name=txtCustomerID'<br>
+<br/>
+2018-01-01 19:04:59,138  INFO root - Type value 'provider_acGKh' to Input 'name=txtProviderID'<br>
+<br/>
+2018-01-01 19:04:59,387  INFO root - Type value '3c729825449d0eee1575d290bfaa538a' to Input 'name=txtCourseID'<br>
+<br/>
+2018-01-01 19:04:59,643  INFO root - Type value 'YGwUr' to Input 'name=txtAssignmentID'<br>
+<br/>
+2018-01-01 19:04:59,904  INFO root - Type value 'title_UF5fW' to Input 'name=txtAssignmentTitle'<br>
+<br/>
+2018-01-01 19:05:00,126  INFO root - Type value 'Test' to Input 'name=txtCategory'<br>
+<br/>
+2018-01-01 19:05:00,339  INFO root - Type value 'description_l5xs2' to Input 'name=txtDescription'<br>
+<br/>
+2018-01-01 19:05:00,580  INFO root - Type value '10/25/2003' to Input 'name=txtStartDateTime'<br>
+<br/>
+2018-01-01 19:05:00,794  INFO root - Type value '10/29/2029' to Input 'name=txtDueDateTime'<br>
+<br/>
+2018-01-01 19:05:01,008  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+<br/>
+2018-01-01 19:05:01,399 OPERATION root - Unchecking 'name=cbIsStudentViewable' checkbox.<br>
+<br/>
+2018-01-01 19:05:01,654 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+<br/>
+2018-01-01 19:05:01,900  INFO root - Type value 'Connect' to Input 'name=txtToolID'<br>
+<br/>
+2018-01-01 19:05:03,307  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:&quot;16402917&quot;,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Canvas Deep Integration&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Canvas Deep Integration:updated;&quot;,&quot;RequestID&quot;:&quot;Req0g08ur0m07lqv74idxxdj&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2018-01-01 19:05:03,863  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;IHDK-NQFB-U8BQ&quot;,&quot;txtProviderID&quot;:&quot;provider_acGKh&quot;,&quot;txtCourseID&quot;:&quot;3c729825449d0eee1575d290bfaa538a&quot;,&quot;txtAssignmentID&quot;:&quot;YGwUr&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_UF5fW&quot;,&quot;txtCategory&quot;:&quot;Test&quot;,&quot;txtDescription&quot;:&quot;description_l5xs2&quot;,&quot;txtStartDateTime&quot;:&quot;10/25/2003&quot;,&quot;txtDueDateTime&quot;:&quot;10/29/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;False&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;Connect&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=IHDK-NQFB-U8BQ&amp;providerID=provider_acGKh&amp;courseID=3c729825449d0eee1575d290bfaa538a&amp;assignmentID=YGwUr&amp;assignmentTitle=title_UF5fW&amp;category=Test&amp;description=description_l5xs2&amp;startDateTime=10%2f25%2f2003&amp;dueDateTime=10%2f29%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=Connect&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2NTA0MDUxMDMyODE0MzU4&amp;oauth_timestamp=1514826303&amp;oauth_signature=azTBvvX8Wc0poX3aX%2Ful2x9ahQk%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=IHDK-NQFB-U8BQ&amp;providerID=provider_acGKh&amp;courseID=3c729825449d0eee1575d290bfaa538a&amp;assignmentID=YGwUr&amp;assignmentTitle=title_UF5fW&amp;category=Test&amp;description=description_l5xs2&amp;startDateTime=10%2f25%2f2003&amp;dueDateTime=10%2f29%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=Connect&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2NTA0MDUxMDMyODE0MzU4&amp;oauth_timestamp=1514826303&amp;oauth_signature=azTBvvX8Wc0poX3aX%2Ful2x9ahQk%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:\&quot;16402917\&quot;,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Canvas Deep Integration\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Canvas Deep Integration:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req0g08ur0m07lqv74idxxdj\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2018-01-01 19:05:04,097 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190504094.png'>screenshot-20180101-190504094.png</a><br>
+<br/>
+2018-01-01 19:05:04,335 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190504321.png'>screenshot-20180101-190504321.png</a><br>
+<br/>
+2018-01-01 19:05:04,382  INFO root - Get list of assignments for course: id=2279170<br>
+<br/>
+2018-01-01 19:05:05,389  INFO root - Found 1 assignments<br>
+<br/>
+2018-01-01 19:05:05,389  INFO root - Get assignment with title [title_UF5fW] from found data<br>
+<br/>
+2018-01-01 19:05:05,390  INFO root - Assignment found: Canvas Assignment [id=16402917, title=title_UF5fW, courseId =2279170, dueDate=Tue Oct 30 02:59:59 IST 2029, pointsPossible=100]<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17@79d38dae</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17.testScoreSuccessSubmitDI()'><b>testScoreSuccessSubmitDI</b><br>Test class: com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17<br>Test method: Check TestScore form is submitted successfully<br/>
+<a href="#Output-242469677" onClick='toggleBox("Output-242469677", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-242469677" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-242469677">
+2018-01-01 19:05:05,605  INFO root - Filling TestScore form...<br>
+<br/>
+2018-01-01 19:05:05,630  INFO root - Opening URL: http://login-aws-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@fa8de42<br>
+<br/>
+2018-01-01 19:05:06,064  INFO root - Waiting for TestScoreScreen page...<br>
+<br/>
+2018-01-01 19:05:06,285  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2018-01-01 19:05:06,533  INFO root - Type value 'IHDK-NQFB-U8BQ' to Input 'name=txtCustomerID'<br>
+<br/>
+2018-01-01 19:05:06,801  INFO root - Type value 'provider_acGKh' to Input 'name=txtProviderID'<br>
+<br/>
+2018-01-01 19:05:07,054  INFO root - Type value 'YGwUr' to Input 'name=txtAssignmentID'<br>
+<br/>
+2018-01-01 19:05:07,288  INFO root - Type value '3c729825449d0eee1575d290bfaa538a' to Input 'name=txtCourseID'<br>
+<br/>
+2018-01-01 19:05:07,555  INFO root - Type value '755e458f82c081d01ac8d381a7590aaf99a9135921c96f45' to Input 'name=txtUserID'<br>
+<br/>
+2018-01-01 19:05:07,843  INFO root - Type value 'comment_FHSOs' to Input 'name=txtComment'<br>
+<br/>
+2018-01-01 19:05:08,122  INFO root - Type value '10/13/2015' to Input 'name=txtDatetimeSubmitted'<br>
+<br/>
+2018-01-01 19:05:08,460  INFO root - Type value '50' to Input 'name=txtScoreReceived'<br>
+<br/>
+2018-01-01 19:05:08,945  INFO root - Type value 'Connect' to Input 'name=txtToolID'<br>
+<br/>
+2018-01-01 19:05:10,481  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:&quot;YGwUr&quot;,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:&quot;INVALID_USER_OR_ENROLLMENT&quot;,&quot;Name&quot;:&quot;Canvas Deep Integration&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Canvas Deep Integration:updated;&quot;,&quot;RequestID&quot;:&quot;Req04g089e02g07lqv74k9lfpj&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2018-01-01 19:05:11,223  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;IHDK-NQFB-U8BQ&quot;,&quot;txtProviderID&quot;:&quot;provider_acGKh&quot;,&quot;txtAssignmentID&quot;:&quot;YGwUr&quot;,&quot;txtCourseID&quot;:&quot;3c729825449d0eee1575d290bfaa538a&quot;,&quot;txtUserID&quot;:&quot;755e458f82c081d01ac8d381a7590aaf99a9135921c96f45&quot;,&quot;txtComment&quot;:&quot;comment_FHSOs&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;10/13/2015&quot;,&quot;txtScoreReceived&quot;:&quot;50&quot;,&quot;txtToolID&quot;:&quot;Connect&quot;,&quot;txtCompletionStatus&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=IHDK-NQFB-U8BQ&amp;providerID=provider_acGKh&amp;courseID=3c729825449d0eee1575d290bfaa538a&amp;assignmentID=YGwUr&amp;userID=755e458f82c081d01ac8d381a7590aaf99a9135921c96f45&amp;comment=comment_FHSOs&amp;currentAttempt=&amp;datetimeSubmitted=10%2f13%2f2015&amp;scoreReceived=50&amp;toolID=Connect&amp;status=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2NTA0MDUxMTAyODU1NjY0&amp;oauth_timestamp=1514826310&amp;oauth_signature=Xtm1HP5fWvFVF3CzeQekEpOnfRw%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=IHDK-NQFB-U8BQ&amp;providerID=provider_acGKh&amp;courseID=3c729825449d0eee1575d290bfaa538a&amp;assignmentID=YGwUr&amp;userID=755e458f82c081d01ac8d381a7590aaf99a9135921c96f45&amp;comment=comment_FHSOs&amp;currentAttempt=&amp;datetimeSubmitted=10%2f13%2f2015&amp;scoreReceived=50&amp;toolID=Connect&amp;status=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2NTA0MDUxMTAyODU1NjY0&amp;oauth_timestamp=1514826310&amp;oauth_signature=Xtm1HP5fWvFVF3CzeQekEpOnfRw%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:\&quot;YGwUr\&quot;,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:\&quot;INVALID_USER_OR_ENROLLMENT\&quot;,\&quot;Name\&quot;:\&quot;Canvas Deep Integration\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Canvas Deep Integration:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req04g089e02g07lqv74k9lfpj\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+2018-01-01 19:05:11,412 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190511389.png'>screenshot-20180101-190511389.png</a><br>
+<br/>
+2018-01-01 19:05:11,574 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180101-190511569.png'>screenshot-20180101-190511569.png</a><br>
+<br/>
+2018-01-01 19:05:11,617  INFO root - Get list of submissions of assignment [id=16402917] for course [id=2279170]<br>
+<br/>
+2018-01-01 19:05:11,886  INFO root - Found 1 submissions<br>
+<br/>
+2018-01-01 19:05:11,886  INFO root - Get submission for user[id=8553034] from found data<br>
+<br/>
+2018-01-01 19:05:11,886  INFO root - Submission found: Canvas Submission [id=185169532, score number=0, percentage score =null, user id=8553034, assignment id=16402917]<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.mcgraw.test.automation.tests.canvas.configurations.CustomCanvasConfiguration17@79d38dae</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - LTI Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>LTI Test</h1>
+<p>
+  Test duration: 00:05:10s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.mcgraw.test.automation.tests.lti.LtiTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testTearDown
+      </td>
+  <td class="duration">
+    00:00:00s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2016-08-16 13:02:33,914  INFO root - Removing MH Campus instance with number N96K-LQ8C-UY0I...<br>
+
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.io.IOException: Cannot run program &quot;..\dependencies\DeleteInstance\DeleteInstance.exe&quot;: CreateProcess error=2, The system cannot find the file specified</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)<br />
+              java.lang.Runtime.exec(Runtime.java:617)<br />
+              java.lang.Runtime.exec(Runtime.java:450)<br />
+              java.lang.Runtime.exec(Runtime.java:347)<br />
+              com.mcgraw.test.automation.ui.service.InstanceUtils.deleteInstance(InstanceUtils.java:45)<br />
+              com.mcgraw.test.automation.ui.applications.TegrityAdministrationApplication.deleteMhCampusInstance(TegrityAdministrationApplication.java:324)<br />
+              com.mcgraw.test.automation.tests.lti.LtiTest.testTearDown(LtiTest.java:61)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              com.mcgraw.test.automation.framework.core.runner.CommandLineRunner.run(CommandLineRunner.java:147)<br />
+              com.mcgraw.test.automation.tests.base.TestNgRunner.main(TestNgRunner.java:36)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.io.IOException: CreateProcess error=2, The system cannot find the file specified</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.lang.ProcessImpl.create(Native Method)<br />
+                      java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:385)<br />
+                      java.lang.ProcessImpl.start(ProcessImpl.java:136)<br />
+                      java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)<br />
+                      java.lang.Runtime.exec(Runtime.java:617)<br />
+                      java.lang.Runtime.exec(Runtime.java:450)<br />
+                      java.lang.Runtime.exec(Runtime.java:347)<br />
+                      com.mcgraw.test.automation.ui.service.InstanceUtils.deleteInstance(InstanceUtils.java:45)<br />
+                      com.mcgraw.test.automation.ui.applications.TegrityAdministrationApplication.deleteMhCampusInstance(TegrityAdministrationApplication.java:324)<br />
+                      com.mcgraw.test.automation.tests.lti.LtiTest.testTearDown(LtiTest.java:61)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+                      org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+                      org.testng.TestNG.run(TestNG.java:1057)<br />
+                      com.mcgraw.test.automation.framework.core.runner.CommandLineRunner.run(CommandLineRunner.java:147)<br />
+                      com.mcgraw.test.automation.tests.base.TestNgRunner.main(TestNgRunner.java:36)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.mcgraw.test.automation.tests.lti.LtiTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Check availability of MhCampus after filling the form for instructor">checkLTIforInstructor</span>
+      </td>
+  <td class="duration">
+    00:00:49s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2016-08-16 13:00:55,136  INFO root - Waiting for LtiScreen page...<br>
+
+                                2016-08-16 13:00:55,181  INFO root - Clicking 'Clear data' button...<br>
+
+                                2016-08-16 13:00:55,797  INFO root - Selecting OK in alert: 'This will remove all the current non-required parameter values; are you sure?'<br>
+
+                                2016-08-16 13:00:55,909  INFO root - Pause for '1000' millis<br>
+
+                                2016-08-16 13:00:56,986  INFO root - Clicking 'Display optional parameters?...'<br>
+
+                                2016-08-16 13:00:58,310  INFO root - Type value 'http://aairs-aws-qa.tegrity.com/Service/RedirectCMSLink.aspx' to Input 'name=endpoint'<br>
+
+                                2016-08-16 13:00:59,157  INFO root - Type value 'N96K-LQ8C-UY0I' to Input 'name=key'<br>
+
+                                2016-08-16 13:00:59,955  INFO root - Type value '1F9906' to Input 'name=secret'<br>
+
+                                2016-08-16 13:01:00,815  INFO root - Type value 'instructorLoginuNcQu' to Input 'name=user_id'<br>
+
+                                2016-08-16 13:01:01,633  INFO root - Type value 'instructorFullNameV2ac3' to Input 'name=lis_person_name_full'<br>
+
+                                2016-08-16 13:01:02,447  INFO root - Type value 'courseId_dbk6E' to Input 'name=context_id'<br>
+
+                                2016-08-16 13:01:03,502  INFO root - Type value 'courseName_807at' to Input 'name=context_title'<br>
+
+                                2016-08-16 13:01:04,430  INFO root - Type value 'urn:lti:role:ims/lis/Instructor' to Input 'name=roles'<br>
+
+                                2016-08-16 13:01:04,715  INFO root - Typing 'Custom Parameters'...<br>
+
+                                2016-08-16 13:01:07,827 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130107824.png'>screenshot-20160816-130107824.png</a><br>
+
+                                2016-08-16 13:01:07,831  INFO root - Clicking 'Save data' button...<br>
+
+                                2016-08-16 13:01:09,264  INFO root - Pause for '4000' millis<br>
+
+                                2016-08-16 13:01:13,624 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130113621.png'>screenshot-20160816-130113621.png</a><br>
+
+                                2016-08-16 13:01:13,628  INFO root - Clicking 'Launch TP' button...<br>
+
+                                2016-08-16 13:01:14,327  INFO root - Pause for '8000' millis<br>
+
+                                2016-08-16 13:01:22,331  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+
+                                2016-08-16 13:01:22,762  INFO root - Current URL before switching is : http://ltiapps.net/test/tc.php<br>
+
+                                2016-08-16 13:01:22,776  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:01:22,814  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:22,844  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:01:25,282  INFO root - Greeting text in Welcome dialog is: 'Hi instructorFullNameV2ac3 -'<br>
+
+                                2016-08-16 13:01:25,391 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130125389.png'>screenshot-20160816-130125389.png</a><br>
+
+                                2016-08-16 13:01:25,427  INFO root - Checking if welcome text for instructor is shown<br>
+
+                                2016-08-16 13:01:25,480  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:25,495  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:01:25,530  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:25,559  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:01:27,976  INFO root - Rules text in Welcome dialog is: 'As an instructor you have full access to all of our products and content. Feel free to look around and use whatever you like in your courses.'<br>
+
+                                2016-08-16 13:01:28,012  INFO root - Getting current url...<br>
+
+                                2016-08-16 13:01:28,066  INFO root - Current url is 'https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1'<br>
+
+                                2016-08-16 13:01:28,070  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+
+                                2016-08-16 13:01:28,136  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:28,155  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:01:28,199  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:28,236  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:01:30,906 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+
+                                2016-08-16 13:01:31,299  INFO root - Pause for '1000' millis<br>
+
+                                2016-08-16 13:01:32,548  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+
+                                2016-08-16 13:01:32,754  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:01:34,934  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:34,952  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:01:34,996  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:35,069  INFO root - Pause for '6000' millis<br>
+
+                                2016-08-16 13:01:41,202  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:41,222  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:01:41,262  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:41,549  INFO root - User name text is: 'INSTRUCTORFULLNAMEV2AC3'<br>
+
+                                2016-08-16 13:01:41,551  INFO root - Checking if course courseName_807at is present on the page<br>
+
+                                2016-08-16 13:01:41,609  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:41,624  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:01:41,663  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:41,800 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130141798.png'>screenshot-20160816-130141798.png</a><br>
+
+                                2016-08-16 13:01:41,864  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+
+                                2016-08-16 13:01:41,922  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:41,937  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:01:41,973  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:01:42,114 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130142112.png'>screenshot-20160816-130142112.png</a><br>
+
+                                2016-08-16 13:01:42,170 METHOD_SUCCESS root - LtiTest.checkLTIforInstructor<br>
+
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Check availability of MhCampus after filling the form for student">checkLTIforStudent</span>
+      </td>
+  <td class="duration">
+    00:00:50s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2016-08-16 13:01:43,999  INFO root - Waiting for LtiScreen page...<br>
+
+                                2016-08-16 13:01:44,045  INFO root - Clicking 'Clear data' button...<br>
+
+                                2016-08-16 13:01:44,573  INFO root - Selecting OK in alert: 'This will remove all the current non-required parameter values; are you sure?'<br>
+
+                                2016-08-16 13:01:44,640  INFO root - Pause for '1000' millis<br>
+
+                                2016-08-16 13:01:46,212  INFO root - Type value 'http://aairs-aws-qa.tegrity.com/Service/RedirectCMSLink.aspx' to Input 'name=endpoint'<br>
+
+                                2016-08-16 13:01:47,061  INFO root - Type value 'N96K-LQ8C-UY0I' to Input 'name=key'<br>
+
+                                2016-08-16 13:01:47,833  INFO root - Type value '1F9906' to Input 'name=secret'<br>
+
+                                2016-08-16 13:01:49,102  INFO root - Type value 'studentLogin_4eLJ7' to Input 'name=user_id'<br>
+
+                                2016-08-16 13:01:50,210  INFO root - Type value 'studentFullName_dEnDH' to Input 'name=lis_person_name_full'<br>
+
+                                2016-08-16 13:01:51,411  INFO root - Type value 'courseId_dbk6E' to Input 'name=context_id'<br>
+
+                                2016-08-16 13:01:52,529  INFO root - Type value 'courseName_807at' to Input 'name=context_title'<br>
+
+                                2016-08-16 13:01:53,504  INFO root - Type value 'urn:lti:role:ims/lis/Learner' to Input 'name=roles'<br>
+
+                                2016-08-16 13:01:53,845  INFO root - Typing 'Custom Parameters'...<br>
+
+                                2016-08-16 13:01:55,384 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130155378.png'>screenshot-20160816-130155378.png</a><br>
+
+                                2016-08-16 13:01:55,396  INFO root - Clicking 'Save data' button...<br>
+
+                                2016-08-16 13:01:57,586  INFO root - Pause for '4000' millis<br>
+
+                                2016-08-16 13:02:01,932 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130201929.png'>screenshot-20160816-130201929.png</a><br>
+
+                                2016-08-16 13:02:01,937  INFO root - Clicking 'Launch TP' button...<br>
+
+                                2016-08-16 13:02:02,711  INFO root - Pause for '8000' millis<br>
+
+                                2016-08-16 13:02:10,718  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+
+                                2016-08-16 13:02:13,930  INFO root - Current URL before switching is : http://ltiapps.net/test/tc.php<br>
+
+                                2016-08-16 13:02:13,945  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:02:13,985  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:14,060  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:02:16,418  INFO root - Greeting text in Welcome dialog is: 'Hi studentFullName_dEnDH -'<br>
+
+                                2016-08-16 13:02:16,540 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130216538.png'>screenshot-20160816-130216538.png</a><br>
+
+                                2016-08-16 13:02:16,574  INFO root - Checking if welcome text for student is shown<br>
+
+                                2016-08-16 13:02:16,629  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:16,783  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:02:16,870  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:16,900  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:02:19,297  INFO root - Rules text in Welcome dialog is: 'Welcome to McGraw-Hill Campus, where you can easily access McGraw-Hill products and services you use in your courses.'<br>
+
+                                2016-08-16 13:02:19,329  INFO root - Getting current url...<br>
+
+                                2016-08-16 13:02:19,379  INFO root - Current url is 'https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1'<br>
+
+                                2016-08-16 13:02:19,383  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+
+                                2016-08-16 13:02:19,435  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:19,448  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:02:19,481  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:19,508  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:02:22,200 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+
+                                2016-08-16 13:02:22,584  INFO root - Pause for '1000' millis<br>
+
+                                2016-08-16 13:02:23,869  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+
+                                2016-08-16 13:02:24,068  INFO root - Pause for '2000' millis<br>
+
+                                2016-08-16 13:02:26,138  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:26,153  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:02:26,195  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:26,265  INFO root - Pause for '6000' millis<br>
+
+                                2016-08-16 13:02:32,367  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:32,384  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:02:32,424  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:32,650  INFO root - User name text is: 'STUDENTFULLNAME_DENDH'<br>
+
+                                2016-08-16 13:02:32,653  INFO root - Checking if course courseName_807at is present on the page<br>
+
+                                2016-08-16 13:02:32,707  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:32,721  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:02:32,758  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:32,877 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130232874.png'>screenshot-20160816-130232874.png</a><br>
+
+                                2016-08-16 13:02:32,937  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+
+                                2016-08-16 13:02:32,989  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:33,002  INFO root - Now opened : 2 windows!<br>
+
+                                2016-08-16 13:02:33,038  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+
+                                2016-08-16 13:02:33,156 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130233154.png'>screenshot-20160816-130233154.png</a><br>
+
+                                2016-08-16 13:02:33,212 METHOD_SUCCESS root - LtiTest.checkLTIforStudent<br>
+
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Canvas Tests]">
+  <test name="Canvas Include Filter Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.canvas.Gradebook">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testSuiteSetup"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.canvas.Gradebook -->
+      <class name="com.mcgraw.test.automation.tests.canvas.CsvFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="testSuiteTearDown"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.canvas.CsvFilter -->
+      <class name="com.mcgraw.test.automation.tests.canvas.UseExistingAssignment">
+        <methods>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.canvas.UseExistingAssignment -->
+      <class name="com.mcgraw.test.automation.tests.canvas.IncludeAllFilter">
+        <methods>
+          <include name="checkMHCampusLinkIsPresentInInstructorsCoursesForIncludeAllFilter"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="checkMHCampusLinkBahavesCorrectlyForInstructor"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.canvas.IncludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.canvas.TestConnectors">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.canvas.TestConnectors -->
+    </classes>
+  </test> <!-- Canvas Include Filter Test(failed) -->
+</suite> <!-- Failed suite [Canvas Tests] -->

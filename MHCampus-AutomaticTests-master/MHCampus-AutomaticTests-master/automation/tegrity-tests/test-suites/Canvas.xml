@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Canvas Tests" verbose="1">
+
+	<test verbose="1" name="Canvas Default Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.TegrityDefaultFilter" />
+		</classes>
+	</test>
+	
+	<!--<test verbose="1" name="Canvas Include Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.TegrityIncludeAllFilter" />
+		</classes>
+	</test>-->
+	
+	<test verbose="1" name="Canvas Exclude Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.TegrityExcludeAllFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Canvas Csv list Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.TegrityCsvFilter" />
+		</classes>
+	</test>	
+	
+	<test verbose="1" name="Canvas Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.canvas.TegrityGradebook" />
+		</classes>
+	</test>
+		
+
+</suite>

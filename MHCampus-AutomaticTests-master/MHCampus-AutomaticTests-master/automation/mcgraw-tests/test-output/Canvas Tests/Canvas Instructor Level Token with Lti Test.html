@@ -1,0 +1,585 @@
+<html>
+<head>
+<title>TestNG:  Canvas Instructor Level Token with Lti Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Canvas Instructor Level Token with Lti Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 18 12:47:10 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>726 seconds (726054 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkAuthorizeNOTPresentForInstructor1Course2()'><b>checkAuthorizeNOTPresentForInstructor1Course2</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For Canvas instructor1 and course2 DON'T ASK for Authorize Tolken<br/>
+<a href="#Output-1171643944" onClick='toggleBox("Output-1171643944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1171643944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1171643944">
+2016-05-18 12:56:25,657  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:56:25,657  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:56:30,696  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:56:33,347  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:56:33,378  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:56:35,609  INFO root - Type value 'instructor1bb2Q2' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:56:36,076  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:56:36,742 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125636740.png'>screenshot-20160518-125636740.png</a><br>
+<br/>
+2016-05-18 12:56:36,743  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:56:41,636  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:56:41,679  INFO root - Going to the created course CourseName2R6kiS...<br>
+<br/>
+2016-05-18 12:56:41,871  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:56:43,872  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName2R6kiS')]<br>
+<br/>
+2016-05-18 12:56:44,205  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:56:47,059 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125647056.png'>screenshot-20160518-125647056.png</a><br>
+<br/>
+2016-05-18 12:56:47,059  INFO root - Clicking Mh Campus link...<br>
+<br/>
+2016-05-18 12:56:47,266 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125647263.png'>screenshot-20160518-125647263.png</a><br>
+<br/>
+2016-05-18 12:56:54,305  INFO root - Selecting OK in alert: 'The information you have entered on this page will be sent over an insecure connection and could be read by a third party.Are you sure you want to send this information?'<br>
+<br/>
+2016-05-18 12:56:54,405  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:56:55,491  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-05-18 12:56:59,487  INFO root - User name text is: 'INSTRUCTORNAME1BB2Q2'<br>
+<br/>
+2016-05-18 12:56:59,487  INFO root - Checking if course CourseName14Uc1t is present on the page<br>
+<br/>
+2016-05-18 12:56:59,747 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125659745.png'>screenshot-20160518-125659745.png</a><br>
+<br/>
+2016-05-18 12:56:59,794  INFO root - Checking if course CourseName2R6kiS is present on the page<br>
+<br/>
+2016-05-18 12:57:00,035 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125700032.png'>screenshot-20160518-125700032.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkAuthorizeNOTPresentForInstructor2Course1()'><b>checkAuthorizeNOTPresentForInstructor2Course1</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For Canvas instructor2 and course1 DON'T ASK for Authorize Tolken<br/>
+<a href="#Output-1298590344" onClick='toggleBox("Output-1298590344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1298590344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1298590344">
+2016-05-18 12:57:04,800  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:57:04,800  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:57:09,895  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:57:12,441  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:57:12,468  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:57:14,725  INFO root - Type value 'instructor2nwMZR' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:57:15,204  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:57:15,875 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125715872.png'>screenshot-20160518-125715872.png</a><br>
+<br/>
+2016-05-18 12:57:15,875  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:57:20,619  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:57:20,694  INFO root - Going to the created course CourseName14Uc1t...<br>
+<br/>
+2016-05-18 12:57:20,782  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:57:22,782  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName14Uc1t')]<br>
+<br/>
+2016-05-18 12:57:23,127  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:57:26,178 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125726176.png'>screenshot-20160518-125726176.png</a><br>
+<br/>
+2016-05-18 12:57:26,178  INFO root - Clicking Mh Campus link...<br>
+<br/>
+2016-05-18 12:57:26,324 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125726321.png'>screenshot-20160518-125726321.png</a><br>
+<br/>
+2016-05-18 12:57:32,875  INFO root - Selecting OK in alert: 'The information you have entered on this page will be sent over an insecure connection and could be read by a third party.Are you sure you want to send this information?'<br>
+<br/>
+2016-05-18 12:57:32,957  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:57:34,038  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-05-18 12:57:35,669  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-05-18 12:57:35,779  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:57:38,264 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-05-18 12:57:38,607  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:57:42,377  INFO root - User name text is: 'INSTRUCTORNAME2NWMZR'<br>
+<br/>
+2016-05-18 12:57:42,377  INFO root - Checking if course CourseName14Uc1t is present on the page<br>
+<br/>
+2016-05-18 12:57:42,627 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125742612.png'>screenshot-20160518-125742612.png</a><br>
+<br/>
+2016-05-18 12:57:42,690  INFO root - Checking if course CourseName2R6kiS is present on the page<br>
+<br/>
+2016-05-18 12:57:42,927 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125742924.png'>screenshot-20160518-125742924.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkAuthorizeNOTPresentForInstructor2Course1AfterInstructor1WasDeleted()'><b>checkAuthorizeNOTPresentForInstructor2Course1AfterInstructor1WasDeleted</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For Canvas instructor2 and course2 DON'T ASK for Authorize Tolken, after instructor1 was deleted<br/>
+<a href="#Output-1561045491" onClick='toggleBox("Output-1561045491", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1561045491" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1561045491">
+2016-05-18 12:57:47,412  INFO root - Deleting canvas enrollment<br>
+<br/>
+2016-05-18 12:57:48,489  INFO root - Canvas enrollment deleted successfully. Canvas Enrollment [id=30921244, courseId=1883062, courseSectionId=2095944, canvasEnrollmentState=deleted, canvasEnrollmentType=TeacherEnrollment]<br>
+<br/>
+2016-05-18 12:57:48,489  INFO root - Deleting canvas enrollment<br>
+<br/>
+2016-05-18 12:57:49,000  INFO root - Canvas enrollment deleted successfully. Canvas Enrollment [id=30921245, courseId=1883063, courseSectionId=2095945, canvasEnrollmentState=deleted, canvasEnrollmentType=TeacherEnrollment]<br>
+<br/>
+2016-05-18 12:57:49,000  INFO root - Deleting canvas user<br>
+<br/>
+2016-05-18 12:57:50,032  INFO root - Canvas user deleted successfully. CanvasUserRS [user=CanvasUser [id=6886484, avatarImageUrl=null, schoolName=null, visibility=null, storageQuota=null, avatarImageUpdatedAt=null, locale=null, unreadConversationsCount=0, registrationRemoteIp=null, mergeTo=null, workflowState=null, browserLocale=null, turnitinTd=null, subscribeToEmails=null, showUserServices=false, name=InstructorName1bb2Q2, birthdate=null, gender=null, createdAt=null, avatarState=null, reminderTimeForDueDates=0, pageViewsCount=0, sortableName=InstructorName1bb2Q2, preferences=null, loginId=instructor1bb2Q2, deletedAt=null, reminderTimeForGrading=0, crocodocId=null, shortName=InstructorName1bb2Q2, countryCode=null, lastLoggedOut=null, stuck_sis_fields=null, schoolPosition=null, unreadInboxItemsCount=0, avatarImageSource=null, timeZone=null, initialEnrollmentType=null, ltiContextId=null, updatedAt=null, visibleInboxTypes=null, lastUserNote=null, aPublic=null]]<br>
+<br/>
+2016-05-18 12:57:50,032  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:57:50,032  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:57:55,085  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:57:57,624  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:57:57,665  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:57:59,902  INFO root - Type value 'instructor2nwMZR' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:58:00,383  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:58:01,024 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125801021.png'>screenshot-20160518-125801021.png</a><br>
+<br/>
+2016-05-18 12:58:01,024  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:58:05,704  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:58:05,749  INFO root - Going to the created course CourseName2R6kiS...<br>
+<br/>
+2016-05-18 12:58:05,925  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:58:07,926  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName2R6kiS')]<br>
+<br/>
+2016-05-18 12:58:08,349  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:58:11,379 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125811376.png'>screenshot-20160518-125811376.png</a><br>
+<br/>
+2016-05-18 12:58:11,379  INFO root - Clicking Mh Campus link...<br>
+<br/>
+2016-05-18 12:58:11,532 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125811530.png'>screenshot-20160518-125811530.png</a><br>
+<br/>
+2016-05-18 12:58:17,945  INFO root - Selecting OK in alert: 'The information you have entered on this page will be sent over an insecure connection and could be read by a third party.Are you sure you want to send this information?'<br>
+<br/>
+2016-05-18 12:58:18,042  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:58:19,089  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-05-18 12:58:21,105  INFO root - User name text is: 'INSTRUCTORNAME2NWMZR'<br>
+<br/>
+2016-05-18 12:58:21,105  INFO root - Checking if course CourseName14Uc1t is present on the page<br>
+<br/>
+2016-05-18 12:58:21,403 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125821396.png'>screenshot-20160518-125821396.png</a><br>
+<br/>
+2016-05-18 12:58:21,451  INFO root - Checking if course CourseName2R6kiS is present on the page<br>
+<br/>
+2016-05-18 12:58:21,688 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125821686.png'>screenshot-20160518-125821686.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkAuthorizePresentForInstructor1Course1()'><b>checkAuthorizePresentForInstructor1Course1</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For Canvas instructor1 and course1 ASK for Authorize Tolken and accept<br/>
+<a href="#Output-96925429" onClick='toggleBox("Output-96925429", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-96925429" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-96925429">
+2016-05-18 12:55:29,830  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:55:29,831  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:55:34,901  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:55:37,594  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:55:37,636  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:55:39,917  INFO root - Type value 'instructor1bb2Q2' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:55:40,484  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:55:41,217 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125541214.png'>screenshot-20160518-125541214.png</a><br>
+<br/>
+2016-05-18 12:55:41,217  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:55:46,052  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:55:46,123  INFO root - Going to the created course CourseName14Uc1t...<br>
+<br/>
+2016-05-18 12:55:46,309  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:55:48,310  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName14Uc1t')]<br>
+<br/>
+2016-05-18 12:55:48,731  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:55:51,499 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125551497.png'>screenshot-20160518-125551497.png</a><br>
+<br/>
+2016-05-18 12:55:51,500  INFO root - Clicking Mh Campus link...<br>
+<br/>
+2016-05-18 12:55:51,661 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125551659.png'>screenshot-20160518-125551659.png</a><br>
+<br/>
+2016-05-18 12:55:58,577  INFO root - Selecting OK in alert: 'The information you have entered on this page will be sent over an insecure connection and could be read by a third party.Are you sure you want to send this information?'<br>
+<br/>
+2016-05-18 12:55:58,726  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:56:03,065  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-05-18 12:56:13,776  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-05-18 12:56:13,846  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:56:16,332 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-05-18 12:56:16,654  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:56:20,587  INFO root - User name text is: 'INSTRUCTORNAME1BB2Q2'<br>
+<br/>
+2016-05-18 12:56:20,587  INFO root - Checking if course CourseName14Uc1t is present on the page<br>
+<br/>
+2016-05-18 12:56:20,853 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125620850.png'>screenshot-20160518-125620850.png</a><br>
+<br/>
+2016-05-18 12:56:20,900  INFO root - Checking if course CourseName2R6kiS is present on the page<br>
+<br/>
+2016-05-18 12:56:21,125 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125621123.png'>screenshot-20160518-125621123.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkMHCampusLinkBahavesCorrectlyForStudent()'><b>checkMHCampusLinkBahavesCorrectlyForStudent</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For Canvas student MH Campus link bahaves correctly<br/>
+<a href="#Output-1108937424" onClick='toggleBox("Output-1108937424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1108937424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1108937424">
+2016-05-18 12:58:26,338  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:58:26,338  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:58:31,375  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:58:33,959  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:58:33,989  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:58:36,220  INFO root - Type value 'studentGkraO' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:58:36,691  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:58:37,431 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125837429.png'>screenshot-20160518-125837429.png</a><br>
+<br/>
+2016-05-18 12:58:37,431  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:58:42,429  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:58:42,478  INFO root - Going to the created course CourseName14Uc1t...<br>
+<br/>
+2016-05-18 12:58:42,671  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:58:44,671  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName14Uc1t')]<br>
+<br/>
+2016-05-18 12:58:45,061  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:58:48,086 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125848084.png'>screenshot-20160518-125848084.png</a><br>
+<br/>
+2016-05-18 12:58:48,087  INFO root - Clicking Mh Campus link...<br>
+<br/>
+2016-05-18 12:58:48,250 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125848248.png'>screenshot-20160518-125848248.png</a><br>
+<br/>
+2016-05-18 12:58:54,952  INFO root - Selecting OK in alert: 'The information you have entered on this page will be sent over an insecure connection and could be read by a third party.Are you sure you want to send this information?'<br>
+<br/>
+2016-05-18 12:58:55,111  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:58:56,173  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-05-18 12:58:58,462  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-05-18 12:58:58,815  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:59:01,330 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-05-18 12:59:01,657  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-05-18 12:59:05,645  INFO root - User name text is: 'STUDENTNAMEGKRAO'<br>
+<br/>
+2016-05-18 12:59:05,645  INFO root - Checking if course CourseName14Uc1t is present on the page<br>
+<br/>
+2016-05-18 12:59:05,925 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125905922.png'>screenshot-20160518-125905922.png</a><br>
+<br/>
+2016-05-18 12:59:05,983  INFO root - Checking if course CourseName2R6kiS is present on the page<br>
+<br/>
+2016-05-18 12:59:06,307 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125906304.png'>screenshot-20160518-125906304.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkMHCampusLinkPresentInCoursesForInstructor1()'><b>checkMHCampusLinkPresentInCoursesForInstructor1</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For FIRST Canvas instructor MH Campus link is present for created courses<br/>
+<a href="#Output-257397807" onClick='toggleBox("Output-257397807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-257397807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-257397807">
+2016-05-18 12:53:22,753  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:53:22,754  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:53:27,795  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:53:30,446  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:53:30,479  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:53:32,771  INFO root - Type value 'instructor1bb2Q2' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:53:33,318  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:53:34,018 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125334015.png'>screenshot-20160518-125334015.png</a><br>
+<br/>
+2016-05-18 12:53:34,018  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:53:38,825  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:53:38,910  INFO root - Going to the created course CourseName14Uc1t...<br>
+<br/>
+2016-05-18 12:53:39,002  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:53:41,002  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName14Uc1t')]<br>
+<br/>
+2016-05-18 12:53:41,450  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:53:45,375 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125345373.png'>screenshot-20160518-125345373.png</a><br>
+<br/>
+2016-05-18 12:53:48,487 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125348485.png'>screenshot-20160518-125348485.png</a><br>
+<br/>
+2016-05-18 12:53:48,531  INFO root - Going to the created course CourseName2R6kiS...<br>
+<br/>
+2016-05-18 12:53:48,635  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:53:50,635  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName2R6kiS')]<br>
+<br/>
+2016-05-18 12:53:51,190  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:53:55,298 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125355295.png'>screenshot-20160518-125355295.png</a><br>
+<br/>
+2016-05-18 12:53:58,534 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125358532.png'>screenshot-20160518-125358532.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkMHCampusLinkPresentInCoursesForInstructor2()'><b>checkMHCampusLinkPresentInCoursesForInstructor2</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For SECOND Canvas instructor MH Campus link is present for created courses<br/>
+<a href="#Output-674331759" onClick='toggleBox("Output-674331759", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-674331759" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-674331759">
+2016-05-18 12:54:03,128  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:54:03,128  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:54:08,170  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:54:10,659  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:54:10,688  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:54:12,970  INFO root - Type value 'instructor2nwMZR' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:54:13,540  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:54:14,263 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125414260.png'>screenshot-20160518-125414260.png</a><br>
+<br/>
+2016-05-18 12:54:14,263  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:54:23,566  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:54:23,659  INFO root - Going to the created course CourseName14Uc1t...<br>
+<br/>
+2016-05-18 12:54:23,913  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:54:25,914  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName14Uc1t')]<br>
+<br/>
+2016-05-18 12:54:26,375  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:54:29,418 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125429416.png'>screenshot-20160518-125429416.png</a><br>
+<br/>
+2016-05-18 12:54:32,699 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125432697.png'>screenshot-20160518-125432697.png</a><br>
+<br/>
+2016-05-18 12:54:32,749  INFO root - Going to the created course CourseName2R6kiS...<br>
+<br/>
+2016-05-18 12:54:32,851  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:54:34,851  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName2R6kiS')]<br>
+<br/>
+2016-05-18 12:54:35,319  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:54:38,610 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125438608.png'>screenshot-20160518-125438608.png</a><br>
+<br/>
+2016-05-18 12:54:41,808 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125441806.png'>screenshot-20160518-125441806.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti.checkMHCampusLinkPresentInCoursesForStudent()'><b>checkMHCampusLinkPresentInCoursesForStudent</b><br>Test class: com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti<br>Test method: For Canvas student MH Campus link is present for created courses<br/>
+<a href="#Output-1604115730" onClick='toggleBox("Output-1604115730", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1604115730" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1604115730">
+2016-05-18 12:54:46,275  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-05-18 12:54:46,275  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-05-18 12:54:51,345  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1a920729<br>
+<br/>
+2016-05-18 12:54:53,927  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-05-18 12:54:53,961  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:54:56,300  INFO root - Type value 'studentGkraO' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-05-18 12:54:56,836  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-05-18 12:54:57,578 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125457576.png'>screenshot-20160518-125457576.png</a><br>
+<br/>
+2016-05-18 12:54:57,578  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:55:06,617  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-05-18 12:55:06,657  INFO root - Going to the created course CourseName14Uc1t...<br>
+<br/>
+2016-05-18 12:55:06,847  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:55:08,847  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName14Uc1t')]<br>
+<br/>
+2016-05-18 12:55:09,224  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:55:12,400 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125512398.png'>screenshot-20160518-125512398.png</a><br>
+<br/>
+2016-05-18 12:55:16,030 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125516028.png'>screenshot-20160518-125516028.png</a><br>
+<br/>
+2016-05-18 12:55:16,072  INFO root - Going to the created course CourseName2R6kiS...<br>
+<br/>
+2016-05-18 12:55:16,165  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-05-18 12:55:18,165  INFO root - Wait for element By: By.xpath: //span[contains(text(),'CourseName2R6kiS')]<br>
+<br/>
+2016-05-18 12:55:18,615  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-05-18 12:55:21,558 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125521556.png'>screenshot-20160518-125521556.png</a><br>
+<br/>
+2016-05-18 12:55:25,123 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160518-125525121.png'>screenshot-20160518-125525121.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.mcgraw.test.automation.tests.canvas.instructorleveltoken.InstructorLevelTokenLti@79082407</td></tr>
+</table><p>
+</body>
+</html>

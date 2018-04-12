@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Campus page appearance settings test]">
+  <parameter name="separateStudentSetting" value="Disabled"/>
+  <test name="Instructor All settings enabled Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest">
+        <methods>
+          <include name="testLearnSmartOptionAvailableForMarketingUnderInstructor"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testRelatedTitlesAreaPresentForAlgebraUnderInstructor"/>
+          <include name="testCustomizeOptionNAvailableForMarketingUnderInstructor"/>
+          <include name="closeAllThreads"/>
+          <include name="testConnectOptionAvailableForMarketingUnderInstructor"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testViewOnlineResourcesLinkPresentForZoology"/>
+          <include name="testSuiteSetup"/>
+          <include name="testGDPOptionAvailableForZoologyUnderInstructor"/>
+          <include name="testActivSimOptionAvailableForZoologyUnderInstructor"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testALEKSOptionAvailableForZoologyUnderInstructor"/>
+          <include name="testConnectMathOptionAvailableForAlgebraUnderInstructor"/>
+          <include name="testCreateOptionAvailableForZoologyUnderInstructor"/>
+          <include name="prepareTest"/>
+          <include name="testSimNetOptionAvailableForZoologyUnderInstructor"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testAdoptedServicesAreaPresentForZoologyUnderInstructor"/>
+          <include name="testLaunchEbookOptionAvailableForZoologyUnderInstructor"/>
+          <include name="testPrintOnDemandOptionAvailableForZoologyUnderInstructor"/>
+          <include name="testNonAdoptedServicesAreaPresentForZoologyUnderInstructor"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest -->
+    </classes>
+  </test> <!-- Instructor All settings enabled Test(failed) -->
+  <test name="Instructor All settings disabled Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest">
+        <methods>
+          <include name="testAdoptedServicesAreaNotAvailableForZoologyUnderInstructor"/>
+          <include name="testTextBookSearchNotAvailableForEmptyCourseUnderInstructor"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testRelatedTitlesAreaNotAvailableForAlgebraUnderInstructor"/>
+          <include name="closeAllThreads"/>
+          <include name="testALEKSOptionNotAvailableForZoologyUnderInstructor"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testLaunchEbookOptionNotAvailableForZoologyUnderInstructor"/>
+          <include name="testSuiteSetup"/>
+          <include name="testSimNetOptionNotAvailableForZoologyUnderInstructor"/>
+          <include name="testConnectMathOptionNotAvailableForAlgebraUnderInstructor"/>
+          <include name="testCustomizeOptionNotAvailableForMarketingUnderInstructor"/>
+          <include name="testLearnSmartOptionNotAvailableForMarketingUnderInstructor"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testViewOnlineResourcesLinkNotAvailableForZoologyUnderInstructor"/>
+          <include name="prepareTest"/>
+          <include name="testGDPOptionNotAvailableForZoologyUnderInstructor"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testNonAdoptedServicesAreaNotAvailableForZoologyUnderInstructor"/>
+          <include name="testActivSimOptionNotAvailableForZoologyUnderInstructor"/>
+          <include name="testConnectOptionNotAvailableForMarketingUnderInstructor"/>
+          <include name="testCreateOptionNotAvailableForZoologyUnderInstructor"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest -->
+    </classes>
+  </test> <!-- Instructor All settings disabled Test(failed) -->
+  <test name="Student All settings disabled Test(failed)">
+    <parameter name="separateStudentSetting" value="Disabled"/>
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest">
+        <methods>
+          <include name="testGDPNotAvailableForZoologyUnderStudent"/>
+          <include name="testAdoptedServicesAreaNotAvailableForZoologyUnderStudent"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testViewOnlineResourcesLinkNotAvailableForStudent"/>
+          <include name="closeAllThreads"/>
+          <include name="testTextBookSearchNotAvailableForEmptyCourseUnderStudent"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSimNetNotAvailableForZoologyUnderStudent"/>
+          <include name="testALEKSNotAvailableForZoologyUnderStudent"/>
+          <include name="testSuiteSetup"/>
+          <include name="testLearnsmartNotAvailableForMarketingUnderStudent"/>
+          <include name="testConnectMathOptionNotAvailableForAlgebraUnderStudet"/>
+          <include name="testCreateOptionNotPresentForZoologyStudent"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testActivSimOptionNotAvailableForZoologyUnderStudent"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testLaunchEbookOprionNotPresentForZoologyStudent"/>
+          <include name="testRelatedTitlesAreaNotAvailableForAlgebraUnderStudent"/>
+          <include name="testNonAdoptedServicesAreaNotAvailableForZoologyUnderStudent"/>
+          <include name="testConnectNotAvailableForMarketingUnderStudent"/>
+          <include name="testCustomizeNotAvailableForMarketingUnderStudent"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest -->
+    </classes>
+  </test> <!-- Student All settings disabled Test(failed) -->
+  <test name="Student All settings enabled Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllDisabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="testConnectOptionAvailableForStudent"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.InstructorAllEnabledSettingsTest -->
+      <class name="com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.pageappearancesettings.StudentAllDisabledSettingsTest -->
+    </classes>
+  </test> <!-- Student All settings enabled Test(failed) -->
+</suite> <!-- Failed suite [Campus page appearance settings test] -->

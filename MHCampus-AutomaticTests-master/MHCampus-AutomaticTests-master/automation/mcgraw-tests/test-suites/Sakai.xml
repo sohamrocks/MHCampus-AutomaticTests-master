@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sakai Tests" verbose="1">
+<!-- 
+<suite name="Sakai Tests" verbose="1" parallel="tests" thread-count="3">
+ -->
+	<test verbose="1" name="Sakai Direct Login Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.DirectLogin" />
+		</classes>
+	</test>
+	<test verbose="1" name="Sakai Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.Gradebook" />
+		</classes>
+	</test>
+
+	<test verbose="1" name="Sakai SSO Link Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.SSOLink" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Sakai Check Connector Buttons Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.TestConnectors" />
+		</classes>
+	</test>	
+	
+</suite>

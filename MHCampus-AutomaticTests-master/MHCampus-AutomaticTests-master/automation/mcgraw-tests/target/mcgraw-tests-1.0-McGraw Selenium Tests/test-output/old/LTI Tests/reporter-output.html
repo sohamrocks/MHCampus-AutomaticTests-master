@@ -1,0 +1,1101 @@
+<h2>Reporter output</h2><table><tr><td>2016-08-16 12:57:25,306 TEST_STARTED root - LTI Test<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,424  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/general-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,751  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/properties-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,803  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/angel-rest-api-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,838  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/moodle-rest-api-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,870  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/canvas-rest-api-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,915  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/blackboard-api-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,945  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/d2lvalence-rest-api-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:25,987  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/sakai-api-context.xml]<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:26,289  INFO AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:26,326  INFO DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@77110a48: defining beans [placeholderConfig,angelXmlSerializer,angelServerError,angelRestEndpoint,angelApi,angelCredentials,angelUserName,angelPassword,angelApiRequestsFactory,angelApiUtils,moodleJsonSerializer,serverError,restEndpoint,moodleRestApi,moodleUriParamsMap,moodleApiRequestsFactory,com.mcgraw.test.automation.api.rest.moodle.service.MoodleApiUtils#0,canvasExtObjectMapper,canvasJsonSerializer,canvasServerError,canvasRestEndpoint,canvasRestApi,canvasCredentials,canvasCreds,canvasApiRequestsFactory,com.mcgraw.test.automation.api.rest.canvas.service.CanvasApiUtils#0,blackBoardApi,d2LauthenticationSecurityFactory,iD2LapplicationContext,iD2LuserContext,d2LjsonSerializer,d2LserverError,d2LrestEndpoint,d2LApiRequestsFactory,d2LRestApi,com.mcgraw.test.automation.api.rest.d2l.service.D2LApiUtils#0,sakaiApi,sakaiApiFactory,serviceInstanceUtils,tegrityAdministrationApplication,mhCampusInstanceApplication,angelApplication,blackboardApplication,canvasApplication,gradebookApplication,lTIApplication,ExternalToolsApplication,moodleApplication,sakaiApplication,qaEmailClient,filledMailBox,browserBean,d2lApplication,eCollegeApplication,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:26,487  INFO root - Create browser instance with name: defaultDriver<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:26,578  INFO root - Create browser instance with name 'firefox' in Thread 'main', ID '1'<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:35,872  INFO root - STARTING TEST CLASS com.mcgraw.test.automation.tests.lti.LtiTest<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:36,071  INFO root - Creating new MH Campus Instance...<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:36,106  INFO root - Opening URL: http://login-aws-qa.tegrity.com/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@12c7519c<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:36,561  INFO root - Waiting for TegrityLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:39,479  INFO root - Logging to Tegrity Service. Institution: MH Campus Accounts, name: Epam, password:8F54EAED597E<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:39,894  INFO root - Type value 'MH Campus Accounts' to Input 'name=TextBoxInstitution'<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:40,481  INFO root - Type value 'Epam' to Input 'name=TextBoxUsername'<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:42,164  INFO root - Type value '8F54EAED597E' to Input 'name=TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:46,309  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:46,670  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:53,589  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxShowActiveCourse<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:53,673  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxGradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:54,174  INFO root - Type value 'epamInstance-20160816-125736083' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxDomain2'<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:54,995  INFO root - Type value 'epamInstitution-20160816-125736084' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxInstitution2'<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:55,673  INFO root - Waiting for TegrityCreateInstitutionScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:57,896  INFO root - Type value 'epamInstitution-20160816-125736084' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewInstitute$TextBoxNewInstitution'<br>
+</td></tr>
+<tr><td>2016-08-16 12:57:58,122  INFO root - Saving full institution name...<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:00,149  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:05,552  INFO root - Type value 'a8dcbe31d14d409aa2a0e3e7aa0ab66d' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$SchoolMHInfo$TextBoxInstallationId'<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:06,548  INFO root - Type value '8d10934e7f44464a953d1bb754a3f0e8' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$SchoolMHInfo$TextBoxSharedKey'<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:07,343  INFO root - Type value 'qatestingmhcampus@gmail.com' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxEmailContact'<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:08,097  INFO root - Type value 'qatestingmhcampus@gmail.com' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxEmailOwner'<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:08,350  INFO root - Select all settings for instructor to Automatic<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:10,408  INFO root - Change all settings for student to Automatic<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:16,270  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:16,312 OPERATION root - Get messages which contain [http://epamInstance-20160816-125736083.mhcampus.com] in body from folder with name 'INBOX' of mailbox with owner 'qatestingmhcampus@gmail.com', password 'xgppmplyggdjaqbt', at imap server 'imap.googlemail.com', with ssl = true<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:24,215  INFO root - Mailbox contains 1 messages which contain [http://epamInstance-20160816-125736083.mhcampus.com] in body<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,061  INFO root - Extracted e-mail credentials for current instance:<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,079  INFO root - MH Campus Instance login page address: http://epamInstance-20160816-125736083.mhcampus.com<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,086  INFO root - MH Campus Instance login: admin@epamInstance-20160816-125736083.mhcampus.com<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,092  INFO root - MH Campus Instance password: oxtflwgi<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,097  INFO root - Customer number: N96K-LQ8C-UY0I<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,102  INFO root - Shared secret: 1F9906<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,105  INFO root - Is checkbox 'Show Active Course' selected: false<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,109  INFO root - Is checkbox 'Gradebook Services' selected: true<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,113  INFO root - Delete email by customer number<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:25,119 OPERATION root - Removing messages which contain [N96K-LQ8C-UY0I] in body from folder with name 'INBOX' of mailbox with owner 'qatestingmhcampus@gmail.com', password 'xgppmplyggdjaqbt', at imap server 'imap.googlemail.com', with ssl = true<br>
+</td></tr>
+<tr><td>2016-08-16 12:58:31,201  INFO root - Deleted 1 message(s) with content [N96K-LQ8C-UY0I] in body <br>
+</td></tr>
+<tr><td>2016-08-16 12:58:32,014  INFO root - Pause for '60000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:32,019  INFO root - Logging in to MH Campus instance...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:32,102  INFO root - Opening URL: http://epamInstance-20160816-125736083.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@12c7519c<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:36,513  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:36,996  INFO root - Type value 'admin@epamInstance-20160816-125736083.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:37,692  INFO root - Type value 'oxtflwgi' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:38,010 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-125938008.png'>screenshot-20160816-125938008.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 12:59:38,016  INFO root - Clicking Login button...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:40,708  INFO root - Waiting for MhCampusInstanceTermsOfUseScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:40,757  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:41,034 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-125941032.png'>screenshot-20160816-125941032.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 12:59:41,122  INFO root - Accepting the rules...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:41,124  INFO root - Wait for element By: By.id: ServiceAdminMain1_AcceptTOS1_CheckBoxAgreed<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:42,951  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:43,072  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:43,285  INFO root - Clicking manage aairs link...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:44,005  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:47,765 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-125947762.png'>screenshot-20160816-125947762.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 12:59:47,769  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:47,804  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:47,964  INFO root - Clicking Save &amp; Continue on MH Campus Instance Connectors page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:48,044  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:52,131  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:52,237  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 12:59:52,388  INFO root - Pause for '60000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:52,402 METHOD_STARTED root - LtiTest.checkLTIforInstructor<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:55,136  INFO root - Waiting for LtiScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:55,181  INFO root - Clicking 'Clear data' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:55,797  INFO root - Selecting OK in alert: 'This will remove all the current non-required parameter values; are you sure?'<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:55,909  INFO root - Pause for '1000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:56,986  INFO root - Clicking 'Display optional parameters?...'<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:58,310  INFO root - Type value 'http://aairs-aws-qa.tegrity.com/Service/RedirectCMSLink.aspx' to Input 'name=endpoint'<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:59,157  INFO root - Type value 'N96K-LQ8C-UY0I' to Input 'name=key'<br>
+</td></tr>
+<tr><td>2016-08-16 13:00:59,955  INFO root - Type value '1F9906' to Input 'name=secret'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:00,815  INFO root - Type value 'instructorLoginuNcQu' to Input 'name=user_id'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:01,633  INFO root - Type value 'instructorFullNameV2ac3' to Input 'name=lis_person_name_full'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:02,447  INFO root - Type value 'courseId_dbk6E' to Input 'name=context_id'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:03,502  INFO root - Type value 'courseName_807at' to Input 'name=context_title'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:04,430  INFO root - Type value 'urn:lti:role:ims/lis/Instructor' to Input 'name=roles'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:04,715  INFO root - Typing 'Custom Parameters'...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:07,827 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130107824.png'>screenshot-20160816-130107824.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:01:07,831  INFO root - Clicking 'Save data' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:09,264  INFO root - Pause for '4000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:13,624 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130113621.png'>screenshot-20160816-130113621.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:01:13,628  INFO root - Clicking 'Launch TP' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:14,327  INFO root - Pause for '8000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:22,331  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:22,762  INFO root - Current URL before switching is : http://ltiapps.net/test/tc.php<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:22,776  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:22,814  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:22,844  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:25,282  INFO root - Greeting text in Welcome dialog is: 'Hi instructorFullNameV2ac3 -'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:25,391 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130125389.png'>screenshot-20160816-130125389.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:01:25,427  INFO root - Checking if welcome text for instructor is shown<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:25,480  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:25,495  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:25,530  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:25,559  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:27,976  INFO root - Rules text in Welcome dialog is: 'As an instructor you have full access to all of our products and content. Feel free to look around and use whatever you like in your courses.'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:28,012  INFO root - Getting current url...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:28,066  INFO root - Current url is 'https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:28,070  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:28,136  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:28,155  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:28,199  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:28,236  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:30,906 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:31,299  INFO root - Pause for '1000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:32,548  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:32,754  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:34,934  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:34,952  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:34,996  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:35,069  INFO root - Pause for '6000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,202  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,222  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,262  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,549  INFO root - User name text is: 'INSTRUCTORFULLNAMEV2AC3'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,551  INFO root - Checking if course courseName_807at is present on the page<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,609  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,624  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,663  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,800 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130141798.png'>screenshot-20160816-130141798.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,864  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,922  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,937  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:41,973  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:42,114 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130142112.png'>screenshot-20160816-130142112.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:01:42,170 METHOD_SUCCESS root - LtiTest.checkLTIforInstructor<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:42,215  INFO root - Close the window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:42,219  INFO root - Closing browser...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:42,423  INFO root - Opened one window with URL: http://ltiapps.net/test/tc.php<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:42,809 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130142806.png'>screenshot-20160816-130142806.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:01:42,816 METHOD_STARTED root - LtiTest.checkLTIforStudent<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:43,999  INFO root - Waiting for LtiScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:44,045  INFO root - Clicking 'Clear data' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:44,573  INFO root - Selecting OK in alert: 'This will remove all the current non-required parameter values; are you sure?'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:44,640  INFO root - Pause for '1000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:46,212  INFO root - Type value 'http://aairs-aws-qa.tegrity.com/Service/RedirectCMSLink.aspx' to Input 'name=endpoint'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:47,061  INFO root - Type value 'N96K-LQ8C-UY0I' to Input 'name=key'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:47,833  INFO root - Type value '1F9906' to Input 'name=secret'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:49,102  INFO root - Type value 'studentLogin_4eLJ7' to Input 'name=user_id'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:50,210  INFO root - Type value 'studentFullName_dEnDH' to Input 'name=lis_person_name_full'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:51,411  INFO root - Type value 'courseId_dbk6E' to Input 'name=context_id'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:52,529  INFO root - Type value 'courseName_807at' to Input 'name=context_title'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:53,504  INFO root - Type value 'urn:lti:role:ims/lis/Learner' to Input 'name=roles'<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:53,845  INFO root - Typing 'Custom Parameters'...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:55,384 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130155378.png'>screenshot-20160816-130155378.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:01:55,396  INFO root - Clicking 'Save data' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:01:57,586  INFO root - Pause for '4000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:01,932 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130201929.png'>screenshot-20160816-130201929.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:02:01,937  INFO root - Clicking 'Launch TP' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:02,711  INFO root - Pause for '8000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:10,718  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:13,930  INFO root - Current URL before switching is : http://ltiapps.net/test/tc.php<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:13,945  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:13,985  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:14,060  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:16,418  INFO root - Greeting text in Welcome dialog is: 'Hi studentFullName_dEnDH -'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:16,540 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130216538.png'>screenshot-20160816-130216538.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:02:16,574  INFO root - Checking if welcome text for student is shown<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:16,629  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:16,783  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:16,870  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:16,900  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,297  INFO root - Rules text in Welcome dialog is: 'Welcome to McGraw-Hill Campus, where you can easily access McGraw-Hill products and services you use in your courses.'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,329  INFO root - Getting current url...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,379  INFO root - Current url is 'https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,383  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,435  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,448  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,481  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:19,508  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:22,200 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:22,584  INFO root - Pause for '1000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:23,869  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:24,068  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:26,138  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:26,153  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:26,195  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:26,265  INFO root - Pause for '6000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,367  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,384  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,424  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,650  INFO root - User name text is: 'STUDENTFULLNAME_DENDH'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,653  INFO root - Checking if course courseName_807at is present on the page<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,707  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,721  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,758  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,877 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130232874.png'>screenshot-20160816-130232874.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,937  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:32,989  INFO root - Current URL before switching is : https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,002  INFO root - Now opened : 2 windows!<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,038  INFO root - Switched to Last window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,156 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130233154.png'>screenshot-20160816-130233154.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,212 METHOD_SUCCESS root - LtiTest.checkLTIforStudent<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,256  INFO root - Close the window with URL: https://epaminstance-20160816-125736083.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,260  INFO root - Closing browser...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,455  INFO root - Opened one window with URL: http://ltiapps.net/test/tc.php<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,907 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130233905.png'>screenshot-20160816-130233905.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,914  INFO root - Removing MH Campus instance with number N96K-LQ8C-UY0I...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:33,921 CONFIGURATION_FAILED root - LtiTest.testTearDownjava.io.IOException: Cannot run program &quot;..\dependencies\DeleteInstance\DeleteInstance.exe&quot;: CreateProcess error=2, The system cannot find the file specified<br>
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)<br>
+	at java.lang.Runtime.exec(Runtime.java:617)<br>
+	at java.lang.Runtime.exec(Runtime.java:450)<br>
+	at java.lang.Runtime.exec(Runtime.java:347)<br>
+	at com.mcgraw.test.automation.ui.service.InstanceUtils.deleteInstance(InstanceUtils.java:45)<br>
+	at com.mcgraw.test.automation.ui.applications.TegrityAdministrationApplication.deleteMhCampusInstance(TegrityAdministrationApplication.java:324)<br>
+	at com.mcgraw.test.automation.tests.lti.LtiTest.testTearDown(LtiTest.java:61)<br>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+	at java.lang.reflect.Method.invoke(Method.java:606)<br>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br>
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br>
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br>
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br>
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)<br>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)<br>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br>
+	at org.testng.TestNG.run(TestNG.java:1057)<br>
+	at com.mcgraw.test.automation.framework.core.runner.CommandLineRunner.run(CommandLineRunner.java:147)<br>
+	at com.mcgraw.test.automation.tests.base.TestNgRunner.main(TestNgRunner.java:36)<br>
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified<br>
+	at java.lang.ProcessImpl.create(Native Method)<br>
+	at java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:385)<br>
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)<br>
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)<br>
+	... 29 more<br>
+<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:34,007  INFO root - Terminating browser...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:36,018  INFO root - FINISHING TEST CLASS com.mcgraw.test.automation.tests.lti.LtiTest<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:36,129 TEST_FINISHED root - LTI Test<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:36,132 TEST_STARTED root - Gradebook Services<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:36,148  INFO root - Create browser instance with name: defaultDriver<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:36,715  INFO root - Create browser instance with name 'firefox' in Thread 'main', ID '1'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:45,660  INFO root - STARTING TEST CLASS com.mcgraw.test.automation.tests.lti.GradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:46,145  INFO root - Sakai api: initialize the session<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,083  INFO root - Sakai api: session id for logged in user: b7bc392e-1f12-4fb7-bc18-3cf44ea7e148<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,087  INFO root - Create new user: User [login=student05201, password=123qweA@, firstName=StudentName05201, lastName=StudentSurname05201, email=email@email.com]<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,265  INFO root - Create new user response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,269  INFO root - Create new user: User [login=instructor53747, password=123qweA@, firstName=InstructorName53747, lastName=InstructorSurname53747, email=email@email.com]<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,449  INFO root - Create new user response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,459  INFO root - Create new course: Course [siteId=epamcourse35550]<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,733  INFO root - Create new course response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,744  INFO root - Add page: Site Info to site: Site [siteId=epamcourse35550]<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,931  INFO root - Add page response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:47,936  INFO root - Add tool: Sakai tool: [name=Site Info, tool id=sakai.siteinfo] to page: Page [pageTitle=Site Info]<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,111  INFO root - Add page response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,120  INFO root - Add member: id=student05201 to site: siteId=epamcourse35550<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,318  INFO root - Add member to site with role response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,326  INFO root - Add member: id=instructor53747 to site: siteId=epamcourse35550<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,518  INFO root - Add member to site with role response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,526  INFO root - Add page: Gradebook to site: Site [siteId=epamcourse35550]<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,708  INFO root - Add page response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,715  INFO root - Add tool: Sakai tool: [name=Gradebook, tool id=sakai.gradebook.tool] to page: Page [pageTitle=Gradebook]<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,905  INFO root - Add page response: success<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,909  INFO root - Creating new MH Campus Instance...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:48,915  INFO root - Opening URL: http://login-aws-qa.tegrity.com/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:49,341  INFO root - Waiting for TegrityLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:52,292  INFO root - Logging to Tegrity Service. Institution: MH Campus Accounts, name: Epam, password:8F54EAED597E<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:52,819  INFO root - Type value 'MH Campus Accounts' to Input 'name=TextBoxInstitution'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:53,413  INFO root - Type value 'Epam' to Input 'name=TextBoxUsername'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:54,627  INFO root - Type value '8F54EAED597E' to Input 'name=TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:58,723  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:02:59,110  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:05,142  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxShowActiveCourse<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:05,218  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxGradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:05,706  INFO root - Type value 'epamInstance-20160816-130248914' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxDomain2'<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:06,354  INFO root - Type value 'epamInstitution-20160816-130248914' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxInstitution2'<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:06,994  INFO root - Waiting for TegrityCreateInstitutionScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:09,479  INFO root - Type value 'epamInstitution-20160816-130248914' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewInstitute$TextBoxNewInstitution'<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:09,700  INFO root - Saving full institution name...<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:11,648  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:16,709  INFO root - Type value 'a8dcbe31d14d409aa2a0e3e7aa0ab66d' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$SchoolMHInfo$TextBoxInstallationId'<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:17,371  INFO root - Type value '8d10934e7f44464a953d1bb754a3f0e8' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$SchoolMHInfo$TextBoxSharedKey'<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:18,065  INFO root - Type value 'qatestingmhcampus@gmail.com' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxEmailContact'<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:18,717  INFO root - Type value 'qatestingmhcampus@gmail.com' to Input 'name=ctl00$ContentPlaceHolder1$ClientServicesMain1$NewCustomer1$TextBoxEmailOwner'<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:18,952  INFO root - Select all settings for instructor to Automatic<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:20,766  INFO root - Change all settings for student to Automatic<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:25,999  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:26,037 OPERATION root - Get messages which contain [http://epamInstance-20160816-130248914.mhcampus.com] in body from folder with name 'INBOX' of mailbox with owner 'qatestingmhcampus@gmail.com', password 'xgppmplyggdjaqbt', at imap server 'imap.googlemail.com', with ssl = true<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:32,158  INFO root - Mailbox contains 1 messages which contain [http://epamInstance-20160816-130248914.mhcampus.com] in body<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:32,995  INFO root - Extracted e-mail credentials for current instance:<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,004  INFO root - MH Campus Instance login page address: http://epamInstance-20160816-130248914.mhcampus.com<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,018  INFO root - MH Campus Instance login: admin@epamInstance-20160816-130248914.mhcampus.com<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,032  INFO root - MH Campus Instance password: mwibpjft<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,040  INFO root - Customer number: 3QAG-0WU0-VMZL<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,047  INFO root - Shared secret: 5D2D8C<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,055  INFO root - Is checkbox 'Show Active Course' selected: false<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,064  INFO root - Is checkbox 'Gradebook Services' selected: true<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,073  INFO root - Delete email by customer number<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:33,080 OPERATION root - Removing messages which contain [3QAG-0WU0-VMZL] in body from folder with name 'INBOX' of mailbox with owner 'qatestingmhcampus@gmail.com', password 'xgppmplyggdjaqbt', at imap server 'imap.googlemail.com', with ssl = true<br>
+</td></tr>
+<tr><td>2016-08-16 13:03:39,269  INFO root - Deleted 1 message(s) with content [3QAG-0WU0-VMZL] in body <br>
+</td></tr>
+<tr><td>2016-08-16 13:03:40,428  INFO root - Pause for '60000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:40,428  INFO root - Logging in to MH Campus instance...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:40,492  INFO root - Opening URL: http://epamInstance-20160816-130248914.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:44,024  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:44,751  INFO root - Type value 'admin@epamInstance-20160816-130248914.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:45,727  INFO root - Type value 'mwibpjft' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:46,060 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130446054.png'>screenshot-20160816-130446054.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:04:46,064  INFO root - Clicking Login button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:48,650  INFO root - Waiting for MhCampusInstanceTermsOfUseScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:48,691  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:48,984 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130448982.png'>screenshot-20160816-130448982.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:04:49,057  INFO root - Accepting the rules...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:49,059  INFO root - Wait for element By: By.id: ServiceAdminMain1_AcceptTOS1_CheckBoxAgreed<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:51,044  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:51,157  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:51,368  INFO root - Clicking manage aairs link...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:51,922  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:55,905 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130455902.png'>screenshot-20160816-130455902.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:04:55,909  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:55,940  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:56,086  INFO root - ConfiguringSakaiconnector for Gradebook...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:56,762  INFO root - Pause for '1000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:57,765  INFO root - Dragging connector...<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:58,394  INFO root - Wait for element By: By.xpath: //div[@id='GRADES_SORTABLE']//*[contains(text(),'Test')]<br>
+</td></tr>
+<tr><td>2016-08-16 13:04:59,597  INFO root - Pause for '1000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:01,716  INFO root - Type value 'Sakai' to Input 'id=5_Custom_0_TITLE'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:02,761  INFO root - Type value 'http://mhaairs.tegrity.com/CustomIntegrationModules/SakaiGradebookIntegration.svc' to Input 'id=5_Custom_0_SERVICE_URL'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:03,967  INFO root - Type value '{&quot;AdminUser&quot;:&quot;qa_admin&quot;, &quot;AdminPass&quot;:&quot;sak_S4k&quot;, &quot;URLtoSakai&quot;:&quot;http://sakai-qa-auto-pop.mhcampus.com&quot;, &quot;java_api&quot;:&quot;cxf&quot;}' to Input 'id=5_Custom_0_EXTENDED_PROPS'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:05,592 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130505589.png'>screenshot-20160816-130505589.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:05:05,596  INFO root - Pause for '3000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:08,597  INFO root - Clicking Save &amp; Continue on MH Campus Instance Connectors page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:08,729  INFO root - Pause for '2000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:12,004  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:12,038  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:12,250 METHOD_STARTED root - GradebookServices.checkEnableGradebookServicesBeforeChanging<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:12,253  INFO root - Gradebook Services enable: true<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:12,255  INFO root - Filling TestScorableItem form...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:12,281  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:13,477  INFO root - Waiting for TestScoreItemsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:14,018  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:14,470  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:14,901  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:15,314  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:15,731  INFO root - Type value '34741' to Input 'name=txtAssignmentID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:16,143  INFO root - Type value 'title_65478' to Input 'name=txtAssignmentTitle'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:16,580  INFO root - Type value 'Blog' to Input 'name=txtCategory'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:16,987  INFO root - Type value 'description_25155' to Input 'name=txtDescription'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:17,639  INFO root - Type value '11/22/2006' to Input 'name=txtStartDateTime'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:18,066  INFO root - Type value '11/19/2029' to Input 'name=txtDueDateTime'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:18,483  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:19,195 OPERATION root - Unchecking 'name=cbIsStudentViewable' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:19,538 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:20,757  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:&quot;&quot;,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req04s04le0z03j1uhkbx56&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:21,580  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtAssignmentID&quot;:&quot;34741&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_65478&quot;,&quot;txtCategory&quot;:&quot;Blog&quot;,&quot;txtDescription&quot;:&quot;description_25155&quot;,&quot;txtStartDateTime&quot;:&quot;11/22/2006&quot;,&quot;txtDueDateTime&quot;:&quot;11/19/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;False&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;assignmentTitle=title_65478&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1MjEyNzcxMTYw&amp;oauth_timestamp=1471341921&amp;oauth_signature=M%2FXceFIaBwcBCTfUM1pdjngc0fQ%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;assignmentTitle=title_65478&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1MjEyNzcxMTYw&amp;oauth_timestamp=1471341921&amp;oauth_signature=M%2FXceFIaBwcBCTfUM1pdjngc0fQ%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:\&quot;\&quot;,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req04s04le0z03j1uhkbx56\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:21,813 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130521811.png'>screenshot-20160816-130521811.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:05:21,903  INFO root - Filling TestScore form...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:21,927  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:22,438  INFO root - Waiting for TestScoreScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:22,860  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:23,307  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:23,956  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:24,397  INFO root - Type value '34741' to Input 'name=txtAssignmentID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:24,829  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:25,272  INFO root - Type value 'student05201' to Input 'name=txtUserID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:25,704  INFO root - Type value 'comment_23629' to Input 'name=txtComment'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:26,124  INFO root - Type value '11/25/2016' to Input 'name=txtDatetimeSubmitted'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:26,528  INFO root - Type value '20' to Input 'name=txtScoreReceived'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:27,922  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req0804tq04d03j1uiw8ulu&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:28,826  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtAssignmentID&quot;:&quot;34741&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtUserID&quot;:&quot;student05201&quot;,&quot;txtComment&quot;:&quot;comment_23629&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;11/25/2016&quot;,&quot;txtScoreReceived&quot;:&quot;20&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1Mjg0ODA0MjU0&amp;oauth_timestamp=1471341928&amp;oauth_signature=TQHfrpr9GgDT0KkoNQUMovPy30o%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=34741&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk1Mjg0ODA0MjU0&amp;oauth_timestamp=1471341928&amp;oauth_signature=TQHfrpr9GgDT0KkoNQUMovPy30o%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req0804tq04d03j1uiw8ulu\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:29,039 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130529037.png'>screenshot-20160816-130529037.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:05:29,130 METHOD_SUCCESS root - GradebookServices.checkEnableGradebookServicesBeforeChanging<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:29,276 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130529274.png'>screenshot-20160816-130529274.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:05:29,281 METHOD_STARTED root - GradebookServices.checkDisableGradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:29,284  INFO root - Edit new MH Campus Instance...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:29,286  INFO root - Opening URL: http://login-aws-qa.tegrity.com/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:29,372  INFO root - Waiting for TegrityLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:31,140  INFO root - Logging to Tegrity Service. Institution: MH Campus Accounts, name: Epam, password:8F54EAED597E<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:31,634  INFO root - Type value 'MH Campus Accounts' to Input 'name=TextBoxInstitution'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:32,285  INFO root - Type value 'Epam' to Input 'name=TextBoxUsername'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:32,900  INFO root - Type value '8F54EAED597E' to Input 'name=TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:35,312  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:35,511 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130535508.png'>screenshot-20160816-130535508.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:05:35,515  INFO root - Searching Data by column...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:36,388  INFO root - Wait for first row...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:36,389  INFO root - Pause for '9000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:45,857 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130545855.png'>screenshot-20160816-130545855.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:05:45,862  INFO root - Clicking 'Edit' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:45,864  INFO root - Wait for element By: By.xpath: .//a[contains(text(),'Edit')]<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:46,204  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:53,342  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxGradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:53,389  INFO root - Edit Gradebook Services checkbox...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:53,793  INFO root - The valeu of element was UNMARKED...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:54,075 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-130554073.png'>screenshot-20160816-130554073.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:05:56,604  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:05:56,645  INFO root - Pause for '300000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:10:56,637  INFO root - Gradebook Services enable: false<br>
+</td></tr>
+<tr><td>2016-08-16 13:10:56,645  INFO root - Logging in to MH Campus instance...<br>
+</td></tr>
+<tr><td>2016-08-16 13:10:56,726  INFO root - Opening URL: http://epamInstance-20160816-130248914.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:10:58,591  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:10:59,262  INFO root - Type value 'admin@epamInstance-20160816-130248914.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+</td></tr>
+<tr><td>2016-08-16 13:10:59,867  INFO root - Type value 'mwibpjft' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:00,158 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131100155.png'>screenshot-20160816-131100155.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:00,162  INFO root - Clicking Login button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:03,561  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:03,595  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:03,839 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131103837.png'>screenshot-20160816-131103837.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:03,844  INFO root - Clicking manage aairs link...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:04,263  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,377 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131108374.png'>screenshot-20160816-131108374.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,383  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,411  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,542  INFO root - Check if container is available...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,694 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131108692.png'>screenshot-20160816-131108692.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,785 ERROR root - Cannot find any elements with locators '[By.id: GRADES_SORTABLE]'. Please, check your definitions.<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,793 ERROR root - Making screenshoot for error 'Cannot find any elements with locators '[By.id: GRADES_SORTABLE]'. Please, check your definitions.<br>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'<br>
+System info: host: 'Elvira-Lap', ip: '192.168.2.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'<br>
+Driver info: driver.version: unknown'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,952 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131108949.png'>screenshot-20160816-131108949.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:08,981  INFO root - Filling TestScorableItem form...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:09,003  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:09,628  INFO root - Waiting for TestScoreItemsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:10,096  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:10,464  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:10,843  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:11,221  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:11,585  INFO root - Type value '347411' to Input 'name=txtAssignmentID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:11,942  INFO root - Type value 'title_654781' to Input 'name=txtAssignmentTitle'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:12,299  INFO root - Type value 'Blog' to Input 'name=txtCategory'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:12,653  INFO root - Type value 'description_25155' to Input 'name=txtDescription'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:13,043  INFO root - Type value '11/22/2006' to Input 'name=txtStartDateTime'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:13,408  INFO root - Type value '11/19/2029' to Input 'name=txtDueDateTime'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:13,974  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:14,623 OPERATION root - Unchecking 'name=cbIsStudentViewable' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:14,888 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:15,919  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;GRADEBOOK_NOT_ENABLED&quot;,&quot;ErrorDescription&quot;:&quot;Gradebook serivces are not enabled for this customer&quot;,&quot;Name&quot;:&quot;&quot;,&quot;Status&quot;:&quot;failed&quot;}],&quot;Message&quot;:&quot;&quot;,&quot;RequestID&quot;:&quot;Req0803mo0e03j1wf6m365&quot;,&quot;Status&quot;:&quot;Failure&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:16,669  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtAssignmentID&quot;:&quot;347411&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_654781&quot;,&quot;txtCategory&quot;:&quot;Blog&quot;,&quot;txtDescription&quot;:&quot;description_25155&quot;,&quot;txtStartDateTime&quot;:&quot;11/22/2006&quot;,&quot;txtDueDateTime&quot;:&quot;11/19/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;False&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;assignmentTitle=title_654781&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4NzY1MzYyMTA0&amp;oauth_timestamp=1471342277&amp;oauth_signature=L5rK360%2Bkl7UubfkiflXX2lP0Oo%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;assignmentTitle=title_654781&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4NzY1MzYyMTA0&amp;oauth_timestamp=1471342277&amp;oauth_signature=L5rK360%2Bkl7UubfkiflXX2lP0Oo%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;GRADEBOOK_NOT_ENABLED\&quot;,\&quot;ErrorDescription\&quot;:\&quot;Gradebook serivces are not enabled for this customer\&quot;,\&quot;Name\&quot;:\&quot;\&quot;,\&quot;Status\&quot;:\&quot;failed\&quot;}],\&quot;Message\&quot;:\&quot;\&quot;,\&quot;RequestID\&quot;:\&quot;Req0803mo0e03j1wf6m365\&quot;,\&quot;Status\&quot;:\&quot;Failure\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:16,902 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131116900.png'>screenshot-20160816-131116900.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:16,980  INFO root - Filling TestScore form...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:17,003  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:17,503  INFO root - Waiting for TestScoreScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:17,862  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:18,228  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:18,601  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:18,970  INFO root - Type value '347411' to Input 'name=txtAssignmentID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:19,330  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:19,697  INFO root - Type value 'student05201' to Input 'name=txtUserID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:20,191  INFO root - Type value 'comment_23629' to Input 'name=txtComment'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:20,577  INFO root - Type value '11/25/2016' to Input 'name=txtDatetimeSubmitted'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:20,946  INFO root - Type value '20' to Input 'name=txtScoreReceived'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:22,090  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;GRADEBOOK_NOT_ENABLED&quot;,&quot;ErrorDescription&quot;:&quot;Gradebook serivces are not enabled for this customer&quot;,&quot;Name&quot;:&quot;&quot;,&quot;Status&quot;:&quot;failed&quot;}],&quot;Message&quot;:&quot;&quot;,&quot;RequestID&quot;:&quot;Req04s04le02g03j1wgdntzm&quot;,&quot;Status&quot;:&quot;Failure&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,012  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtAssignmentID&quot;:&quot;347411&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtUserID&quot;:&quot;student05201&quot;,&quot;txtComment&quot;:&quot;comment_23629&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;11/25/2016&quot;,&quot;txtScoreReceived&quot;:&quot;20&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4ODI3MjM4Njg4&amp;oauth_timestamp=1471342283&amp;oauth_signature=PkRMOPT8GYZcpze1kOx0dj6M%2FMI%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347411&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NDk4ODI3MjM4Njg4&amp;oauth_timestamp=1471342283&amp;oauth_signature=PkRMOPT8GYZcpze1kOx0dj6M%2FMI%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;GRADEBOOK_NOT_ENABLED\&quot;,\&quot;ErrorDescription\&quot;:\&quot;Gradebook serivces are not enabled for this customer\&quot;,\&quot;Name\&quot;:\&quot;\&quot;,\&quot;Status\&quot;:\&quot;failed\&quot;}],\&quot;Message\&quot;:\&quot;\&quot;,\&quot;RequestID\&quot;:\&quot;Req04s04le02g03j1wgdntzm\&quot;,\&quot;Status\&quot;:\&quot;Failure\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,224 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131123222.png'>screenshot-20160816-131123222.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,299 METHOD_SUCCESS root - GradebookServices.checkDisableGradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,441 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131123439.png'>screenshot-20160816-131123439.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,446 METHOD_STARTED root - GradebookServices.checkEnableGradebookServicesAfterChanging<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,449  INFO root - Edit new MH Campus Instance...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,451  INFO root - Opening URL: http://login-aws-qa.tegrity.com/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:23,530  INFO root - Waiting for TegrityLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:25,170  INFO root - Logging to Tegrity Service. Institution: MH Campus Accounts, name: Epam, password:8F54EAED597E<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:25,510  INFO root - Type value 'MH Campus Accounts' to Input 'name=TextBoxInstitution'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:26,052  INFO root - Type value 'Epam' to Input 'name=TextBoxUsername'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:26,777  INFO root - Type value '8F54EAED597E' to Input 'name=TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:29,183  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:29,382 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131129376.png'>screenshot-20160816-131129376.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:29,387  INFO root - Searching Data by column...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:30,038  INFO root - Wait for first row...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:30,040  INFO root - Pause for '9000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:39,476 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131139474.png'>screenshot-20160816-131139474.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:39,481  INFO root - Clicking 'Edit' button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:39,482  INFO root - Wait for element By: By.xpath: .//a[contains(text(),'Edit')]<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:39,956  INFO root - Waiting for TegrityCreateMhCampusCustomerScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:46,469  INFO root - Wait for element By: By.id: ctl00_ContentPlaceHolder1_ClientServicesMain1_NewCustomer1_CheckBoxGradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:46,518  INFO root - Edit Gradebook Services checkbox...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:46,931  INFO root - The valeu of element was MARKED...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:47,213 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131147210.png'>screenshot-20160816-131147210.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:11:50,219  INFO root - Waiting for TegrityAccountsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:11:50,258  INFO root - Pause for '300000' millis<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:50,249  INFO root - Gradebook Services enable: true<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:50,256  INFO root - Logging in to MH Campus instance...<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:50,322  INFO root - Opening URL: http://epamInstance-20160816-130248914.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:52,046  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:52,694  INFO root - Type value 'admin@epamInstance-20160816-130248914.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:53,464  INFO root - Type value 'mwibpjft' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:53,799 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131653797.png'>screenshot-20160816-131653797.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:16:53,804  INFO root - Clicking Login button...<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:56,879  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:56,919  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:57,177 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131657174.png'>screenshot-20160816-131657174.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:16:57,181  INFO root - Clicking manage aairs link...<br>
+</td></tr>
+<tr><td>2016-08-16 13:16:57,633  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:01,450 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131701448.png'>screenshot-20160816-131701448.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:17:01,455  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:01,487  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:01,622  INFO root - Check if container is available...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:01,766 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131701764.png'>screenshot-20160816-131701764.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:17:01,909  INFO root - Filling TestScorableItem form...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:01,930  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:02,556  INFO root - Waiting for TestScoreItemsScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:03,024  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:03,432  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:03,826  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:04,221  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:04,602  INFO root - Type value '347412' to Input 'name=txtAssignmentID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:04,965  INFO root - Type value 'title_654782' to Input 'name=txtAssignmentTitle'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:05,332  INFO root - Type value 'Blog' to Input 'name=txtCategory'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:05,705  INFO root - Type value 'description_25155' to Input 'name=txtDescription'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:06,086  INFO root - Type value '11/22/2006' to Input 'name=txtStartDateTime'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:06,457  INFO root - Type value '11/19/2029' to Input 'name=txtDueDateTime'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:06,823  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:07,708 OPERATION root - Unchecking 'name=cbIsStudentViewable' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:08,000 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:09,599  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:&quot;&quot;,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req0804tq0u03j1ycfi9vu&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:10,367  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtAssignmentID&quot;:&quot;347412&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_654782&quot;,&quot;txtCategory&quot;:&quot;Blog&quot;,&quot;txtDescription&quot;:&quot;description_25155&quot;,&quot;txtStartDateTime&quot;:&quot;11/22/2006&quot;,&quot;txtDueDateTime&quot;:&quot;11/19/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;False&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;assignmentTitle=title_654782&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMjk2NzAyNTA0&amp;oauth_timestamp=1471342630&amp;oauth_signature=rMzay%2BktF5x0lhh8yeCD5T759lo%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;assignmentTitle=title_654782&amp;category=Blog&amp;description=description_25155&amp;startDateTime=11%2f22%2f2006&amp;dueDateTime=11%2f19%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=false&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMjk2NzAyNTA0&amp;oauth_timestamp=1471342630&amp;oauth_signature=rMzay%2BktF5x0lhh8yeCD5T759lo%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:\&quot;\&quot;,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req0804tq0u03j1ycfi9vu\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:10,622 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131710619.png'>screenshot-20160816-131710619.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:17:10,710  INFO root - Filling TestScore form...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:10,733  INFO root - Opening URL: http://login-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@744a0284<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:11,162  INFO root - Waiting for TestScoreScreen page...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:11,527  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:11,926  INFO root - Type value '3QAG-0WU0-VMZL' to Input 'name=txtCustomerID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:12,367  INFO root - Type value 'provider_56275' to Input 'name=txtProviderID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:12,746  INFO root - Type value '347412' to Input 'name=txtAssignmentID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:13,117  INFO root - Type value 'epamcourse35550' to Input 'name=txtCourseID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:13,495  INFO root - Type value 'student05201' to Input 'name=txtUserID'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:14,306  INFO root - Type value 'comment_23629' to Input 'name=txtComment'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:14,702  INFO root - Type value '11/25/2016' to Input 'name=txtDatetimeSubmitted'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:15,077  INFO root - Type value '20' to Input 'name=txtScoreReceived'<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:16,369  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Sakai&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Sakai:updated;&quot;,&quot;RequestID&quot;:&quot;Req04s038602803j1ydsryyq&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:17,243  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;3QAG-0WU0-VMZL&quot;,&quot;txtProviderID&quot;:&quot;provider_56275&quot;,&quot;txtAssignmentID&quot;:&quot;347412&quot;,&quot;txtCourseID&quot;:&quot;epamcourse35550&quot;,&quot;txtUserID&quot;:&quot;student05201&quot;,&quot;txtComment&quot;:&quot;comment_23629&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;11/25/2016&quot;,&quot;txtScoreReceived&quot;:&quot;20&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMzY4NzM1NTk4&amp;oauth_timestamp=1471342637&amp;oauth_signature=1Jn2qQ%2BEPCJvvAk00IYNHGNOfxA%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=3QAG-0WU0-VMZL&amp;providerID=provider_56275&amp;courseID=epamcourse35550&amp;assignmentID=347412&amp;userID=student05201&amp;comment=comment_23629&amp;currentAttempt=&amp;datetimeSubmitted=11%2f25%2f2016&amp;scoreReceived=20&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MDY5NTAyMzY4NzM1NTk4&amp;oauth_timestamp=1471342637&amp;oauth_signature=1Jn2qQ%2BEPCJvvAk00IYNHGNOfxA%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Sakai\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Sakai:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req04s038602803j1ydsryyq\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:17,466 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131717463.png'>screenshot-20160816-131717463.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:17:17,540 METHOD_SUCCESS root - GradebookServices.checkEnableGradebookServicesAfterChanging<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:17,686 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160816-131717684.png'>screenshot-20160816-131717684.png</a><br>
+</td></tr>
+<tr><td>2016-08-16 13:17:17,691  INFO root - Removing MH Campus instance with number 3QAG-0WU0-VMZL...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:17,696 CONFIGURATION_FAILED root - GradebookServices.testSuiteTearDownjava.io.IOException: Cannot run program &quot;..\dependencies\DeleteInstance\DeleteInstance.exe&quot;: CreateProcess error=2, The system cannot find the file specified<br>
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)<br>
+	at java.lang.Runtime.exec(Runtime.java:617)<br>
+	at java.lang.Runtime.exec(Runtime.java:450)<br>
+	at java.lang.Runtime.exec(Runtime.java:347)<br>
+	at com.mcgraw.test.automation.ui.service.InstanceUtils.deleteInstance(InstanceUtils.java:45)<br>
+	at com.mcgraw.test.automation.ui.applications.TegrityAdministrationApplication.deleteMhCampusInstance(TegrityAdministrationApplication.java:324)<br>
+	at com.mcgraw.test.automation.tests.lti.GradebookServices.testSuiteTearDown(GradebookServices.java:98)<br>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+	at java.lang.reflect.Method.invoke(Method.java:606)<br>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br>
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br>
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br>
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br>
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)<br>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)<br>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br>
+	at org.testng.TestNG.run(TestNG.java:1057)<br>
+	at com.mcgraw.test.automation.framework.core.runner.CommandLineRunner.run(CommandLineRunner.java:147)<br>
+	at com.mcgraw.test.automation.tests.base.TestNgRunner.main(TestNgRunner.java:36)<br>
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified<br>
+	at java.lang.ProcessImpl.create(Native Method)<br>
+	at java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:385)<br>
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)<br>
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)<br>
+	... 29 more<br>
+<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:17,775  INFO root - Terminating browser...<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:18,668  INFO root - FINISHING TEST CLASS com.mcgraw.test.automation.tests.lti.GradebookServices<br>
+</td></tr>
+<tr><td>2016-08-16 13:17:18,703 TEST_FINISHED root - Gradebook Services<br>
+</td></tr>
+</table>

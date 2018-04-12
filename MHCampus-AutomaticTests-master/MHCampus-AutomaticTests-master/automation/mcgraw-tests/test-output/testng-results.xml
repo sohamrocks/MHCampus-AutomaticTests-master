@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[2018-04-12 15:22:56,271  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/general-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:22:57,721  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/properties-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:22:57,832  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/angel-rest-api-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:22:57,910  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/moodle-rest-api-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:22:57,972  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/canvas-rest-api-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:22:58,019  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/blackboard-api-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:22:58,066  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/d2lvalence-rest-api-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:22:58,113  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/sakai-api-context.xml]<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:23:02,376  INFO AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:23:02,596  INFO DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@acb0951: defining beans [placeholderConfig,angelXmlSerializer,angelServerError,angelRestEndpoint,angelApi,angelCredentials,angelUserName,angelPassword,angelApiRequestsFactory,angelApiUtils,moodleJsonSerializer,serverError,restEndpoint,moodleRestApi,moodleUriParamsMap,moodleApiRequestsFactory,com.mcgraw.test.automation.api.rest.moodle.service.MoodleApiUtils#0,canvasExtObjectMapper,canvasJsonSerializer,canvasServerError,canvasRestEndpoint,canvasRestApi,canvasCredentials,canvasCreds,canvasApiRequestsFactory,com.mcgraw.test.automation.api.rest.canvas.service.CanvasApiUtils#0,blackBoardApi,d2LauthenticationSecurityFactory,iD2LapplicationContext,iD2LuserContext,d2LjsonSerializer,d2LserverError,d2LrestEndpoint,d2LApiRequestsFactory,d2LRestApi,com.mcgraw.test.automation.api.rest.d2l.service.D2LApiUtils#0,sakaiApi,sakaiApiFactory,serviceInstanceUtils,tegrityAdministrationApplication,mhCampusInstanceApplication,angelApplication,blackboardApplication,canvasApplication,gradebookApplication,lTIApplication,ExternalToolsApplication,moodleApplication,sakaiApplication,qaEmailClient,filledMailBox,browserBean,d2lApplication,eCollegeApplication,RestApplication,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:23:03,772  INFO root - Create browser instance with name: defaultDriver<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:23:05,083  INFO root - Create browser instance with name 'firefox' in Thread 'main', ID '1'<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:23:21,152  INFO root - STARTING TEST CLASS com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:24:13,337 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180412-152413274.png'>screenshot-20180412-152413274.png</a><br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:27:41,069 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180412-152741069.png'>screenshot-20180412-152741069.png</a><br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:27:41,069  INFO root - Terminating browser...<br>]]>
+    </line>
+    <line>
+      <![CDATA[2018-04-12 15:27:42,794  INFO root - FINISHING TEST CLASS com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="573458" started-at="2018-04-12T09:48:09Z" finished-at="2018-04-12T09:57:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="573458" started-at="2018-04-12T09:48:09Z" finished-at="2018-04-12T09:57:42Z">
+      <class name="com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest">
+        <test-method status="PASS" signature="TestData()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="TestData" is-config="true" duration-ms="44" started-at="2018-04-12T15:18:09Z" finished-at="2018-04-12T15:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestData -->
+        <test-method status="PASS" signature="CreateCDIadmin()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="CreateCDIadmin" is-config="true" duration-ms="285745" started-at="2018-04-12T15:18:09Z" finished-at="2018-04-12T15:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCDIadmin -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="9811" started-at="2018-04-12T15:22:55Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2018-04-12T15:23:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-04-12 15:22:56,271  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/general-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:22:57,721  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/properties-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:22:57,832  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/angel-rest-api-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:22:57,910  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/moodle-rest-api-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:22:57,972  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/canvas-rest-api-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:22:58,019  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/blackboard-api-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:22:58,066  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/d2lvalence-rest-api-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:22:58,113  INFO XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/sakai-api-context.xml]<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:23:02,376  INFO AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:23:02,596  INFO DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@acb0951: defining beans [placeholderConfig,angelXmlSerializer,angelServerError,angelRestEndpoint,angelApi,angelCredentials,angelUserName,angelPassword,angelApiRequestsFactory,angelApiUtils,moodleJsonSerializer,serverError,restEndpoint,moodleRestApi,moodleUriParamsMap,moodleApiRequestsFactory,com.mcgraw.test.automation.api.rest.moodle.service.MoodleApiUtils#0,canvasExtObjectMapper,canvasJsonSerializer,canvasServerError,canvasRestEndpoint,canvasRestApi,canvasCredentials,canvasCreds,canvasApiRequestsFactory,com.mcgraw.test.automation.api.rest.canvas.service.CanvasApiUtils#0,blackBoardApi,d2LauthenticationSecurityFactory,iD2LapplicationContext,iD2LuserContext,d2LjsonSerializer,d2LserverError,d2LrestEndpoint,d2LApiRequestsFactory,d2LRestApi,com.mcgraw.test.automation.api.rest.d2l.service.D2LApiUtils#0,sakaiApi,sakaiApiFactory,serviceInstanceUtils,tegrityAdministrationApplication,mhCampusInstanceApplication,angelApplication,blackboardApplication,canvasApplication,gradebookApplication,lTIApplication,ExternalToolsApplication,moodleApplication,sakaiApplication,qaEmailClient,filledMailBox,browserBean,d2lApplication,eCollegeApplication,RestApplication,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:23:03,772  INFO root - Create browser instance with name: defaultDriver<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2018-04-12T15:22:55Z" finished-at="2018-04-12T15:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="prepareTest()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="prepareTest" is-config="true" duration-ms="16184" started-at="2018-04-12T15:23:05Z" description="Preparing WebDriver to run test" finished-at="2018-04-12T15:23:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-04-12 15:23:05,083  INFO root - Create browser instance with name 'firefox' in Thread 'main', ID '1'<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:23:21,152  INFO root - STARTING TEST CLASS com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- prepareTest -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="65" started-at="2018-04-12T15:23:21Z" finished-at="2018-04-12T15:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest.VerifyDefaultCDItab()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="CDIadminLogin()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="CDIadminLogin" is-config="true" duration-ms="29314" started-at="2018-04-12T15:23:21Z" finished-at="2018-04-12T15:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CDIadminLogin -->
+        <test-method status="PASS" signature="VerifyDefaultCDItab()[pri:1, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="VerifyDefaultCDItab" duration-ms="118" started-at="2018-04-12T15:23:50Z" finished-at="2018-04-12T15:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDefaultCDItab -->
+        <test-method status="PASS" signature="Logout()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="Logout" is-config="true" duration-ms="22372" started-at="2018-04-12T15:23:50Z" finished-at="2018-04-12T15:24:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="makeScreenshot()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="makeScreenshot" is-config="true" duration-ms="188" started-at="2018-04-12T15:24:13Z" description="Making screenshot after each test method" finished-at="2018-04-12T15:24:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-04-12 15:24:13,337 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180412-152413274.png'>screenshot-20180412-152413274.png</a><br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- makeScreenshot -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="15" started-at="2018-04-12T15:24:13Z" finished-at="2018-04-12T15:24:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest.VerifyDefaultCDItab()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2018-04-12T15:24:13Z" finished-at="2018-04-12T15:24:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest.CreateCDIcustomer() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="CDIadminLogin()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="CDIadminLogin" is-config="true" duration-ms="26118" started-at="2018-04-12T15:24:13Z" finished-at="2018-04-12T15:24:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CDIadminLogin -->
+        <test-method status="PASS" signature="CreateCDIcustomer()[pri:2, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="CreateCDIcustomer" duration-ms="163541" started-at="2018-04-12T15:24:39Z" finished-at="2018-04-12T15:27:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCDIcustomer -->
+        <test-method status="PASS" signature="Logout()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="Logout" is-config="true" duration-ms="17980" started-at="2018-04-12T15:27:23Z" finished-at="2018-04-12T15:27:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="makeScreenshot()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="makeScreenshot" is-config="true" duration-ms="78" started-at="2018-04-12T15:27:40Z" description="Making screenshot after each test method" finished-at="2018-04-12T15:27:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-04-12 15:27:41,069 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20180412-152741069.png'>screenshot-20180412-152741069.png</a><br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- makeScreenshot -->
+        <test-method status="PASS" signature="closeAllThreads()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="closeAllThreads" is-config="true" duration-ms="1725" started-at="2018-04-12T15:27:41Z" description="Close WebDriver after tests" finished-at="2018-04-12T15:27:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-04-12 15:27:41,069  INFO root - Terminating browser...<br>]]>
+            </line>
+            <line>
+              <![CDATA[2018-04-12 15:27:42,794  INFO root - FINISHING TEST CLASS com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeAllThreads -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2018-04-12T15:27:41Z" finished-at="2018-04-12T15:27:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest.CreateCDIcustomer() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest@50d13246]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2018-04-12T15:27:42Z" finished-at="2018-04-12T15:27:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

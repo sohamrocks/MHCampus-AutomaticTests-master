@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test" verbose="1">
+	
+	<test verbose="1" name="Canvas Deep Integration with Connect">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.deepintegration.CanvasDeepIntegrationWithConnect" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Check If Login ID and SIS ID Pass">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.deepintegration.CheckIfLoginIdAndSISIdPass.java" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>TestNG:  ALEKS Tool Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ALEKS Tool Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 10 13:58:20 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>93 seconds (93733 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest.testALEKSAvailableUnderStudent()'><b>testALEKSAvailableUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest<br>Test method: Test if 'ALEKS' available under student<br/>
+<a href="#Output-1565623650" onClick='toggleBox("Output-1565623650", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1565623650" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1565623650">
+2016-04-10 13:59:28,052  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20160403-125112826.mhcampus.com as user: username=student93468, password=123qweA@<br>
+<br/>
+2016-04-10 13:59:28,062  INFO root - Opening URL: http://epamInstance-20160403-125112826.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1ca801ce<br>
+<br/>
+2016-04-10 13:59:29,039  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-10 13:59:29,487  INFO root - Type value 'student93468' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-10 13:59:29,850  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-10 13:59:30,161 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135930159.png'>screenshot-20160410-135930159.png</a><br>
+<br/>
+2016-04-10 13:59:30,161  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-10 13:59:32,111  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 13:59:32,498 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135932495.png'>screenshot-20160410-135932495.png</a><br>
+<br/>
+2016-04-10 13:59:32,553  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-04-10 13:59:38,553  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-04-10 13:59:38,574  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:59:38,581  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 13:59:38,596  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:59:40,873 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-04-10 13:59:42,901  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:59:42,928  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 13:59:42,960  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:59:42,986  INFO root - Expand course name=courseName20968<br>
+<br/>
+2016-04-10 13:59:42,986  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 13:59:44,450  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 13:59:46,463  INFO root - Check elements present Aleks  for course: courseName20968<br>
+<br/>
+2016-04-10 13:59:46,654 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135946652.png'>screenshot-20160410-135946652.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest@7d9acbbd</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest.testALEKSSchoolConfigurationOpenedUnderStudent()'><b>testALEKSSchoolConfigurationOpenedUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest<br>Test method: Test if 'ALEKS' school configuration opened under student<br/>
+<a href="#Output-782415676" onClick='toggleBox("Output-782415676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-782415676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-782415676">
+2016-04-10 13:59:46,798  INFO root - Open ALEKS<br>
+<br/>
+2016-04-10 13:59:46,925  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME20968')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='Aleks']<br>
+<br/>
+2016-04-10 13:59:53,669  INFO root - Current URL before switching is : https://secure.aleks.com/service?account=sso&amp;action=sso_login&amp;sso_key=1oPAbl9gkAMUiZmqbra7TZKTVaXUlJhFoVDldUuR-QhBp9kYTfHDs432cgRx6sp6Q_lvd6q0hVYlR-CtxiO1XHQ7tyaFcVCtiu_ZRz_v-Za0g-pP_uKnlg70hY8hIeX6RIJ0&amp;signup_options=skip_username&amp;signin_options=none&amp;register_firstname=studentFirstname93468&amp;register_middlename=&amp;register_lastname=studentLastname93468&amp;register_email=&amp;register_class_name=courseName20968&amp;register_school_name=epamInstitution%2D20160403%2D125112826&amp;return_url=<br>
+<br/>
+2016-04-10 13:59:53,685  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 13:59:53,719  INFO root - Switched to Last window with URL: https://secure.aleks.com/service?account=sso&amp;action=sso_login&amp;sso_key=1oPAbl9gkAMUiZmqbra7TZKTVaXUlJhFoVDldUuR-QhBp9kYTfHDs432cgRx6sp6Q_lvd6q0hVYlR-CtxiO1XHQ7tyaFcVCtiu_ZRz_v-Za0g-pP_uKnlg70hY8hIeX6RIJ0&amp;signup_options=skip_username&amp;signin_options=none&amp;register_firstname=studentFirstname93468&amp;register_middlename=&amp;register_lastname=studentLastname93468&amp;register_email=&amp;register_class_name=courseName20968&amp;register_school_name=epamInstitution%2D20160403%2D125112826&amp;return_url=<br>
+<br/>
+2016-04-10 13:59:53,859 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135953857.png'>screenshot-20160410-135953857.png</a><br>
+<br/>
+2016-04-10 13:59:53,859  INFO root - Waiting for MhCampusALEKSReadyToUseScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest@7d9acbbd</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest.testAddALEKSForStudent()'><b>testAddALEKSForStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest<br>Test method: Add 'ALEKS' for student<br/>
+<a href="#Output-443975686" onClick='toggleBox("Output-443975686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-443975686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-443975686">
+2016-04-10 13:59:10,984  INFO root - Perform steps to adopt ALEKS for course courseName20968<br>
+<br/>
+2016-04-10 13:59:10,984  INFO root - Expand course name=courseName20968<br>
+<br/>
+2016-04-10 13:59:10,985  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 13:59:11,181  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 13:59:13,201  INFO root - Open ALEKS<br>
+<br/>
+2016-04-10 13:59:13,319  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME20968')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='Aleks']<br>
+<br/>
+2016-04-10 13:59:20,161  INFO root - Current URL before switching is : http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewAleks.aspx?isbn=0000011111&amp;course=id20968<br>
+<br/>
+2016-04-10 13:59:20,174  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 13:59:20,202  INFO root - Switched to Last window with URL: http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewAleks.aspx?isbn=0000011111&amp;course=id20968<br>
+<br/>
+2016-04-10 13:59:20,389 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135920388.png'>screenshot-20160410-135920388.png</a><br>
+<br/>
+2016-04-10 13:59:20,428  INFO root - Waiting for MhCampusALEKSScreen page...<br>
+<br/>
+2016-04-10 13:59:20,542  INFO root - Click iWantThisForMyStudentsButton<br>
+<br/>
+2016-04-10 13:59:23,391  INFO root - No alerts appeared<br>
+<br/>
+2016-04-10 13:59:23,391  INFO root - Click 'Adopt ALEKS' Button<br>
+<br/>
+2016-04-10 13:59:23,726  INFO root - Waiting for MhCampusALEKSReadyToUseScreen page...<br>
+<br/>
+2016-04-10 13:59:27,653 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135927651.png'>screenshot-20160410-135927651.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest@7d9acbbd</td></tr>
+</table><p>
+</body>
+</html>

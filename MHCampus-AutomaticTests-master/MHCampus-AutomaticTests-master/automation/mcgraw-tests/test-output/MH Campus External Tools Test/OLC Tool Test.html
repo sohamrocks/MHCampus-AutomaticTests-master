@@ -1,0 +1,343 @@
+<html>
+<head>
+<title>TestNG:  OLC Tool Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OLC Tool Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 10 13:59:54 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>702 seconds (702193 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.OLCTool.checkOLCToolForInstructor()'><b>checkOLCToolForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.OLCTool<br>Test method: Check OLC Tool for instructor<br/>
+<a href="#Output-18467656" onClick='toggleBox("Output-18467656", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18467656" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18467656">
+2016-04-10 14:07:51,720  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20160410-140000633.mhcampus.com as user: username=instructor99699, password=123qweA@<br>
+<br/>
+2016-04-10 14:07:51,772  INFO root - Opening URL: http://epamInstance-20160410-140000633.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@277f4c02<br>
+<br/>
+2016-04-10 14:07:52,641  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-10 14:07:53,213  INFO root - Type value 'instructor99699' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-10 14:07:53,487  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-10 14:07:53,678 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140753676.png'>screenshot-20160410-140753676.png</a><br>
+<br/>
+2016-04-10 14:07:53,678  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-10 14:07:56,119  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:07:56,520 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140756518.png'>screenshot-20160410-140756518.png</a><br>
+<br/>
+2016-04-10 14:07:56,561  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-04-10 14:08:02,561  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-04-10 14:08:02,583  INFO root - Current URL before switching is : https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:08:02,590  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 14:08:02,608  INFO root - Switched to Last window with URL: https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:08:04,911 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-04-10 14:08:08,297  INFO root - Current URL before switching is : https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:08:08,302  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 14:08:08,315  INFO root - Switched to Last window with URL: https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:08:08,330  INFO root - Expand course name=courseName91761<br>
+<br/>
+2016-04-10 14:08:08,330  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:08:08,481  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 14:08:10,501  INFO root - Select book ISBN= 0073403466 within course name=courseName91761<br>
+<br/>
+2016-04-10 14:08:10,501  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME91761')]/ancestor::div[1]//input[@class='search-input']<br>
+<br/>
+2016-04-10 14:08:10,639  INFO root - Type value '0073403466' to Input 'name=q'<br>
+<br/>
+2016-04-10 14:08:10,918 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140810916.png'>screenshot-20160410-140810916.png</a><br>
+<br/>
+2016-04-10 14:08:10,918  INFO root - Clicking 'Find Now' button...<br>
+<br/>
+2016-04-10 14:08:10,918  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME91761')]/ancestor::div[1]//*[@class='search-button lightbox cboxElement']<br>
+<br/>
+2016-04-10 14:08:17,408  INFO root - Wait for element By: By.xpath: //iframe[@class='cboxIframe']<br>
+<br/>
+2016-04-10 14:08:17,616 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140817614.png'>screenshot-20160410-140817614.png</a><br>
+<br/>
+2016-04-10 14:08:17,616  INFO root - Wait for element By: By.xpath: //img[@isbn='0073403466']<br>
+<br/>
+2016-04-10 14:08:17,641  INFO root - Clicking 'Select' button...<br>
+<br/>
+2016-04-10 14:08:26,928 ERROR root - --------------------------------------------  retryCount is: 5<br>
+<br/>
+2016-04-10 14:08:26,928 ERROR root - --------------------------------------------  retryAttempt is: 0<br>
+<br/>
+2016-04-10 14:08:26,930 ERROR root - UnreachableBrowserException is: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.<br>
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'<br>
+System info: host: 'Elvira-Lap', ip: '192.168.2.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'<br>
+Driver info: driver.version: ConvertFirefoxDriver<br>
+Session ID: 189ed4b6-877b-494f-88fa-ab36c13fa1dd<br>
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.1}]<br>
+<br/>
+2016-04-10 14:08:27,931  INFO root - Pause ...<br>
+<br/>
+2016-04-10 14:08:27,952 ERROR root - --------------------------------------------  retryCount is: 5<br>
+<br/>
+2016-04-10 14:08:27,952 ERROR root - --------------------------------------------  retryAttempt is: 1<br>
+<br/>
+2016-04-10 14:08:27,953 ERROR root - UnreachableBrowserException is: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.<br>
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'<br>
+System info: host: 'Elvira-Lap', ip: '192.168.2.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'<br>
+Driver info: driver.version: ConvertFirefoxDriver<br>
+Session ID: 189ed4b6-877b-494f-88fa-ab36c13fa1dd<br>
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.1}]<br>
+<br/>
+2016-04-10 14:08:28,954  INFO root - Pause ...<br>
+<br/>
+2016-04-10 14:08:29,166 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140829164.png'>screenshot-20160410-140829164.png</a><br>
+<br/>
+2016-04-10 14:08:29,166  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 14:08:29,180  INFO root - Wait for element By: By.xpath: //a[contains(text(),'View online resources')]<br>
+<br/>
+2016-04-10 14:08:29,768  INFO root - Create new account...<br>
+<br/>
+2016-04-10 14:08:30,013 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140830011.png'>screenshot-20160410-140830011.png</a><br>
+<br/>
+2016-04-10 14:08:30,013  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 14:08:31,403 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140831402.png'>screenshot-20160410-140831402.png</a><br>
+<br/>
+2016-04-10 14:08:31,978 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140831977.png'>screenshot-20160410-140831977.png</a><br>
+<br/>
+2016-04-10 14:08:31,979  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 14:08:32,365 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140832363.png'>screenshot-20160410-140832363.png</a><br>
+<br/>
+2016-04-10 14:08:32,538  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 14:08:32,539  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 14:08:33,792  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 14:08:33,969  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 14:08:34,238  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 14:08:34,521  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 14:08:34,985 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140834983.png'>screenshot-20160410-140834983.png</a><br>
+<br/>
+2016-04-10 14:08:34,985  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 14:08:35,012  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 14:08:36,872  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 14:08:44,062  INFO root - Current URL before switching is : https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:08:44,084  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:08:45,496  INFO root - Switched to Last window with URL: http://highered.mheducation.com/sites/0073403466/student_view0/index.html<br>
+<br/>
+2016-04-10 14:08:45,639 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140845637.png'>screenshot-20160410-140845637.png</a><br>
+<br/>
+2016-04-10 14:08:45,649  INFO root - Waiting for MhCampusOlcEditionScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.mcgraw.test.automation.tests.externaltools.OLCTool@77958338</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.OLCTool.checkOLCToolForStudent()'><b>checkOLCToolForStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.OLCTool<br>Test method: Check OLC Tool for student<br/>
+<a href="#Output-1944796079" onClick='toggleBox("Output-1944796079", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944796079" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944796079">
+2016-04-10 14:08:45,975  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20160410-140000633.mhcampus.com as user: username=student46312, password=123qweA@<br>
+<br/>
+2016-04-10 14:08:45,983  INFO root - Opening URL: http://epamInstance-20160410-140000633.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@277f4c02<br>
+<br/>
+2016-04-10 14:08:46,002  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-10 14:08:48,101  INFO root - Type value 'student46312' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-10 14:08:48,453  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-10 14:08:48,666 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140848665.png'>screenshot-20160410-140848665.png</a><br>
+<br/>
+2016-04-10 14:08:48,667  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-10 14:08:49,729  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:08:50,016 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140850015.png'>screenshot-20160410-140850015.png</a><br>
+<br/>
+2016-04-10 14:09:31,634  INFO root - Try Login in to MH Campus instance again...<br>
+<br/>
+2016-04-10 14:09:31,634  INFO root - Opening URL: http://epamInstance-20160410-140000633.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@277f4c02<br>
+<br/>
+2016-04-10 14:09:32,491  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-10 14:09:32,828  INFO root - Type value 'student46312' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-10 14:09:33,112  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-10 14:09:33,295 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140933293.png'>screenshot-20160410-140933293.png</a><br>
+<br/>
+2016-04-10 14:09:33,295  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-10 14:09:34,957  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:09:35,281 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140935279.png'>screenshot-20160410-140935279.png</a><br>
+<br/>
+2016-04-10 14:09:41,281  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-04-10 14:09:41,307  INFO root - Current URL before switching is : https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f<br>
+<br/>
+2016-04-10 14:09:41,313  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:09:41,329  INFO root - Switched to Last window with URL: https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f<br>
+<br/>
+2016-04-10 14:09:43,648 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-04-10 14:09:46,795  INFO root - Current URL before switching is : https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f<br>
+<br/>
+2016-04-10 14:09:46,838  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:09:47,056  INFO root - Switched to Last window with URL: https://epaminstance-20160410-140000633.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f<br>
+<br/>
+2016-04-10 14:09:47,072  INFO root - Expand course name=courseName91761<br>
+<br/>
+2016-04-10 14:09:47,073  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:09:47,215  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 14:09:49,228  INFO root - Wait for element By: By.xpath: //a[contains(text(),'View online resources')]<br>
+<br/>
+2016-04-10 14:09:49,715  INFO root - Create new account...<br>
+<br/>
+2016-04-10 14:09:49,903 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140949900.png'>screenshot-20160410-140949900.png</a><br>
+<br/>
+2016-04-10 14:09:49,904  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 14:09:52,438 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140952437.png'>screenshot-20160410-140952437.png</a><br>
+<br/>
+2016-04-10 14:09:52,979 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140952978.png'>screenshot-20160410-140952978.png</a><br>
+<br/>
+2016-04-10 14:09:52,979  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 14:09:53,339 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140953338.png'>screenshot-20160410-140953338.png</a><br>
+<br/>
+2016-04-10 14:09:53,525  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 14:09:53,525  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 14:09:54,765  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 14:09:54,936  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 14:09:55,204  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 14:09:55,508  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 14:09:55,941 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-140955940.png'>screenshot-20160410-140955940.png</a><br>
+<br/>
+2016-04-10 14:09:55,941  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 14:09:55,971  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 14:09:57,415  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 14:10:04,497  INFO root - Current URL before switching is : http://highered.mheducation.com/sites/0073403466/student_view0/index.html<br>
+<br/>
+2016-04-10 14:10:04,516  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:10:04,544  INFO root - Switched to Last window with URL: http://highered.mheducation.com/sites/0073403466/student_view0/index.html<br>
+<br/>
+2016-04-10 14:10:04,706 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141004704.png'>screenshot-20160410-141004704.png</a><br>
+<br/>
+2016-04-10 14:10:04,706  INFO root - Waiting for MhCampusOlcEditionScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>78</td>
+<td>com.mcgraw.test.automation.tests.externaltools.OLCTool@77958338</td></tr>
+</table><p>
+</body>
+</html>

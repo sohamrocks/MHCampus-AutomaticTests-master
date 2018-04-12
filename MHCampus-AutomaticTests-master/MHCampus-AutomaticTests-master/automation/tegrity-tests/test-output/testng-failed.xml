@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.sakai.TegrityDirectLogin">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="checkAuthenticationAndAuthorizationConnectorsAreAvailable"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="checkDirectLoginForSakaiStudent"/>
+          <include name="checkDirectLoginForSakaiInstructor"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.sakai.TegrityDirectLogin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

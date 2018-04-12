@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Configurations Tests" verbose="1">
+
+	<test verbose="1" name="BlackBoard Configurtaion Number 136">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration136" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 138">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration138" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 139">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration139" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 140">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration140" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 182">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration182" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 184">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration184" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 185">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration185" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 186">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration186" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 187">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration187" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Configurtaion Number 188">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.configurations.CustomBlackBoardConfiguration188" />
+		</classes>
+	</test>
+	
+</suite>

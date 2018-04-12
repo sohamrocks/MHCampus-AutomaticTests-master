@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CentralOrg" verbose="1">
+
+	<test verbose="1" name="CreateMapping">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.centralorgservices.CreateMapping" />
+		</classes>
+	</test>
+	</suite>

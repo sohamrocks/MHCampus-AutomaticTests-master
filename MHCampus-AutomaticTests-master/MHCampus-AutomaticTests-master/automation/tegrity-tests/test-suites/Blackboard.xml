@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BlackBoard Tests" verbose="1">
+
+	<test verbose="1" name="BlackBoard Direct Login Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.TegrityGradebook" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Default Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.TegrityDefaultFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Exclude All Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.TegrityExcludeAllFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard CSV Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.TegrityCsvFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Include All Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter" />
+		</classes>
+	</test>	
+		 
+</suite>

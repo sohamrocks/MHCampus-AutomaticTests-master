@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MH Campus Basic Functionality Test" verbose="1">
+<!-- 
+<suite name="MH Campus Basic Functionality Test" verbose="1" parallel="tests" thread-count="2">
+ -->
+	<test verbose="1" name="Basic Functionality Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.basicfunctionality.BasicFunctionality" />
+		</classes>
+	</test>
+	<test verbose="1" name="Book Appearance Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.basicfunctionality.BookAppearance" />
+		</classes>
+	</test>
+</suite>

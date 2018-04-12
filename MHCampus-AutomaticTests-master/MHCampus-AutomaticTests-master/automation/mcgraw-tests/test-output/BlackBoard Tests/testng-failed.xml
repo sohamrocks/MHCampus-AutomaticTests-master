@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BlackBoard Tests]">
+  <test name="BlackBoard CSV Filter Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.blackboard.TestConnectors">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TestConnectors -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.CsvFilter">
+        <methods>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="testSuiteSetup"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="checkMHCampusLinkIsPresentInInstructorsCoursesAccordingToCsvFilter"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.CsvFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.DirectLoginTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.DirectLoginTest -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.Gradebook">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.Gradebook -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.DefaultFilter">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.DefaultFilter -->
+    </classes>
+  </test> <!-- BlackBoard CSV Filter Test(failed) -->
+  <test name="BlackBoard Include All Filter Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.blackboard.TestConnectors">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TestConnectors -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.CsvFilter">
+        <methods>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="testSuiteSetup"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.CsvFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter">
+        <methods>
+          <include name="checkMHCampusLinkBahavesCorrectlyForBlackBoardStudent"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="checkMHCampusLinkIsPresentInInstructorsCoursesForIncludeAllFilter"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="checkMHCampusLinkBahavesCorrectlyForBlackBoardInstructor"/>
+          <include name="checkMHCampusLinkIsPresentInStudentsCoursesForIncludeAllFilter"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.DirectLoginTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.DirectLoginTest -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.Gradebook">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.Gradebook -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.DefaultFilter">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.DefaultFilter -->
+    </classes>
+  </test> <!-- BlackBoard Include All Filter Test(failed) -->
+  <test name="BlackBoard Check Connector Buttons Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.blackboard.TestConnectors">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="checkResultOfCommonTestButtonForStudent"/>
+          <include name="closeAllThreads"/>
+          <include name="checkAuthorizationConnectorForInstructor"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="checkAuthorizationConnectorForNotExistingUser"/>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="checkResultOfCommonTestButtonForNotExistingUser"/>
+          <include name="prepareTest"/>
+          <include name="checkGradebookConnector"/>
+          <include name="checkAuthorizationConnectorForStudent"/>
+          <include name="checkResultOfCommonTestButtonForInstructor"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="checkSsoLinkConnector"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TestConnectors -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.CsvFilter">
+        <methods>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="testSuiteSetup"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.CsvFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.DirectLoginTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.DirectLoginTest -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.Gradebook">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.Gradebook -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.DefaultFilter">
+        <methods>
+          <include name="testSuiteSetup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.DefaultFilter -->
+    </classes>
+  </test> <!-- BlackBoard Check Connector Buttons Test(failed) -->
+</suite> <!-- Failed suite [BlackBoard Tests] -->

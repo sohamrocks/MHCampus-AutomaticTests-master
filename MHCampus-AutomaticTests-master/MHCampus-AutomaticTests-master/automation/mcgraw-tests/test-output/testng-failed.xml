@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="CreateCDIcustomer"/>
+          <include name="Logout"/>
+          <include name="CDIadminLogin"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="CreateCDIadmin"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="closeAllThreads"/>
+          <include name="TestData"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="makeScreenshot"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.test.CDIservices.TC11244CDIAdmintest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MH Campus External Tools Test" verbose="1">
+<!-- 
+<suite name="MH Campus External Tools Direct Access Test" verbose="1" parallel="tests" thread-count="4">
+--> 
+	<test verbose="1" name="Connect Tool Direct Access Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.directaccess.ConnectToolDirectAccess" />
+		</classes>
+	</test>
+	<test verbose="1" name="ALEKS Tool Direct Access Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.directaccess.AleksToolDirectAccess" />
+		</classes>
+	</test>
+	<test verbose="1" name="LearnSmart Tool Direct Access Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.directaccess.LearnSmartToolDirectAccess" />
+		</classes>
+	</test>
+</suite>

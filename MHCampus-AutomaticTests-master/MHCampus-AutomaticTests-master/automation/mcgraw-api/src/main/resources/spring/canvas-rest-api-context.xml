@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-lazy-init="true">
+
+	<bean id="canvasExtObjectMapper"
+		class="com.mcgraw.test.automation.api.rest.base.ExtendedObjectMapper">
+		<property name="timeZone" value="Etc/GMT-3"/>
+	</bean>
+
+	<bean id="canvasJsonSerializer"
+		class="com.mcgraw.test.automation.api.rest.endpoint.Jackson2Serializer">
+		<constructor-arg name="objectMapper" ref="canvasExtObjectMapper">
+	<!-- 	 	<bean class="com.fasterxml.jackson.databind.ObjectMapper" />  -->
+		</constructor-arg>
+	</bean>
+
+	<bean id="canvasServerError"
+		class=" com.mcgraw.test.automation.api.rest.canvas.rsmodel.CanvasServerError" />
+
+	<bean id="canvasRestEndpoint"
+		class="com.mcgraw.test.automation.api.rest.endpoint.HttpClientRestEndpoint">
+		<constructor-arg name="baseUrl" value="${canvas.api.baseurl}" />
+		<constructor-arg name="serializer" ref="canvasJsonSerializer" />
+		<constructor-arg name="errorHandler">
+			<bean class="com.mcgraw.test.automation.api.rest.base.RestErrorHandler">
+			</bean>
+		</constructor-arg>
+		<constructor-arg name="credentials">
+			<null />
+		</constructor-arg>
+		<constructor-arg name="additionalHeaders" ref="canvasCreds" />
+	</bean>
+
+	<bean id="canvasRestApi"
+		class="com.mcgraw.test.automation.api.rest.canvas.service.CanvasRestApi">
+		<constructor-arg name="endpoint" ref="canvasRestEndpoint" />
+		<property name="canvasRequestsFactory" ref="canvasApiRequestsFactory" />
+	</bean>
+
+	<bean id="canvasCredentials" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="canvasCreds" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="canvasCreds" class="org.apache.http.message.BasicHeader">
+		<constructor-arg name="name" value="Authorization" />
+		<constructor-arg name="value"
+			value="Bearer ${canvas.api.accesstoken}" />
+	</bean>
+
+	<bean id="canvasApiRequestsFactory"
+		class="com.mcgraw.test.automation.api.rest.canvas.factory.CanvasRequestsFactory" />
+
+	<bean
+		class="com.mcgraw.test.automation.api.rest.canvas.service.CanvasApiUtils">
+		<constructor-arg name="canvasRestApi" ref="canvasRestApi" />
+		<constructor-arg name="canvasRequestsFactory" ref="canvasApiRequestsFactory" />
+	</bean>
+
+
+</beans>

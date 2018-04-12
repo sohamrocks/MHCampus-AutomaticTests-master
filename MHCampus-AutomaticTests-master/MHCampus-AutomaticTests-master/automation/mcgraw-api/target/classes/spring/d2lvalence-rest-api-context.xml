@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-lazy-init="true">
+
+	<bean id="d2LauthenticationSecurityFactory"
+		class="com.mcgraw.test.automation.api.rest.d2l.idkeyauth.AuthenticationSecurityFactory" />
+
+	<bean id="iD2LapplicationContext"
+		class="com.mcgraw.test.automation.api.rest.d2l.idkeyauth.ID2LAppContext"
+		factory-bean="d2LauthenticationSecurityFactory" factory-method="createSecurityContext">
+		<constructor-arg value="${d2l.api.appid}" />
+		<constructor-arg value="${d2l.api.appkey}" />
+	</bean>
+
+	<bean id="iD2LuserContext"
+		class="com.mcgraw.test.automation.api.rest.d2l.idkeyauth.ID2LUserContext"
+		factory-bean="iD2LapplicationContext" factory-method="createUserContext">
+		<constructor-arg value="${d2l.api.userid}" />
+		<constructor-arg value="${d2l.api.userkey}" />
+		<constructor-arg value="${d2l.api.host}" />
+		<constructor-arg value="${d2l.api.port}" />
+		<constructor-arg value="true" />
+	</bean>
+
+	<bean id="d2LjsonSerializer"
+		class="com.mcgraw.test.automation.api.rest.endpoint.Jackson2Serializer">
+		<constructor-arg name="objectMapper">
+			<bean class="com.fasterxml.jackson.databind.ObjectMapper" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="d2LserverError"
+		class=" com.mcgraw.test.automation.api.rest.moodle.rsmodel.MoodleServerError" />
+
+	<bean id="d2LrestEndpoint"
+		class="com.mcgraw.test.automation.api.rest.endpoint.HttpClientRestEndpoint">
+		<constructor-arg name="baseUrl" value="${d2l.api.host}" />
+		<constructor-arg name="serializer" ref="d2LjsonSerializer" />
+		<constructor-arg name="errorHandler">
+			<bean class="com.mcgraw.test.automation.api.rest.base.RestErrorHandler">
+			</bean>
+		</constructor-arg>
+		<constructor-arg name="credentials">
+			<null />
+		</constructor-arg>
+		<constructor-arg name="additionalHeaders">
+			<null />
+		</constructor-arg>
+		<property name="disabledSSLValidation" value="true" />
+	</bean>
+
+
+
+
+	<bean id="d2LApiRequestsFactory"
+		class="com.mcgraw.test.automation.api.rest.d2l.factory.D2LRequestsFactory" />
+
+	<bean id="d2LRestApi"
+		class="com.mcgraw.test.automation.api.rest.d2l.service.D2LRestApi">
+		<constructor-arg name="endpoint" ref="d2LrestEndpoint" />
+		<constructor-arg name="d2lUserContext" ref="iD2LuserContext" />
+	</bean>
+
+	<bean class="com.mcgraw.test.automation.api.rest.d2l.service.D2LApiUtils">
+		<constructor-arg name="restApi" ref="d2LRestApi" />
+		<constructor-arg name="requestsFactory" ref="d2LApiRequestsFactory" />
+	</bean>
+ 
+	<beans profile="d2lV9">
+		<bean id="d2LApiRequestsFactory"
+			class="com.mcgraw.test.automation.api.rest.d2l.factory.D2LRequestsFactoryV9" />
+
+		<bean id="d2LRestApi"
+			class="com.mcgraw.test.automation.api.rest.d2l.service.version9.D2LRestApiV9">
+			<constructor-arg name="endpoint" ref="d2LrestEndpoint" />
+			<constructor-arg name="d2lUserContext" ref="iD2LuserContext" />
+		</bean>
+	</beans>
+
+
+</beans>

@@ -1,0 +1,404 @@
+<html>
+<head>
+<title>TestNG:  SimNet Tool Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SimNet Tool Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 07 12:49:55 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>48 seconds (48526 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.testSuiteSetup()'><b>testSuiteSetup</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest<br/>
+<a href="#Output-456736655" onClick='toggleBox("Output-456736655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-456736655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-456736655">
+2016-04-07 12:50:01,900  INFO root - Creating angel user<br>
+<br/>
+2016-04-07 12:50:02,109  INFO root - Response is CREATED. User [userName=student51757, password=123qweA@, firstName=studentFirstname51757, lastName=studentLastname51757, system role=STUDENT]<br>
+<br/>
+2016-04-07 12:50:02,109  INFO root - Creating angel user<br>
+<br/>
+2016-04-07 12:50:02,314  INFO root - Response is CREATED. User [userName=instructor35920, password=123qweA@, firstName=instructorFirstname35920, lastName=instructorLastname35920, system role=FACULTY]<br>
+<br/>
+2016-04-07 12:50:02,314  INFO root - Creating angel course<br>
+<br/>
+2016-04-07 12:50:02,534  INFO root - Response is CREATED COURSE. COURSE [courseId=id29828, title=courseName29828, validCourseCategory=TESTCATEGORY, validCourseSemester=TEST_SEMESTER, courseCode=epamcourseCode_BFBVT, instructorId=instructor35920, sectionCode=id29828]<br>
+<br/>
+2016-04-07 12:50:02,534  INFO root - Initialize angel course [id29828]<br>
+<br/>
+2016-04-07 12:50:02,535  INFO root - Start interactive session<br>
+<br/>
+2016-04-07 12:50:02,750  INFO root - Response is User session started. <br>
+<br/>
+2016-04-07 12:50:02,750  INFO root - Trying to enter section (course) [id29828]<br>
+<br/>
+2016-04-07 12:50:02,977  INFO root - Response is Section initialized. <br>
+<br/>
+2016-04-07 12:50:02,977  INFO root - Exit section(course)<br>
+<br/>
+2016-04-07 12:50:03,171  INFO root - Response is . <br>
+<br/>
+2016-04-07 12:50:03,172  INFO root - End interactive session<br>
+<br/>
+2016-04-07 12:50:03,361  INFO root - Response is User session ended. <br>
+<br/>
+2016-04-07 12:50:03,362  INFO root - Enrolling user<br>
+<br/>
+2016-04-07 12:50:03,577  INFO root - Response is CREATED ENROLLMENT. Enrol User to course [user name=student51757, course id=id29828, section role=STUDENT]<br>
+<br/>
+2016-04-07 12:50:03,578  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20160403-125112826.mhcampus.com as user: username=instructor35920, password=123qweA@<br>
+<br/>
+2016-04-07 12:50:03,603  INFO root - Opening URL: http://epamInstance-20160403-125112826.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2e69f3d0<br>
+<br/>
+2016-04-07 12:50:09,205  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-07 12:50:09,661  INFO root - Type value 'instructor35920' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-07 12:50:10,747  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-07 12:50:10,960 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160407-125010959.png'>screenshot-20160407-125010959.png</a><br>
+<br/>
+2016-04-07 12:50:10,960  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-07 12:50:13,586  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-07 12:50:14,053 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160407-125014052.png'>screenshot-20160407-125014052.png</a><br>
+<br/>
+2016-04-07 12:50:14,131  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-04-07 12:50:20,133  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-04-07 12:50:20,203  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-07 12:50:20,225  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-07 12:50:20,267  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-07 12:50:22,577 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-04-07 12:50:24,543  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-07 12:50:24,631  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-07 12:50:25,588  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-07 12:50:25,613  INFO root - Expand course name=courseName29828<br>
+<br/>
+2016-04-07 12:50:25,613  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-07 12:50:25,802  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-07 12:50:27,916  INFO root - Select book ISBN= 0000011111 within course name=courseName29828<br>
+<br/>
+2016-04-07 12:50:27,916  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME29828')]/ancestor::div[1]//input[@class='search-input']<br>
+<br/>
+2016-04-07 12:50:28,060  INFO root - Type value '0000011111' to Input 'name=q'<br>
+<br/>
+2016-04-07 12:50:28,374 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160407-125028373.png'>screenshot-20160407-125028373.png</a><br>
+<br/>
+2016-04-07 12:50:28,374  INFO root - Clicking 'Find Now' button...<br>
+<br/>
+2016-04-07 12:50:28,374  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME29828')]/ancestor::div[1]//*[@class='search-button lightbox cboxElement']<br>
+<br/>
+2016-04-07 12:50:34,838  INFO root - Wait for element By: By.xpath: //iframe[@class='cboxIframe']<br>
+<br/>
+2016-04-07 12:50:35,059 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160407-125035057.png'>screenshot-20160407-125035057.png</a><br>
+<br/>
+2016-04-07 12:50:35,059  INFO root - Wait for element By: By.xpath: //img[@isbn='0000011111']<br>
+<br/>
+2016-04-07 12:50:35,086  INFO root - Clicking 'Select' button...<br>
+<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Elvira-Lap&apos;, ip: &apos;192.168.2.24&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 81cc4622-9a9e-4df8-8cd7-f37075c31b47
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.1}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:1039)
+	at com.mcgraw.test.automation.ui.mhcampus.course.MhCampusCourseBlock.selectBookForcourse(MhCampusCourseBlock.java:147)
+	at com.mcgraw.test.automation.ui.applications.MhCampusInstanceApplication.findAndSelectBookForCourse(MhCampusInstanceApplication.java:105)
+	at com.mcgraw.test.automation.tests.externaltools.BaseToolTest.testSuiteSetup(BaseToolTest.java:95)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 3398; received: 0
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:200)
+	at org.apache.http.impl.io.ContentLengthInputStream.close(ContentLengthInputStream.java:103)
+	at org.apache.http.impl.execchain.ResponseEntityProxy.streamClosed(ResponseEntityProxy.java:128)
+	at org.apache.http.conn.EofSensorInputStream.checkClose(EofSensorInputStream.java:228)
+	at org.apache.http.conn.EofSensorInputStream.close(EofSensorInputStream.java:174)
+	at org.apache.http.util.EntityUtils.consume(EntityUtils.java:88)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.createResponse(ApacheHttpClient.java:113)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace456736655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456736655'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Elvira-Lap&apos;, ip: &apos;192.168.2.24&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 81cc4622-9a9e-4df8-8cd7-f37075c31b47
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.1}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:1039)
+	at com.mcgraw.test.automation.ui.mhcampus.course.MhCampusCourseBlock.selectBookForcourse(MhCampusCourseBlock.java:147)
+	at com.mcgraw.test.automation.ui.applications.MhCampusInstanceApplication.findAndSelectBookForCourse(MhCampusInstanceApplication.java:105)
+	at com.mcgraw.test.automation.tests.externaltools.BaseToolTest.testSuiteSetup(BaseToolTest.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 3398; received: 0
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:200)
+	at org.apache.http.impl.io.ContentLengthInputStream.close(ContentLengthInputStream.java:103)
+	at org.apache.http.impl.execchain.ResponseEntityProxy.streamClosed(ResponseEntityProxy.java:128)
+	at org.apache.http.conn.EofSensorInputStream.checkClose(EofSensorInputStream.java:228)
+	at org.apache.http.conn.EofSensorInputStream.close(EofSensorInputStream.java:174)
+	at org.apache.http.util.EntityUtils.consume(EntityUtils.java:88)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.createResponse(ApacheHttpClient.java:113)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SimNetToolTest@52d8a522</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.closeAllThreads()'><b>closeAllThreads</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest<br>Test method: Close WebDriver after tests<br/>
+<a href="#Output-1056872809" onClick='toggleBox("Output-1056872809", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1056872809" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1056872809">
+2016-04-07 12:50:44,407  INFO root - Closing browser...<br>
+<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Elvira-Lap&apos;, ip: &apos;192.168.2.24&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 81cc4622-9a9e-4df8-8cd7-f37075c31b47
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.1}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at com.mcgraw.test.automation.framework.selenium2.ui.Browser.close(Browser.java:897)
+	at com.mcgraw.test.automation.tests.base.BaseTest.closeAllThreads(BaseTest.java:57)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 3390; received: 0
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:200)
+	at org.apache.http.impl.io.ContentLengthInputStream.close(ContentLengthInputStream.java:103)
+	at org.apache.http.impl.execchain.ResponseEntityProxy.streamClosed(ResponseEntityProxy.java:128)
+	at org.apache.http.conn.EofSensorInputStream.checkClose(EofSensorInputStream.java:228)
+	at org.apache.http.conn.EofSensorInputStream.close(EofSensorInputStream.java:174)
+	at org.apache.http.util.EntityUtils.consume(EntityUtils.java:88)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.createResponse(ApacheHttpClient.java:113)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1056872809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1056872809'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Elvira-Lap&apos;, ip: &apos;192.168.2.24&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 81cc4622-9a9e-4df8-8cd7-f37075c31b47
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.1}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at com.mcgraw.test.automation.framework.selenium2.ui.Browser.close(Browser.java:897)
+	at com.mcgraw.test.automation.tests.base.BaseTest.closeAllThreads(BaseTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 3390; received: 0
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:200)
+	at org.apache.http.impl.io.ContentLengthInputStream.close(ContentLengthInputStream.java:103)
+	at org.apache.http.impl.execchain.ResponseEntityProxy.streamClosed(ResponseEntityProxy.java:128)
+	at org.apache.http.conn.EofSensorInputStream.checkClose(EofSensorInputStream.java:228)
+	at org.apache.http.conn.EofSensorInputStream.close(EofSensorInputStream.java:174)
+	at org.apache.http.util.EntityUtils.consume(EntityUtils.java:88)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.createResponse(ApacheHttpClient.java:113)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SimNetToolTest@52d8a522</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest</td>
+<td></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SimNetToolTest@52d8a522</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.closeExtraBrowserWindows()'><b>closeExtraBrowserWindows</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest<br>Test method: Guarantee to close new windows even if test method failed</td>
+<td></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SimNetToolTest@52d8a522</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.makeScreenshot()'><b>makeScreenshot</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest<br>Test method: Making screenshot after each test method</td>
+<td></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SimNetToolTest@52d8a522</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.testSuiteTearDown()'><b>testSuiteTearDown</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest</td>
+<td></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SimNetToolTest@52d8a522</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.testAddSimNetForStudent()'><b>testAddSimNetForStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest<br>Test method: Add 'SimNet' for student</td>
+<td></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SimNetToolTest@52d8a522</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.testSimNetAvailableUnderStudent()'><b>testSimNetAvailableUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest<br>Test method: Test if 'SimNet' available under student</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SimNetToolTest.testSimNetClassNotConfiguredPageOpened()'><b>testSimNetClassNotConfiguredPageOpened</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SimNetToolTest<br>Test method: Test if 'simnet' class not configured page opened under student</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LTI Tests" verbose="1">
+	
+	<test verbose="1" name="TegrityImsImport Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.selfreg.TegrityImsImport" />
+		</classes>
+	</test>
+	<test verbose="1" name="SelfReg Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.selfreg.TegritySelfReg" />
+		</classes>
+	</test>
+	<test verbose="1" name="SelfReg for Admin users Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.selfreg.TegritySelfRegForAdmin" />
+		</classes>
+	</test>
+		 
+</suite>

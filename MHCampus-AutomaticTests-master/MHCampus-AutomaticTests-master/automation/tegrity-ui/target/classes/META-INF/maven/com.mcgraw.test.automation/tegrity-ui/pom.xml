@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.mhcampus.qa</groupId>
+		<artifactId>jselenium-root</artifactId>
+		<version>1.0</version>
+	</parent>
+	<groupId>com.mcgraw.test.automation</groupId>
+	<artifactId>tegrity-ui</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>com.mcgraw.test.automation</groupId>
+			<artifactId>framework-selenium</artifactId>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
+	<name>tegrity-ui</name>
+</project>

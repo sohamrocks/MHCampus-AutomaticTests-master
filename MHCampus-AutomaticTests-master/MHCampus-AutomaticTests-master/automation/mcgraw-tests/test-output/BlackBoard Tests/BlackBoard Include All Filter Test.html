@@ -1,0 +1,491 @@
+<html>
+<head>
+<title>TestNG:  BlackBoard Include All Filter Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlackBoard Include All Filter Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 06 16:59:18 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1443 seconds (1443088 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter.checkMHCampusLinkBahavesCorrectlyForBlackBoardInstructor()'><b>checkMHCampusLinkBahavesCorrectlyForBlackBoardInstructor</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter<br>Test method: For BlackBoard instructor MH Campus link bahaves correctly<br/>
+<a href="#Output-784111935" onClick='toggleBox("Output-784111935", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-784111935" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-784111935">
+2016-11-06 17:21:55,880  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-06 17:21:55,907  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-06 17:21:55,907  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-06 17:21:55,925  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-06 17:21:55,925  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-06 17:21:55,925  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1744d4c6<br>
+<br/>
+2016-11-06 17:21:56,844  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-06 17:21:57,012  INFO root - Type value 'InstructorPX6s7' to Input 'name=user_id'<br>
+<br/>
+2016-11-06 17:21:57,235  INFO root - Type value 'InstructorPX6s7' to Input 'name=password'<br>
+<br/>
+2016-11-06 17:21:59,330  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 17:21:59,376  INFO root - Going to the created course CoursefnCrM...<br>
+<br/>
+2016-11-06 17:21:59,376  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 17:22:09,980 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172209979.png'>screenshot-20161106-172209979.png</a><br>
+<br/>
+2016-11-06 17:22:09,981  INFO root - Wait for element By: By.linkText: CoursefnCrM<br>
+<br/>
+2016-11-06 17:22:10,390  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 17:22:13,160  INFO root - Clicking Mh Campus link...<br>
+<br/>
+2016-11-06 17:22:13,503  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-11-06 17:22:14,344  INFO root - Current URL before switching is : https://blackboard-qa-auto-latest.mhcampus.com/webapps/blackboard/execute/modulepage/view?course_id=_5872_1&amp;cmp_tab_id=_5879_1&amp;editMode=true&amp;mode=cpview<br>
+<br/>
+2016-11-06 17:22:14,353  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:17,595  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:17,860  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:22:20,071  INFO root - Greeting text in Welcome dialog is: 'Hi InstructorNamePX6s7 InstructorSurnamePX6s7 -'<br>
+<br/>
+2016-11-06 17:22:20,205 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172220203.png'>screenshot-20161106-172220203.png</a><br>
+<br/>
+2016-11-06 17:22:20,215  INFO root - Checking if welcome text for instructor is shown<br>
+<br/>
+2016-11-06 17:22:20,233  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:20,238  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:20,254  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:20,263  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:22:22,451  INFO root - Rules text in Welcome dialog is: 'As an instructor you have full access to all of our products and content. Feel free to look around and use whatever you like in your courses.'<br>
+<br/>
+2016-11-06 17:22:22,460  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-11-06 17:22:22,478  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:22,485  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:22,500  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:22,509  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:22:24,786 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-11-06 17:22:24,951  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-11-06 17:22:26,084  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+<br/>
+2016-11-06 17:22:26,165  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:22:28,195  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:28,201  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:28,218  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:28,238  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 17:22:34,292  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:34,304  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:34,334  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:34,480  INFO root - User name text is: 'INSTRUCTORNAMEPX6S7 INSTRUCTORSURNAMEPX6S7'<br>
+<br/>
+2016-11-06 17:22:34,480  INFO root - Checking if course CoursefnCrM is present on the page<br>
+<br/>
+2016-11-06 17:22:34,502  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:34,508  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:34,525  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:34,718 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172234716.png'>screenshot-20161106-172234716.png</a><br>
+<br/>
+2016-11-06 17:22:34,745  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+<br/>
+2016-11-06 17:22:34,768  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:34,773  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:34,788  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:35,059 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172235057.png'>screenshot-20161106-172235057.png</a><br>
+<br/>
+2016-11-06 17:22:35,089  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:35,096  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:35,160  INFO root - Switched to First window with URL: https://blackboard-qa-auto-latest.mhcampus.com/webapps/blackboard/execute/modulepage/view?course_id=_5872_1&amp;cmp_tab_id=_5879_1&amp;editMode=true&amp;mode=cpview<br>
+<br/>
+2016-11-06 17:22:35,235  INFO root - Close the window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:35,236  INFO root - Closing browser...<br>
+<br/>
+2016-11-06 17:22:35,455  INFO root - Opened one window with URL: https://blackboard-qa-auto-latest.mhcampus.com/webapps/blackboard/execute/modulepage/view?course_id=_5872_1&amp;cmp_tab_id=_5879_1&amp;editMode=true&amp;mode=cpview<br>
+<br/>
+2016-11-06 17:22:35,455  INFO root - Logout from Blackboard...<br>
+<br/>
+2016-11-06 17:22:35,464  INFO root - Wait for element By: By.id: topframe.logout.label<br>
+<br/>
+2016-11-06 17:22:35,645  INFO root - Pause for '1000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter@e865388</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter.checkMHCampusLinkBahavesCorrectlyForBlackBoardStudent()'><b>checkMHCampusLinkBahavesCorrectlyForBlackBoardStudent</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter<br>Test method: For BlackBoard student MH Campus link bahaves correctly<br/>
+<a href="#Output-241206528" onClick='toggleBox("Output-241206528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-241206528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-241206528">
+2016-11-06 17:22:37,478  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-06 17:22:37,512  INFO root - Before deletion cookies size = 9<br>
+<br/>
+2016-11-06 17:22:37,512  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-06 17:22:37,540  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-06 17:22:37,540  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-06 17:22:37,540  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1744d4c6<br>
+<br/>
+2016-11-06 17:22:38,437  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-06 17:22:38,576  INFO root - Type value 'Studentn4b0b' to Input 'name=user_id'<br>
+<br/>
+2016-11-06 17:22:38,791  INFO root - Type value 'Studentn4b0b' to Input 'name=password'<br>
+<br/>
+2016-11-06 17:22:40,977  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 17:22:40,994  INFO root - Going to the created course CoursefnCrM...<br>
+<br/>
+2016-11-06 17:22:40,994  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 17:22:51,626 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172251625.png'>screenshot-20161106-172251625.png</a><br>
+<br/>
+2016-11-06 17:22:51,626  INFO root - Wait for element By: By.linkText: CoursefnCrM<br>
+<br/>
+2016-11-06 17:22:52,043  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 17:22:54,778  INFO root - Clicking Mh Campus link...<br>
+<br/>
+2016-11-06 17:22:55,152  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-11-06 17:22:55,779  INFO root - Current URL before switching is : https://blackboard-qa-auto-latest.mhcampus.com/webapps/blackboard/execute/modulepage/view?course_id=_5872_1&amp;cmp_tab_id=_5879_1&amp;mode=view<br>
+<br/>
+2016-11-06 17:22:55,793  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:22:57,108  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:57,642  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:22:59,828  INFO root - Greeting text in Welcome dialog is: 'Hi StudentNamen4b0b StudentSurnamen4b0b -'<br>
+<br/>
+2016-11-06 17:22:59,960 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172259959.png'>screenshot-20161106-172259959.png</a><br>
+<br/>
+2016-11-06 17:22:59,970  INFO root - Checking if welcome text for student is shown<br>
+<br/>
+2016-11-06 17:22:59,990  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:22:59,995  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:23:00,009  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:00,017  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:23:02,181  INFO root - Rules text in Welcome dialog is: 'Welcome to McGraw-Hill Campus, where you can easily access McGraw-Hill products and services you use in your courses.'<br>
+<br/>
+2016-11-06 17:23:02,191  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-11-06 17:23:02,210  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:02,216  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:23:02,231  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:02,240  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:23:04,508 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-11-06 17:23:04,687  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-11-06 17:23:05,829  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+<br/>
+2016-11-06 17:23:05,907  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:23:07,971  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:07,986  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:23:08,007  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:08,027  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 17:23:14,081  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,090  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:23:14,108  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,198  INFO root - User name text is: 'STUDENTNAMEN4B0B STUDENTSURNAMEN4B0B'<br>
+<br/>
+2016-11-06 17:23:14,198  INFO root - Checking if course CoursefnCrM is present on the page<br>
+<br/>
+2016-11-06 17:23:14,217  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,223  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:23:14,237  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,379 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172314377.png'>screenshot-20161106-172314377.png</a><br>
+<br/>
+2016-11-06 17:23:14,406  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+<br/>
+2016-11-06 17:23:14,426  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,433  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:23:14,450  INFO root - Switched to Last window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,644 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172314640.png'>screenshot-20161106-172314640.png</a><br>
+<br/>
+2016-11-06 17:23:14,674  INFO root - Current URL before switching is : https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,680  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-11-06 17:23:14,742  INFO root - Switched to First window with URL: https://blackboard-qa-auto-latest.mhcampus.com/webapps/blackboard/execute/modulepage/view?course_id=_5872_1&amp;cmp_tab_id=_5879_1&amp;mode=view<br>
+<br/>
+2016-11-06 17:23:14,925  INFO root - Close the window with URL: https://elviraqatest1.mhcampus.com/Pages/MyClasses.aspx?sso=1<br>
+<br/>
+2016-11-06 17:23:14,926  INFO root - Closing browser...<br>
+<br/>
+2016-11-06 17:23:15,128  INFO root - Opened one window with URL: https://blackboard-qa-auto-latest.mhcampus.com/webapps/blackboard/execute/modulepage/view?course_id=_5872_1&amp;cmp_tab_id=_5879_1&amp;mode=view<br>
+<br/>
+2016-11-06 17:23:15,129  INFO root - Logout from Blackboard...<br>
+<br/>
+2016-11-06 17:23:15,140  INFO root - Wait for element By: By.id: topframe.logout.label<br>
+<br/>
+2016-11-06 17:23:16,441  INFO root - Pause for '1000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter@e865388</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter.checkMHCampusLinkIsPresentInInstructorsCoursesForIncludeAllFilter()'><b>checkMHCampusLinkIsPresentInInstructorsCoursesForIncludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter<br>Test method: For BlackBoard instructor MH Campus link is present for all courses<br/>
+<a href="#Output-253512982" onClick='toggleBox("Output-253512982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-253512982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-253512982">
+2016-11-06 17:20:44,250  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-06 17:20:44,338  INFO root - Before deletion cookies size = 8<br>
+<br/>
+2016-11-06 17:20:44,338  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-06 17:20:44,366  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-06 17:20:44,366  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-06 17:20:44,366  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1744d4c6<br>
+<br/>
+2016-11-06 17:20:44,396  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-06 17:20:47,309  INFO root - Type value 'InstructorPX6s7' to Input 'name=user_id'<br>
+<br/>
+2016-11-06 17:20:47,515  INFO root - Type value 'InstructorPX6s7' to Input 'name=password'<br>
+<br/>
+2016-11-06 17:20:49,511  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 17:20:49,536  INFO root - Going to the created course CoursefnCrM...<br>
+<br/>
+2016-11-06 17:20:49,537  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 17:20:50,012  INFO root - Wait for element By: By.linkText: CoursefnCrM<br>
+<br/>
+2016-11-06 17:20:50,394  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 17:20:55,865 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172055864.png'>screenshot-20161106-172055864.png</a><br>
+<br/>
+2016-11-06 17:20:55,889  INFO root - Clicking Institution link...<br>
+<br/>
+2016-11-06 17:20:56,148  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 17:21:02,148  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 17:21:02,189  INFO root - Going to the created course CourseEF6hb...<br>
+<br/>
+2016-11-06 17:21:02,189  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 17:21:12,819 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172112816.png'>screenshot-20161106-172112816.png</a><br>
+<br/>
+2016-11-06 17:21:12,819  INFO root - Wait for element By: By.linkText: CourseEF6hb<br>
+<br/>
+2016-11-06 17:21:13,192  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 17:21:18,300 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172118299.png'>screenshot-20161106-172118299.png</a><br>
+<br/>
+2016-11-06 17:21:18,322  INFO root - Logout from Blackboard...<br>
+<br/>
+2016-11-06 17:21:18,331  INFO root - Wait for element By: By.id: topframe.logout.label<br>
+<br/>
+2016-11-06 17:21:19,581  INFO root - Pause for '1000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter@e865388</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter.checkMHCampusLinkIsPresentInStudentsCoursesForIncludeAllFilter()'><b>checkMHCampusLinkIsPresentInStudentsCoursesForIncludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter<br>Test method: For BlackBoard student MH Campus link is present for all courses<br/>
+<a href="#Output-1022906213" onClick='toggleBox("Output-1022906213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1022906213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1022906213">
+2016-11-06 17:21:20,834  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-06 17:21:20,861  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-06 17:21:20,861  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-06 17:21:20,876  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-06 17:21:20,876  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-06 17:21:20,876  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1744d4c6<br>
+<br/>
+2016-11-06 17:21:21,924  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-06 17:21:22,069  INFO root - Type value 'Studentn4b0b' to Input 'name=user_id'<br>
+<br/>
+2016-11-06 17:21:22,319  INFO root - Type value 'Studentn4b0b' to Input 'name=password'<br>
+<br/>
+2016-11-06 17:21:24,346  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 17:21:24,375  INFO root - Going to the created course CoursefnCrM...<br>
+<br/>
+2016-11-06 17:21:24,375  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 17:21:24,728  INFO root - Wait for element By: By.linkText: CoursefnCrM<br>
+<br/>
+2016-11-06 17:21:26,490  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 17:21:31,329 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172131328.png'>screenshot-20161106-172131328.png</a><br>
+<br/>
+2016-11-06 17:21:31,355  INFO root - Clicking Institution link...<br>
+<br/>
+2016-11-06 17:21:31,714  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 17:21:37,714  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 17:21:37,772  INFO root - Going to the created course CourseEF6hb...<br>
+<br/>
+2016-11-06 17:21:37,772  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 17:21:48,392 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172148391.png'>screenshot-20161106-172148391.png</a><br>
+<br/>
+2016-11-06 17:21:48,392  INFO root - Wait for element By: By.linkText: CourseEF6hb<br>
+<br/>
+2016-11-06 17:21:48,771  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 17:21:53,378 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172153376.png'>screenshot-20161106-172153376.png</a><br>
+<br/>
+2016-11-06 17:21:53,395  INFO root - Logout from Blackboard...<br>
+<br/>
+2016-11-06 17:21:53,404  INFO root - Wait for element By: By.id: topframe.logout.label<br>
+<br/>
+2016-11-06 17:21:54,605  INFO root - Pause for '1000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter@e865388</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Moodle Tests" verbose="1">
+
+	<test verbose="1" name="Moodle SSO Link Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.SSOLink" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Direct Login Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.DirectLogin" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.Gradebook" />
+		</classes>
+	</test>	
+	
+	<test verbose="1" name="Moodle Check Connector Buttons Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.TestConnectors" />
+		</classes>
+	</test>	
+	
+	<test verbose="1" name="Moodle Use Existing Assignment Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.UseExistingAssignment" />
+		</classes>
+	</test>	
+		 
+</suite>

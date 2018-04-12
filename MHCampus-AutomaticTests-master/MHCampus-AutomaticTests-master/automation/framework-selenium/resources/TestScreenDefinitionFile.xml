@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements
+	xmlns="http://www.krux.com/selenium2-framework/elements.locators.map.schema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.krux.com/selenium2-framework/elements.locators.map.schema elements.locators.map.schema.xsd ">
+	<element name="loginInput">
+		<locator priority="100" type="LinkText">Test Locator with order 100
+		</locator>
+		<locator priority="1" type="NameAttribute">Test Locator with order 1</locator>
+		<locator priority="50" type="Id">Test Locator with order 50
+		</locator>
+	</element>
+</elements>

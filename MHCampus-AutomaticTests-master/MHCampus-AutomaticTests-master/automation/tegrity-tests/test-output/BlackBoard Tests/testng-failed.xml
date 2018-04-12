@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BlackBoard Tests]">
+  <test name="BlackBoard Gradebook Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="closeAllWindowsExceptFirst"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testSuiteSetup"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityDefaultFilter">
+        <methods>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityDefaultFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityCsvFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testSuiteSetup"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityCsvFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityExcludeAllFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityExcludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityGradebook">
+        <methods>
+          <include name="checkSubmittingTestScoreFormIsSuccessfullForStudent1"/>
+          <include name="checkSubmittingTestScoreFormIsSuccessfullForStudent2"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="checkGradebookItemsAreNotPresentForStudent1Course2"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testSuiteSetup"/>
+          <include name="checkGradebookItemsAreNotPresentForStudent2Course2"/>
+          <include name="prepareTest"/>
+          <include name="checkSubmittingTestScorableItemFormIsSuccessfull"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="checkGradebookItemsAreCorrectForStudent1Course1"/>
+          <include name="checkGradebookItemsAreCorrectForStudent2Course1"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityGradebook -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest -->
+    </classes>
+  </test> <!-- BlackBoard Gradebook Test(failed) -->
+  <test name="BlackBoard CSV Filter Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="closeAllWindowsExceptFirst"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testSuiteSetup"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityIncludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityDefaultFilter">
+        <methods>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityDefaultFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityCsvFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testSuiteSetup"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="checkTegrityLinkIsPresentInInstructorsCoursesAccordingToCsvFilter"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteTearDown"/>
+          <include name="checkTegrityLinkIsPresentInStudentsCoursesAccordingToCsvFilter"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityCsvFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityGradebook">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testSuiteSetup"/>
+          <include name="prepareTest"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityGradebook -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityExcludeAllFilter">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testSuiteTearDown"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityExcludeAllFilter -->
+      <class name="com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="makeScreenshot"/>
+          <include name="prepareTest"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.blackboard.TegrityDirectLoginTest -->
+    </classes>
+  </test> <!-- BlackBoard CSV Filter Test(failed) -->
+</suite> <!-- Failed suite [BlackBoard Tests] -->

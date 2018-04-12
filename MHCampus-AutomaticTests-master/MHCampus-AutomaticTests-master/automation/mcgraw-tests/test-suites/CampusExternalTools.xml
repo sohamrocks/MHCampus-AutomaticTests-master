@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MH Campus External Tools Test" verbose="1">
+<!-- 
+<suite name="MH Campus External Tools Test" verbose="1" parallel="tests" thread-count="4">
+--> 
+	<test verbose="1" name="Connect Tool Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.ConnectToolTest" />
+		</classes>
+	</test>
+	<test verbose="1" name="ALEKS Tool Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.ALEKSToolTest" />
+		</classes>
+	</test>
+	<test verbose="1" name="SimNet Tool Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.SimNetToolTest" />
+		</classes>
+	</test> 
+	<test verbose="1" name="OLC Tool Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.OLCTool" />
+		</classes>
+	</test>
+	<test verbose="1" name="SmartBook Tool Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.SmartBookTool" />
+		</classes>
+	</test>
+	<test verbose="1" name="CourseSmart Provider Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.CourseSmartLaunchEbook" />
+		</classes>
+	</test> 
+	<test verbose="1" name="Create Provider Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.CreateLaunchEbook" />
+		</classes>
+	</test>
+	<test verbose="1" name="LearnSmart Tool Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.LearnSmartToolTest" />
+		</classes>
+	</test>
+	<test verbose="1" name="ActiveSim Tool Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.externaltools.ActiveSimToolTest" />
+		</classes>
+	</test>
+</suite>

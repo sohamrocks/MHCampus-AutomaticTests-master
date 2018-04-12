@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>TestNG:  SmartBook Tool Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SmartBook Tool Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 10 14:11:36 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>164 seconds (164873 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SmartBookTool.checkSmartBookToolForInstructor()'><b>checkSmartBookToolForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SmartBookTool<br>Test method: Check Smart Book Tool for instructor<br/>
+<a href="#Output-24093021" onClick='toggleBox("Output-24093021", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24093021" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24093021">
+2016-04-10 14:12:26,237  INFO root - Open SmartBook<br>
+<br/>
+2016-04-10 14:12:26,312  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME27528')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='LearnSmart SmartBook']<br>
+<br/>
+2016-04-10 14:12:26,819  INFO root - Create new account...<br>
+<br/>
+2016-04-10 14:12:26,960 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141226958.png'>screenshot-20160410-141226958.png</a><br>
+<br/>
+2016-04-10 14:12:26,960  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 14:12:28,343 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141228342.png'>screenshot-20160410-141228342.png</a><br>
+<br/>
+2016-04-10 14:12:28,931 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141228923.png'>screenshot-20160410-141228923.png</a><br>
+<br/>
+2016-04-10 14:12:28,931  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 14:12:29,353 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141229352.png'>screenshot-20160410-141229352.png</a><br>
+<br/>
+2016-04-10 14:12:29,584  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 14:12:29,584  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 14:12:30,866  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 14:12:31,053  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 14:12:31,346  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 14:12:31,649  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 14:12:32,123 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141232121.png'>screenshot-20160410-141232121.png</a><br>
+<br/>
+2016-04-10 14:12:32,123  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 14:12:32,161  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 14:12:33,593  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 14:12:40,850  INFO root - Current URL before switching is : http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewLearnSmartSmartBook.aspx?isbn=0000011111&amp;course=id27528<br>
+<br/>
+2016-04-10 14:12:40,869  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:12:40,891  INFO root - Switched to Last window with URL: http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewLearnSmartSmartBook.aspx?isbn=0000011111&amp;course=id27528<br>
+<br/>
+2016-04-10 14:12:40,987 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141240985.png'>screenshot-20160410-141240985.png</a><br>
+<br/>
+2016-04-10 14:12:40,987  INFO root - Check Access denied message<br>
+<br/>
+2016-04-10 14:13:11,591  INFO root - Waiting for MhCampusSmartBookScreen page...<br>
+<br/>
+2016-04-10 14:13:11,781  INFO root - Click iWantThisForMyStudentsButton<br>
+<br/>
+2016-04-10 14:13:12,921  INFO root - Waiting for MhCampusSmartBookFlowRunner page...<br>
+<br/>
+2016-04-10 14:13:15,120  INFO root - Check Smart Book Dashboard is present<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SmartBookTool@78a1c627</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.SmartBookTool.checkSmartBookToolForStudent()'><b>checkSmartBookToolForStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.SmartBookTool<br>Test method: Check Smart Book Tool for student<br/>
+<a href="#Output-1474404838" onClick='toggleBox("Output-1474404838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1474404838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1474404838">
+2016-04-10 14:13:15,639  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20160403-125112826.mhcampus.com as user: username=student30486, password=123qweA@<br>
+<br/>
+2016-04-10 14:13:15,649  INFO root - Opening URL: http://epamInstance-20160403-125112826.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@71a658b9<br>
+<br/>
+2016-04-10 14:13:16,658  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-10 14:13:17,103  INFO root - Type value 'student30486' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-10 14:13:17,346  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-10 14:13:17,512 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141317511.png'>screenshot-20160410-141317511.png</a><br>
+<br/>
+2016-04-10 14:13:17,513  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-10 14:13:19,536  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:13:19,836 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141319834.png'>screenshot-20160410-141319834.png</a><br>
+<br/>
+2016-04-10 14:13:19,887  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-04-10 14:13:25,888  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-04-10 14:13:25,940  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:13:25,953  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 14:13:25,973  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:13:28,255 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-04-10 14:13:30,218  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:13:30,335  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 14:13:31,621  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 14:13:31,647  INFO root - Expand course name=courseName27528<br>
+<br/>
+2016-04-10 14:13:31,647  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 14:13:31,783  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 14:13:33,814  INFO root - Open SmartBook<br>
+<br/>
+2016-04-10 14:13:33,831  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME27528')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='LearnSmart SmartBook']<br>
+<br/>
+2016-04-10 14:13:34,363  INFO root - Create new account...<br>
+<br/>
+2016-04-10 14:13:34,473 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141334471.png'>screenshot-20160410-141334471.png</a><br>
+<br/>
+2016-04-10 14:13:34,473  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 14:13:35,906 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141335904.png'>screenshot-20160410-141335904.png</a><br>
+<br/>
+2016-04-10 14:13:36,456 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141336454.png'>screenshot-20160410-141336454.png</a><br>
+<br/>
+2016-04-10 14:13:36,456  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 14:13:36,816 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141336815.png'>screenshot-20160410-141336815.png</a><br>
+<br/>
+2016-04-10 14:13:37,202  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 14:13:37,202  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 14:13:38,634  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 14:13:38,824  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 14:13:39,100  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 14:13:39,384  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 14:13:39,832 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141339831.png'>screenshot-20160410-141339831.png</a><br>
+<br/>
+2016-04-10 14:13:39,833  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 14:13:39,862  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 14:13:41,163  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 14:13:48,365  INFO root - Current URL before switching is : http://www.mhlearnsmart.com/flow/flowcampus.php?name=smartbook&amp;campus=1&amp;isbn=0077896491&amp;paris_uid=19851509&amp;external_user_id=6c49421e13e4c16f98b01dfdff9eb0856086cd79debc0d7e&amp;first_name=studentFirstname30486&amp;last_name=studentLastname30486&amp;type=S&amp;section_name=id27528&amp;school=2&amp;installation_id=a8dcbe31d14d409aa2a0e3e7aa0ab66d&amp;salt=N44X5oNsq&amp;key=548EACE7FAB026A94F677A35677A0493<br>
+<br/>
+2016-04-10 14:13:48,373  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 14:13:48,394  INFO root - Switched to Last window with URL: http://www.mhlearnsmart.com/flow/flowcampus.php?name=smartbook&amp;campus=1&amp;isbn=0077896491&amp;paris_uid=19851509&amp;external_user_id=6c49421e13e4c16f98b01dfdff9eb0856086cd79debc0d7e&amp;first_name=studentFirstname30486&amp;last_name=studentLastname30486&amp;type=S&amp;section_name=id27528&amp;school=2&amp;installation_id=a8dcbe31d14d409aa2a0e3e7aa0ab66d&amp;salt=N44X5oNsq&amp;key=548EACE7FAB026A94F677A35677A0493<br>
+<br/>
+2016-04-10 14:13:48,469 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141348467.png'>screenshot-20160410-141348467.png</a><br>
+<br/>
+2016-04-10 14:13:48,469  INFO root - Check Access denied message<br>
+<br/>
+2016-04-10 14:14:20,882 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141420880.png'>screenshot-20160410-141420880.png</a><br>
+<br/>
+2016-04-10 14:14:20,949  INFO root - Waiting for MhCampusSmartBookStudentRegistrationScreen page...<br>
+<br/>
+2016-04-10 14:14:20,993  INFO root - Check Smart Book Registration Dashboard is present<br>
+<br/>
+2016-04-10 14:14:21,215 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-141421213.png'>screenshot-20160410-141421213.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>65</td>
+<td>com.mcgraw.test.automation.tests.externaltools.SmartBookTool@78a1c627</td></tr>
+</table><p>
+</body>
+</html>

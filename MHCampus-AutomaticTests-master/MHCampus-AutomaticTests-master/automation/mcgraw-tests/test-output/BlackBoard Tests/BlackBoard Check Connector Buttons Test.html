@@ -1,0 +1,761 @@
+<html>
+<head>
+<title>TestNG:  BlackBoard Check Connector Buttons Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlackBoard Check Connector Buttons Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 06 17:23:21 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>442 seconds (442697 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkAuthorizationConnectorForInstructor()'><b>checkAuthorizationConnectorForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check Authorization connector behaves correctly for Instructor<br/>
+<a href="#Output-1493653053" onClick='toggleBox("Output-1493653053", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1493653053" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1493653053">
+2016-11-06 17:25:56,699  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-11-06 17:25:56,741  INFO root - Opening URL: http://elviraQATest1.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2d708739<br>
+<br/>
+2016-11-06 17:25:58,285  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 17:25:58,724  INFO root - Type value 'admin@elviraQATest1.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 17:25:59,076  INFO root - Type value 'ojlllpny' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 17:25:59,303 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172559301.png'>screenshot-20161106-172559301.png</a><br>
+<br/>
+2016-11-06 17:25:59,303  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 17:26:01,132  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-11-06 17:26:01,147  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:26:01,335 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172601333.png'>screenshot-20161106-172601333.png</a><br>
+<br/>
+2016-11-06 17:26:01,335  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 17:26:01,546  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 17:26:05,132 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172605131.png'>screenshot-20161106-172605131.png</a><br>
+<br/>
+2016-11-06 17:26:05,132  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 17:26:05,141  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:26:05,202  INFO root - Getting result of EXTERNAL 'Test' button for Authorization connector...<br>
+<br/>
+2016-11-06 17:26:05,202  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:26:05,476  INFO root - Type username...<br>
+<br/>
+2016-11-06 17:26:05,477  INFO root - Wait for element By: By.id: Test_USERID_INPUT<br>
+<br/>
+2016-11-06 17:26:06,147 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172606146.png'>screenshot-20161106-172606146.png</a><br>
+<br/>
+2016-11-06 17:26:06,147  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:26:06,174  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:26:06,333  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:26:15,537 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172615535.png'>screenshot-20161106-172615535.png</a><br>
+<br/>
+2016-11-06 17:26:15,537  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:26:15,583  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:26:15,614  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:26:15,751  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:26:20,930 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172620928.png'>screenshot-20161106-172620928.png</a><br>
+<br/>
+2016-11-06 17:26:20,940  INFO root - Getting result of INTERNAL 'Test' button for Authorization connector...<br>
+<br/>
+2016-11-06 17:26:20,940  INFO root - Clicl Edit link...<br>
+<br/>
+2016-11-06 17:26:21,158  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:26:23,191  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:26:23,510  INFO root - Type username...<br>
+<br/>
+2016-11-06 17:26:23,510  INFO root - Wait for element By: By.id: Test_USERID_INPUT<br>
+<br/>
+2016-11-06 17:26:24,036 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172624035.png'>screenshot-20161106-172624035.png</a><br>
+<br/>
+2016-11-06 17:26:24,036  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:26:24,064  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:26:24,252  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:26:33,455 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172633453.png'>screenshot-20161106-172633453.png</a><br>
+<br/>
+2016-11-06 17:26:33,455  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:26:33,492  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:26:33,517  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:26:33,636  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:26:38,829 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172638828.png'>screenshot-20161106-172638828.png</a><br>
+<br/>
+2016-11-06 17:26:39,082  INFO root - Pause for '3000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkAuthorizationConnectorForNotExistingUser()'><b>checkAuthorizationConnectorForNotExistingUser</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check Authorization connector behaves correctly for not existing user<br/>
+<a href="#Output-756978799" onClick='toggleBox("Output-756978799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-756978799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-756978799">
+2016-11-06 17:26:42,275  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-11-06 17:26:42,283  INFO root - Opening URL: http://elviraQATest1.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2d708739<br>
+<br/>
+2016-11-06 17:26:43,196  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 17:26:43,653  INFO root - Type value 'admin@elviraQATest1.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 17:26:43,971  INFO root - Type value 'ojlllpny' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 17:26:44,192 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172644190.png'>screenshot-20161106-172644190.png</a><br>
+<br/>
+2016-11-06 17:26:44,192  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 17:26:46,005  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-11-06 17:26:46,018  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:26:46,214 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172646212.png'>screenshot-20161106-172646212.png</a><br>
+<br/>
+2016-11-06 17:26:46,214  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 17:26:46,418  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 17:26:49,322 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172649320.png'>screenshot-20161106-172649320.png</a><br>
+<br/>
+2016-11-06 17:26:49,322  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 17:26:49,331  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:26:49,392  INFO root - Getting result of EXTERNAL 'Test' button for Authorization connector...<br>
+<br/>
+2016-11-06 17:26:49,392  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:26:49,666  INFO root - Type username...<br>
+<br/>
+2016-11-06 17:26:49,666  INFO root - Wait for element By: By.id: Test_USERID_INPUT<br>
+<br/>
+2016-11-06 17:26:50,125 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172650124.png'>screenshot-20161106-172650124.png</a><br>
+<br/>
+2016-11-06 17:26:50,126  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:26:50,153  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:26:50,323  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:26:59,545 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172659544.png'>screenshot-20161106-172659544.png</a><br>
+<br/>
+2016-11-06 17:26:59,545  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:26:59,593  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:26:59,624  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:26:59,876  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:27:05,058 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172705056.png'>screenshot-20161106-172705056.png</a><br>
+<br/>
+2016-11-06 17:27:05,068  INFO root - Getting result of INTERNAL 'Test' button for Authorization connector...<br>
+<br/>
+2016-11-06 17:27:05,068  INFO root - Clicl Edit link...<br>
+<br/>
+2016-11-06 17:27:05,284  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:27:07,328  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:27:07,650  INFO root - Type username...<br>
+<br/>
+2016-11-06 17:27:07,651  INFO root - Wait for element By: By.id: Test_USERID_INPUT<br>
+<br/>
+2016-11-06 17:27:08,178 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172708177.png'>screenshot-20161106-172708177.png</a><br>
+<br/>
+2016-11-06 17:27:08,178  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:27:08,205  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:27:08,407  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:27:17,604 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172717603.png'>screenshot-20161106-172717603.png</a><br>
+<br/>
+2016-11-06 17:27:17,604  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:27:17,650  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:27:17,680  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:27:17,816  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:27:22,993 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172722991.png'>screenshot-20161106-172722991.png</a><br>
+<br/>
+2016-11-06 17:27:23,295  INFO root - Pause for '3000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkAuthorizationConnectorForStudent()'><b>checkAuthorizationConnectorForStudent</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check Authorization connector behaves correctly for Student<br/>
+<a href="#Output-1122092926" onClick='toggleBox("Output-1122092926", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1122092926" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1122092926">
+2016-11-06 17:27:26,489  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-11-06 17:27:26,498  INFO root - Opening URL: http://elviraQATest1.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2d708739<br>
+<br/>
+2016-11-06 17:27:27,391  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 17:27:27,866  INFO root - Type value 'admin@elviraQATest1.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 17:27:28,191  INFO root - Type value 'ojlllpny' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 17:27:28,436 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172728434.png'>screenshot-20161106-172728434.png</a><br>
+<br/>
+2016-11-06 17:27:28,436  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 17:27:30,312  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-11-06 17:27:30,324  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:27:30,520 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172730518.png'>screenshot-20161106-172730518.png</a><br>
+<br/>
+2016-11-06 17:27:30,520  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 17:27:30,727  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 17:27:33,617 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172733615.png'>screenshot-20161106-172733615.png</a><br>
+<br/>
+2016-11-06 17:27:33,617  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 17:27:33,627  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:27:33,699  INFO root - Getting result of EXTERNAL 'Test' button for Authorization connector...<br>
+<br/>
+2016-11-06 17:27:33,699  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:27:33,999  INFO root - Type username...<br>
+<br/>
+2016-11-06 17:27:33,999  INFO root - Wait for element By: By.id: Test_USERID_INPUT<br>
+<br/>
+2016-11-06 17:27:34,449 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172734447.png'>screenshot-20161106-172734447.png</a><br>
+<br/>
+2016-11-06 17:27:34,449  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:27:34,478  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:27:34,679  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:27:43,880 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172743879.png'>screenshot-20161106-172743879.png</a><br>
+<br/>
+2016-11-06 17:27:43,881  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:27:43,928  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:27:43,964  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:27:44,107  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:27:49,300 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172749298.png'>screenshot-20161106-172749298.png</a><br>
+<br/>
+2016-11-06 17:27:49,311  INFO root - Getting result of INTERNAL 'Test' button for Authorization connector...<br>
+<br/>
+2016-11-06 17:27:49,311  INFO root - Clicl Edit link...<br>
+<br/>
+2016-11-06 17:27:49,554  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:27:51,566  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:27:52,031  INFO root - Type username...<br>
+<br/>
+2016-11-06 17:27:52,032  INFO root - Wait for element By: By.id: Test_USERID_INPUT<br>
+<br/>
+2016-11-06 17:27:52,549 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172752547.png'>screenshot-20161106-172752547.png</a><br>
+<br/>
+2016-11-06 17:27:52,549  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:27:52,579  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:27:52,765  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:28:01,950 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172801949.png'>screenshot-20161106-172801949.png</a><br>
+<br/>
+2016-11-06 17:28:01,950  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:28:01,998  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:28:02,028  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:28:02,173  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:28:07,373 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172807372.png'>screenshot-20161106-172807372.png</a><br>
+<br/>
+2016-11-06 17:28:07,675  INFO root - Pause for '3000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkGradebookConnector()'><b>checkGradebookConnector</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check Gradebook connector behaves correctly<br/>
+<a href="#Output-1152576704" onClick='toggleBox("Output-1152576704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1152576704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1152576704">
+2016-11-06 17:28:10,864  INFO root - Getting result of EXTERNAL 'Test' button for Gradebook connector...<br>
+<br/>
+2016-11-06 17:28:10,864  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:28:11,401 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172811399.png'>screenshot-20161106-172811399.png</a><br>
+<br/>
+2016-11-06 17:28:11,401  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:28:11,431  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:28:11,655  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:28:20,851 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172820850.png'>screenshot-20161106-172820850.png</a><br>
+<br/>
+2016-11-06 17:28:20,851  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:28:20,896  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:28:20,926  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:28:21,071  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:28:26,261 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172826260.png'>screenshot-20161106-172826260.png</a><br>
+<br/>
+2016-11-06 17:28:26,272  INFO root - Getting result of INTERNAL 'Test' button for Gradebook connector...<br>
+<br/>
+2016-11-06 17:28:26,272  INFO root - Clicl Edit link...<br>
+<br/>
+2016-11-06 17:28:26,507  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:28:28,543  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:28:28,982 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172828980.png'>screenshot-20161106-172828980.png</a><br>
+<br/>
+2016-11-06 17:28:28,982  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:28:29,008  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:28:29,208  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:28:38,403 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172838401.png'>screenshot-20161106-172838401.png</a><br>
+<br/>
+2016-11-06 17:28:38,403  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:28:38,449  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:28:38,479  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:28:38,620  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:28:43,793 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172843792.png'>screenshot-20161106-172843792.png</a><br>
+<br/>
+2016-11-06 17:28:44,065  INFO root - Pause for '3000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkResultOfCommonTestButtonForInstructor()'><b>checkResultOfCommonTestButtonForInstructor</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check result of Common 'Test' button for Instructor<br/>
+<a href="#Output-1651412950" onClick='toggleBox("Output-1651412950", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1651412950" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1651412950">
+2016-11-06 17:28:47,246  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-11-06 17:28:47,254  INFO root - Opening URL: http://elviraQATest1.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2d708739<br>
+<br/>
+2016-11-06 17:28:48,201  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 17:28:48,656  INFO root - Type value 'admin@elviraQATest1.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 17:28:48,985  INFO root - Type value 'ojlllpny' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 17:28:49,203 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172849201.png'>screenshot-20161106-172849201.png</a><br>
+<br/>
+2016-11-06 17:28:49,203  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 17:28:50,971  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-11-06 17:28:50,987  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:28:51,185 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172851181.png'>screenshot-20161106-172851181.png</a><br>
+<br/>
+2016-11-06 17:28:51,185  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 17:28:51,392  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 17:28:54,239 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172854237.png'>screenshot-20161106-172854237.png</a><br>
+<br/>
+2016-11-06 17:28:54,239  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 17:28:54,249  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:28:54,320  INFO root - Getting result of COMMON 'Test' button...<br>
+<br/>
+2016-11-06 17:28:54,320  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:28:54,746  INFO root - Type username and password...<br>
+<br/>
+2016-11-06 17:28:54,746  INFO root - Wait for element By: By.id: Test_USERNAME_INPUT<br>
+<br/>
+2016-11-06 17:28:55,060  INFO root - Wait for element By: By.id: Test_PASSWORD_INPUT<br>
+<br/>
+2016-11-06 17:28:55,521 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172855520.png'>screenshot-20161106-172855520.png</a><br>
+<br/>
+2016-11-06 17:28:55,521  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:28:55,551  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:28:55,716  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:29:04,912 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172904910.png'>screenshot-20161106-172904910.png</a><br>
+<br/>
+2016-11-06 17:29:04,912  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:29:04,958  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:29:04,993  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:29:05,137  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:29:10,332 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172910330.png'>screenshot-20161106-172910330.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkResultOfCommonTestButtonForNotExistingUser()'><b>checkResultOfCommonTestButtonForNotExistingUser</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check result of Common 'Test' button for for not existing user<br/>
+<a href="#Output-1903479723" onClick='toggleBox("Output-1903479723", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1903479723" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1903479723">
+2016-11-06 17:29:10,482  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-11-06 17:29:10,493  INFO root - Opening URL: http://elviraQATest1.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2d708739<br>
+<br/>
+2016-11-06 17:29:11,401  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 17:29:11,886  INFO root - Type value 'admin@elviraQATest1.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 17:29:12,218  INFO root - Type value 'ojlllpny' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 17:29:12,437 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172912435.png'>screenshot-20161106-172912435.png</a><br>
+<br/>
+2016-11-06 17:29:12,437  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 17:29:14,272  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-11-06 17:29:14,290  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:29:14,496 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172914494.png'>screenshot-20161106-172914494.png</a><br>
+<br/>
+2016-11-06 17:29:14,496  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 17:29:14,713  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 17:29:17,583 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172917581.png'>screenshot-20161106-172917581.png</a><br>
+<br/>
+2016-11-06 17:29:17,583  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 17:29:17,592  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:29:17,657  INFO root - Getting result of COMMON 'Test' button...<br>
+<br/>
+2016-11-06 17:29:17,658  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:29:17,944  INFO root - Type username and password...<br>
+<br/>
+2016-11-06 17:29:17,944  INFO root - Wait for element By: By.id: Test_USERNAME_INPUT<br>
+<br/>
+2016-11-06 17:29:18,262  INFO root - Wait for element By: By.id: Test_PASSWORD_INPUT<br>
+<br/>
+2016-11-06 17:29:18,711 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172918710.png'>screenshot-20161106-172918710.png</a><br>
+<br/>
+2016-11-06 17:29:18,711  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:29:18,738  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:29:18,900  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:29:28,088 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172928086.png'>screenshot-20161106-172928086.png</a><br>
+<br/>
+2016-11-06 17:29:28,088  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:29:28,134  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:29:28,164  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:29:28,308  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:29:33,493 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172933491.png'>screenshot-20161106-172933491.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkResultOfCommonTestButtonForStudent()'><b>checkResultOfCommonTestButtonForStudent</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check result of Common 'Test' button for Angel Student<br/>
+<a href="#Output-888841188" onClick='toggleBox("Output-888841188", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-888841188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-888841188">
+2016-11-06 17:29:33,645  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-11-06 17:29:33,655  INFO root - Opening URL: http://elviraQATest1.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2d708739<br>
+<br/>
+2016-11-06 17:29:34,511  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 17:29:34,991  INFO root - Type value 'admin@elviraQATest1.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 17:29:35,318  INFO root - Type value 'ojlllpny' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 17:29:35,546 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172935545.png'>screenshot-20161106-172935545.png</a><br>
+<br/>
+2016-11-06 17:29:35,546  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 17:29:37,194  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-11-06 17:29:37,213  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:29:37,418 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172937416.png'>screenshot-20161106-172937416.png</a><br>
+<br/>
+2016-11-06 17:29:37,418  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 17:29:37,627  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 17:29:40,449 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172940447.png'>screenshot-20161106-172940447.png</a><br>
+<br/>
+2016-11-06 17:29:40,449  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 17:29:40,458  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:29:40,521  INFO root - Getting result of COMMON 'Test' button...<br>
+<br/>
+2016-11-06 17:29:40,521  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:29:40,811  INFO root - Type username and password...<br>
+<br/>
+2016-11-06 17:29:40,811  INFO root - Wait for element By: By.id: Test_USERNAME_INPUT<br>
+<br/>
+2016-11-06 17:29:41,129  INFO root - Wait for element By: By.id: Test_PASSWORD_INPUT<br>
+<br/>
+2016-11-06 17:29:41,584 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172941582.png'>screenshot-20161106-172941582.png</a><br>
+<br/>
+2016-11-06 17:29:41,584  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:29:41,610  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:29:41,768  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:29:50,979 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172950977.png'>screenshot-20161106-172950977.png</a><br>
+<br/>
+2016-11-06 17:29:50,979  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:29:51,025  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:29:51,059  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:29:51,202  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:29:56,368 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172956367.png'>screenshot-20161106-172956367.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TestConnectors.checkSsoLinkConnector()'><b>checkSsoLinkConnector</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TestConnectors<br>Test method: Check SSO Link connector behaves correctly<br/>
+<a href="#Output-699375490" onClick='toggleBox("Output-699375490", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-699375490" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-699375490">
+2016-11-06 17:29:56,519  INFO root - Logging in to MH Campus instance...<br>
+<br/>
+2016-11-06 17:29:56,528  INFO root - Opening URL: http://elviraQATest1.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2d708739<br>
+<br/>
+2016-11-06 17:29:57,408  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 17:29:57,874  INFO root - Type value 'admin@elviraQATest1.mhcampus.com' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 17:29:58,199  INFO root - Type value 'ojlllpny' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 17:29:58,429 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-172958428.png'>screenshot-20161106-172958428.png</a><br>
+<br/>
+2016-11-06 17:29:58,430  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 17:30:00,408  INFO root - Waiting for MhCampusInstanceDashboardScreen page...<br>
+<br/>
+2016-11-06 17:30:00,425  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:30:00,623 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173000622.png'>screenshot-20161106-173000622.png</a><br>
+<br/>
+2016-11-06 17:30:00,623  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 17:30:00,833  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 17:30:03,720 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173003718.png'>screenshot-20161106-173003718.png</a><br>
+<br/>
+2016-11-06 17:30:03,720  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 17:30:03,728  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+2016-11-06 17:30:03,792  INFO root - Getting result of EXTERNAL 'Test' button for Sso Link connector...<br>
+<br/>
+2016-11-06 17:30:03,792  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:30:04,237 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173004235.png'>screenshot-20161106-173004235.png</a><br>
+<br/>
+2016-11-06 17:30:04,237  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:30:04,264  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:30:04,433  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:30:13,711 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173013709.png'>screenshot-20161106-173013709.png</a><br>
+<br/>
+2016-11-06 17:30:13,711  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:30:13,780  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:30:13,834  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:30:14,083  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:30:19,272 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173019270.png'>screenshot-20161106-173019270.png</a><br>
+<br/>
+2016-11-06 17:30:19,284  INFO root - Getting result of INTERNAL 'Test' button for Sso Link connector...<br>
+<br/>
+2016-11-06 17:30:19,284  INFO root - Clicl Edit link...<br>
+<br/>
+2016-11-06 17:30:19,526  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 17:30:21,571  INFO root - Getting result of 'Test' button...<br>
+<br/>
+2016-11-06 17:30:22,269 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173022267.png'>screenshot-20161106-173022267.png</a><br>
+<br/>
+2016-11-06 17:30:22,269  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/table/tbody/tr[4]/td[2]/input<br>
+<br/>
+2016-11-06 17:30:22,303  INFO root - Clicking 'Test' button...<br>
+<br/>
+2016-11-06 17:30:22,520  INFO root - Pause for '9000' millis<br>
+<br/>
+2016-11-06 17:30:31,713 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173031712.png'>screenshot-20161106-173031712.png</a><br>
+<br/>
+2016-11-06 17:30:31,713  INFO root - Wait for element By: By.xpath: //*[@id='Dialog_1']/div/textarea<br>
+<br/>
+2016-11-06 17:30:31,777  INFO root - Wait for element By: By.xpath: html/body/div[3]/div[3]/button<br>
+<br/>
+2016-11-06 17:30:31,806  INFO root - Clicking 'Close Window' button...<br>
+<br/>
+2016-11-06 17:30:31,953  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-11-06 17:30:37,130 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-173037128.png'>screenshot-20161106-173037128.png</a><br>
+<br/>
+2016-11-06 17:30:37,445  INFO root - Pause for '3000' millis<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TestConnectors@1c9c5521</td></tr>
+</table><p>
+</body>
+</html>

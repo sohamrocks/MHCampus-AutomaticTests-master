@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>TestNG:  BlackBoard Exclude All Filter Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlackBoard Exclude All Filter Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 06 16:13:52 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1362 seconds (1362026 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter.checkMHCampusLinkIsAbsentInInstructorsCoursesForExcludeAllFilter()'><b>checkMHCampusLinkIsAbsentInInstructorsCoursesForExcludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter<br>Test method: For BlackBoard instructor MH Campus link is absent<br/>
+<a href="#Output-22929617" onClick='toggleBox("Output-22929617", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22929617" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22929617">
+2016-11-06 16:35:21,577  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-06 16:35:21,650  INFO root - Before deletion cookies size = 8<br>
+<br/>
+2016-11-06 16:35:21,651  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-06 16:35:21,686  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-06 16:35:21,686  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-06 16:35:21,686  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@36aee298<br>
+<br/>
+2016-11-06 16:35:21,724  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-06 16:35:24,586  INFO root - Type value 'InstructorsFcbO' to Input 'name=user_id'<br>
+<br/>
+2016-11-06 16:35:24,796  INFO root - Type value 'InstructorsFcbO' to Input 'name=password'<br>
+<br/>
+2016-11-06 16:35:26,912  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 16:35:26,933  INFO root - Going to the created course CourseeNS0Q...<br>
+<br/>
+2016-11-06 16:35:26,933  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 16:35:27,286  INFO root - Wait for element By: By.linkText: CourseeNS0Q<br>
+<br/>
+2016-11-06 16:35:27,840  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 16:35:33,273 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-163533270.png'>screenshot-20161106-163533270.png</a><br>
+<br/>
+2016-11-06 16:35:33,295  INFO root - Clicking Institution link...<br>
+<br/>
+2016-11-06 16:35:33,554  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 16:35:39,554  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 16:35:39,612  INFO root - Going to the created course Coursexq0QW...<br>
+<br/>
+2016-11-06 16:35:39,612  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 16:35:50,386 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-163550385.png'>screenshot-20161106-163550385.png</a><br>
+<br/>
+2016-11-06 16:35:50,386  INFO root - Wait for element By: By.linkText: Coursexq0QW<br>
+<br/>
+2016-11-06 16:35:50,769  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 16:35:56,066 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-163556063.png'>screenshot-20161106-163556063.png</a><br>
+<br/>
+2016-11-06 16:35:56,089  INFO root - Logging out...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter@6b44e406</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter.checkMHCampusLinkIsAbsentInStudentsCoursesForExcludeAllFilter()'><b>checkMHCampusLinkIsAbsentInStudentsCoursesForExcludeAllFilter</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter<br>Test method: For BlackBoard student MH Campus link is absent<br/>
+<a href="#Output-146966221" onClick='toggleBox("Output-146966221", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-146966221" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-146966221">
+2016-11-06 16:35:57,596  INFO root - Logging in to Blackboard...<br>
+<br/>
+2016-11-06 16:35:57,633  INFO root - Before deletion cookies size = 4<br>
+<br/>
+2016-11-06 16:35:57,633  INFO root - Before deletion cookies are empty = false<br>
+<br/>
+2016-11-06 16:35:57,651  INFO root - After deletion cookies size = 0<br>
+<br/>
+2016-11-06 16:35:57,651  INFO root - After deletion cookies are empty = true<br>
+<br/>
+2016-11-06 16:35:57,651  INFO root - Opening URL: https://blackboard-qa-auto-latest.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@36aee298<br>
+<br/>
+2016-11-06 16:35:58,542  INFO root - Waiting for BlackboardLoginScreen page...<br>
+<br/>
+2016-11-06 16:35:58,962  INFO root - Type value 'StudentrZGCU' to Input 'name=user_id'<br>
+<br/>
+2016-11-06 16:35:59,217  INFO root - Type value 'StudentrZGCU' to Input 'name=password'<br>
+<br/>
+2016-11-06 16:36:01,333  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 16:36:01,364  INFO root - Going to the created course CourseeNS0Q...<br>
+<br/>
+2016-11-06 16:36:01,364  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 16:36:01,808  INFO root - Wait for element By: By.linkText: CourseeNS0Q<br>
+<br/>
+2016-11-06 16:36:02,231  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 16:36:06,926 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-163606923.png'>screenshot-20161106-163606923.png</a><br>
+<br/>
+2016-11-06 16:36:06,947  INFO root - Clicking Institution link...<br>
+<br/>
+2016-11-06 16:36:08,434  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 16:36:14,434  INFO root - Waiting for BlackboardHomeScreen page...<br>
+<br/>
+2016-11-06 16:36:14,486  INFO root - Going to the created course Coursexq0QW...<br>
+<br/>
+2016-11-06 16:36:14,487  INFO root - Wait for element By: By.id: finishLater<br>
+<br/>
+2016-11-06 16:36:25,111 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-163625108.png'>screenshot-20161106-163625108.png</a><br>
+<br/>
+2016-11-06 16:36:25,111  INFO root - Wait for element By: By.linkText: Coursexq0QW<br>
+<br/>
+2016-11-06 16:36:25,495  INFO root - Waiting for BlackboardCourseDetails page...<br>
+<br/>
+2016-11-06 16:36:30,057 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-163630053.png'>screenshot-20161106-163630053.png</a><br>
+<br/>
+2016-11-06 16:36:30,078  INFO root - Logging out...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter@6b44e406</td></tr>
+</table><p>
+</body>
+</html>

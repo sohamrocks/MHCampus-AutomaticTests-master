@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<enterprise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<person>
+		<Sourcedid>
+			<Source>Tegrity</Source>
+			<ID>Instructor841582</ID>
+		</Sourcedid>
+		<UserID>Instructor841582</UserID>
+		<name><FN>FirstNameInstructor841582 LastNameInstructor841582</FN></name>
+		<Email>Instructor841582@columbusstate.edu</Email>
+	</person>
+	<person recstatus="2">
+		<sourcedid>
+			<source>Tegrity</source>
+			<id>Student841582</id>
+		</sourcedid>
+		<userid>Student841582</userid>
+		<name>
+			<family>LastNameStudent841582</family>
+			<given>FirstNameStudent841582</given>
+			<fn>FirstNameStudent841582 LastNameStudent841582</fn>
+		</name>
+		<email>Student841582@columbusstate.edu</email>
+		<extension>
+			<role roletype="02">
+				<status>0</status>
+			</role>
+		</extension>
+	</person>
+	<group recstatus="2">
+		<sourcedid>
+			<id>FirstCourse841582</id>
+		</sourcedid>
+		<grouptype>
+			<typevalue level="90">Section</typevalue>
+		</grouptype>
+		<description>
+			<short>Name FirstCourse841582</short>
+			<long>Contemp Issues Biol - Non-Lab Section 02 Summer Term 2014 SEC</long>
+		</description>
+		<relationship relation="0">
+			<sourcedid>
+				<id>CO.300.BIOL1125.50765.20151</id>
+			</sourcedid>
+		</relationship>
+	</group>
+	<group recstatus="2">
+		<sourcedid>
+			<id>SecondCourse841582</id>
+		</sourcedid>
+		<grouptype>
+			<typevalue level="90">Section</typevalue>
+		</grouptype>
+		<description>
+			<short>Name SecondCourse841582</short>
+			<long>Contemp Issues Biol - Non-Lab Section 02 Summer Term 2014 SEC</long>
+		</description>
+		<relationship relation="0">
+			<sourcedid>
+				<id>SecondCourse841582</id>
+			</sourcedid>
+		</relationship>
+	</group>
+	<membership recstatus="2">
+		<sourcedid>
+			<source>Tegrity</source>
+			<id>FirstCourse841582</id>
+		</sourcedid>
+		<member>
+			<sourcedid>
+				<source>Tegrity</source>
+				<id>Instructor841582</id>
+			</sourcedid>
+			<idtype>1</idtype>
+			<role roletype="Instructor">
+				<status>1</status>
+				<userid>Instructor841582</userid>
+				<datasource>Tegrity</datasource>
+			</role>
+		</member>
+		<member>
+			<sourcedid>
+				<source>Tegrity</source>
+				<id>Student841582</id>
+			</sourcedid>
+			<idtype>1</idtype>
+			<role roletype="Student">
+				<status>1</status>
+				<userid>Student841582</userid>
+				<datasource>Tegrity</datasource>
+			</role>
+		</member>
+	</membership>
+	<membership recstatus="2">
+		<sourcedid>
+			<source>Tegrity</source>
+			<id>SecondCourse841582</id>
+		</sourcedid>
+		<member>
+			<sourcedid>
+				<source>Tegrity</source>
+				<id>Instructor841582</id>
+			</sourcedid>
+			<idtype>1</idtype>
+			<role roletype="Instructor">
+				<status>1</status>
+				<userid>Instructor841582</userid>
+				<datasource>Tegrity</datasource>
+			</role>
+		</member>
+		<member>
+			<sourcedid>
+				<source>Tegrity</source>
+				<id>Student841582</id>
+			</sourcedid>
+			<idtype>1</idtype>
+			<role roletype="Student">
+				<status>1</status>
+				<userid>Student841582</userid>
+				<datasource>Tegrity</datasource>
+			</role>
+		</member>
+	</membership>
+</enterprise>

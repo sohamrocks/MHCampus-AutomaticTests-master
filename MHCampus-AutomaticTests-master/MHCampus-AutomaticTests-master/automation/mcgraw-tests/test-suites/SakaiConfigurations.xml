@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Configurations Tests" verbose="1">
+
+	<test verbose="1" name="Sakai Configurtaion Number 170">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.configurations.CustomSakaiConfiguration170" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Sakai Configurtaion Number 171">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.configurations.CustomSakaiConfiguration171" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Sakai Configurtaion Number 172">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.configurations.CustomSakaiConfiguration172" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Sakai Configurtaion Number 177">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.configurations.CustomSakaiConfiguration177" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Sakai Configurtaion Number 179">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.configurations.CustomSakaiConfiguration179" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Sakai Configurtaion Number 180">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.configurations.CustomSakaiConfiguration180" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Sakai Configurtaion Number 181">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.sakai.configurations.CustomSakaiConfiguration181" />
+		</classes>
+	</test>
+		
+</suite>

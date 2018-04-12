@@ -1,0 +1,318 @@
+<html>
+<head>
+<title>TestNG:  BlackBoard Gradebook Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlackBoard Gradebook Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 07 15:11:06 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>139 seconds (139388 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreCorrectForStudent1Course1()'><b>checkGradebookItemsAreCorrectForStudent1Course1</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityGradebook<br>Test method: Check Gradebook data related to the first Student<br/>
+<a href="#Output-380505211" onClick='toggleBox("Output-380505211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-380505211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-380505211">
+2016-11-07 15:13:17,523  INFO root - Gradebook details extracted via blackboard API: GradebookInfo [AssignmentId=43821, AssignmentTitle=title_KqyRp, Category=Blog, Description=description_cQroy, ScoreType=Percentage, ScorePoints=100, IsStudentViewable=true, IsIncludedInGrade=false, ScoreItemData0 [ScoreReceived = 18,Comment=comment_uJVzm], ]<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityGradebook@27b47740</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreCorrectForStudent2Course1()'><b>checkGradebookItemsAreCorrectForStudent2Course1</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityGradebook<br>Test method: Check Gradebook data related to the second Student<br/>
+<a href="#Output-597971867" onClick='toggleBox("Output-597971867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-597971867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-597971867">
+2016-11-07 15:13:20,169  INFO root - Gradebook details extracted via blackboard API: GradebookInfo [AssignmentId=43821, AssignmentTitle=title_KqyRp, Category=Blog, Description=description_cQroy, ScoreType=Percentage, ScorePoints=100, IsStudentViewable=true, IsIncludedInGrade=false, ScoreItemData0 [ScoreReceived = 14,Comment=comment_HHMQz], ]<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityGradebook@27b47740</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreNotPresentForStudent1Course2()'><b>checkGradebookItemsAreNotPresentForStudent1Course2</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityGradebook<br>Test method: Check sent Gradebook items are NOT present in the Blackboard unused course for the first Student</td>
+<td><div><pre>com.mcgraw.test.automation.api.blackboard.exceptions.NullGradebookInfoException: No gradebook info for course _5905_1
+	at com.mcgraw.test.automation.api.blackboard.serviceapi.BlackBoardApi.getGradebook(BlackBoardApi.java:386)
+	at com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreNotPresentForStudent1Course2(TegrityGradebook.java:180)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1895971989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1895971989'><pre>com.mcgraw.test.automation.api.blackboard.exceptions.NullGradebookInfoException: No gradebook info for course _5905_1
+	at com.mcgraw.test.automation.api.blackboard.serviceapi.BlackBoardApi.getGradebook(BlackBoardApi.java:386)
+	at com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreNotPresentForStudent1Course2(TegrityGradebook.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityGradebook@27b47740</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreNotPresentForStudent2Course2()'><b>checkGradebookItemsAreNotPresentForStudent2Course2</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityGradebook<br>Test method: Check sent Gradebook items are NOT present in the Blackboard unused course for the second Student</td>
+<td><div><pre>com.mcgraw.test.automation.api.blackboard.exceptions.NullGradebookInfoException: No gradebook info for course _5905_1
+	at com.mcgraw.test.automation.api.blackboard.serviceapi.BlackBoardApi.getGradebook(BlackBoardApi.java:386)
+	at com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreNotPresentForStudent2Course2(TegrityGradebook.java:186)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace68300802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace68300802'><pre>com.mcgraw.test.automation.api.blackboard.exceptions.NullGradebookInfoException: No gradebook info for course _5905_1
+	at com.mcgraw.test.automation.api.blackboard.serviceapi.BlackBoardApi.getGradebook(BlackBoardApi.java:386)
+	at com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkGradebookItemsAreNotPresentForStudent2Course2(TegrityGradebook.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>0</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityGradebook@27b47740</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkSubmittingTestScorableItemFormIsSuccessfull()'><b>checkSubmittingTestScorableItemFormIsSuccessfull</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityGradebook<br>Test method: Check TestScorableItem form is submitted successfully<br/>
+<a href="#Output-188596160" onClick='toggleBox("Output-188596160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-188596160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-188596160">
+2016-11-07 15:12:51,376  INFO root - Filling TestScorableItem form...<br>
+<br/>
+2016-11-07 15:12:51,411  INFO root - Opening URL: http://login-aws-qa.tegrity.com/TestGradebook/TestScorableItem.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2636d85f<br>
+<br/>
+2016-11-07 15:13:01,330  INFO root - Waiting for TestScoreItemsScreen page...<br>
+<br/>
+2016-11-07 15:13:01,626  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-11-07 15:13:01,845  INFO root - Type value '1S89-S6PK-S7K3' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-11-07 15:13:02,048  INFO root - Type value 'provider_IqQIu' to Input 'name=txtProviderID'<br>
+<br/>
+2016-11-07 15:13:02,255  INFO root - Type value 'Course1Pe6X8' to Input 'name=txtCourseID'<br>
+<br/>
+2016-11-07 15:13:02,476  INFO root - Type value '43821' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-11-07 15:13:02,659  INFO root - Type value 'title_KqyRp' to Input 'name=txtAssignmentTitle'<br>
+<br/>
+2016-11-07 15:13:02,852  INFO root - Type value 'Blog' to Input 'name=txtCategory'<br>
+<br/>
+2016-11-07 15:13:03,049  INFO root - Type value 'description_cQroy' to Input 'name=txtDescription'<br>
+<br/>
+2016-11-07 15:13:03,242  INFO root - Type value '10/12/2012' to Input 'name=txtStartDateTime'<br>
+<br/>
+2016-11-07 15:13:03,429  INFO root - Type value '10/29/2029' to Input 'name=txtDueDateTime'<br>
+<br/>
+2016-11-07 15:13:03,620  INFO root - Type value '100' to Input 'name=txtScorePossible'<br>
+<br/>
+2016-11-07 15:13:03,947 OPERATION root - Checking 'name=cbIsStudentViewable' checkbox.<br>
+<br/>
+2016-11-07 15:13:04,335 OPERATION root - Unchecking 'name=cbIsIncludedInGrade' checkbox.<br>
+<br/>
+2016-11-07 15:13:05,463  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:&quot;&quot;,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Blackboard&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Blackboard:updated;&quot;,&quot;RequestID&quot;:&quot;Req02o026t0k07lm9yucyz9ze&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2016-11-07 15:13:06,149  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;1S89-S6PK-S7K3&quot;,&quot;txtProviderID&quot;:&quot;provider_IqQIu&quot;,&quot;txtCourseID&quot;:&quot;Course1Pe6X8&quot;,&quot;txtAssignmentID&quot;:&quot;43821&quot;,&quot;txtAssignmentTitle&quot;:&quot;title_KqyRp&quot;,&quot;txtCategory&quot;:&quot;Blog&quot;,&quot;txtDescription&quot;:&quot;description_cQroy&quot;,&quot;txtStartDateTime&quot;:&quot;10/12/2012&quot;,&quot;txtDueDateTime&quot;:&quot;10/29/2029&quot;,&quot;txtScorePossible&quot;:&quot;100&quot;,&quot;cbIsExtraCredit&quot;:&quot;False&quot;,&quot;cbIsStudentViewable&quot;:&quot;True&quot;,&quot;cbIsIncludedInGrade&quot;:&quot;False&quot;,&quot;txtModuleID&quot;:&quot;&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=1S89-S6PK-S7K3&amp;providerID=provider_IqQIu&amp;courseID=Course1Pe6X8&amp;assignmentID=43821&amp;assignmentTitle=title_KqyRp&amp;category=Blog&amp;description=description_cQroy&amp;startDateTime=10%2f12%2f2012&amp;dueDateTime=10%2f29%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=true&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MTQxMDMxODYwNDE0NDY3&amp;oauth_timestamp=1478524386&amp;oauth_signature=0TxI%2Fu5osyt%2FFOdWFSRdGrqvPmM%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScorableItem?customer_number=1S89-S6PK-S7K3&amp;providerID=provider_IqQIu&amp;courseID=Course1Pe6X8&amp;assignmentID=43821&amp;assignmentTitle=title_KqyRp&amp;category=Blog&amp;description=description_cQroy&amp;startDateTime=10%2f12%2f2012&amp;dueDateTime=10%2f29%2f2029&amp;scoreType=Percentage&amp;scorePossible=100&amp;isExtraCredit=false&amp;isStudentViewable=true&amp;isIncludedInGrade=false&amp;moduleID=&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MTQxMDMxODYwNDE0NDY3&amp;oauth_timestamp=1478524386&amp;oauth_signature=0TxI%2Fu5osyt%2FFOdWFSRdGrqvPmM%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:\&quot;\&quot;,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Blackboard\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Blackboard:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req02o026t0k07lm9yucyz9ze\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityGradebook@27b47740</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkSubmittingTestScoreFormIsSuccessfullForStudent1()'><b>checkSubmittingTestScoreFormIsSuccessfullForStudent1</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityGradebook<br>Test method: Check TestScore form is submitted successfully<br/>
+<a href="#Output-689758111" onClick='toggleBox("Output-689758111", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689758111" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689758111">
+2016-11-07 15:13:06,346  INFO root - Filling TestScore form...<br>
+<br/>
+2016-11-07 15:13:06,356  INFO root - Opening URL: http://login-aws-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2636d85f<br>
+<br/>
+2016-11-07 15:13:06,878  INFO root - Waiting for TestScoreScreen page...<br>
+<br/>
+2016-11-07 15:13:07,069  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-11-07 15:13:07,289  INFO root - Type value '1S89-S6PK-S7K3' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-11-07 15:13:07,502  INFO root - Type value 'provider_IqQIu' to Input 'name=txtProviderID'<br>
+<br/>
+2016-11-07 15:13:07,704  INFO root - Type value '43821' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-11-07 15:13:07,908  INFO root - Type value 'Course1Pe6X8' to Input 'name=txtCourseID'<br>
+<br/>
+2016-11-07 15:13:08,108  INFO root - Type value 'StudentV3PwX' to Input 'name=txtUserID'<br>
+<br/>
+2016-11-07 15:13:08,320  INFO root - Type value 'comment_uJVzm' to Input 'name=txtComment'<br>
+<br/>
+2016-11-07 15:13:08,535  INFO root - Type value '10/25/2012' to Input 'name=txtDatetimeSubmitted'<br>
+<br/>
+2016-11-07 15:13:08,714  INFO root - Type value '18' to Input 'name=txtScoreReceived'<br>
+<br/>
+2016-11-07 15:13:09,723  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Blackboard&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Blackboard:updated;&quot;,&quot;RequestID&quot;:&quot;Req06302on02f07lm9yudrejgs&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2016-11-07 15:13:10,447  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;1S89-S6PK-S7K3&quot;,&quot;txtProviderID&quot;:&quot;provider_IqQIu&quot;,&quot;txtAssignmentID&quot;:&quot;43821&quot;,&quot;txtCourseID&quot;:&quot;Course1Pe6X8&quot;,&quot;txtUserID&quot;:&quot;StudentV3PwX&quot;,&quot;txtComment&quot;:&quot;comment_uJVzm&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;10/25/2012&quot;,&quot;txtScoreReceived&quot;:&quot;18&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=1S89-S6PK-S7K3&amp;providerID=provider_IqQIu&amp;courseID=Course1Pe6X8&amp;assignmentID=43821&amp;userID=StudentV3PwX&amp;comment=comment_uJVzm&amp;currentAttempt=&amp;datetimeSubmitted=10%2f25%2f2012&amp;scoreReceived=18&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MTQxMDMxOTA0MjUxODcy&amp;oauth_timestamp=1478524390&amp;oauth_signature=8iFw1fcGmMoywYvPsX4JI39IEXo%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=1S89-S6PK-S7K3&amp;providerID=provider_IqQIu&amp;courseID=Course1Pe6X8&amp;assignmentID=43821&amp;userID=StudentV3PwX&amp;comment=comment_uJVzm&amp;currentAttempt=&amp;datetimeSubmitted=10%2f25%2f2012&amp;scoreReceived=18&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MTQxMDMxOTA0MjUxODcy&amp;oauth_timestamp=1478524390&amp;oauth_signature=8iFw1fcGmMoywYvPsX4JI39IEXo%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Blackboard\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Blackboard:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req06302on02f07lm9yudrejgs\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityGradebook@27b47740</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.TegrityGradebook.checkSubmittingTestScoreFormIsSuccessfullForStudent2()'><b>checkSubmittingTestScoreFormIsSuccessfullForStudent2</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.TegrityGradebook<br>Test method: Check TestScore form is submitted successfully<br/>
+<a href="#Output-321631474" onClick='toggleBox("Output-321631474", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-321631474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-321631474">
+2016-11-07 15:13:10,637  INFO root - Filling TestScore form...<br>
+<br/>
+2016-11-07 15:13:10,645  INFO root - Opening URL: http://login-aws-qa.tegrity.com/TestGradebook/TestScore.aspx/. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@2636d85f<br>
+<br/>
+2016-11-07 15:13:11,113  INFO root - Waiting for TestScoreScreen page...<br>
+<br/>
+2016-11-07 15:13:11,318  INFO root - Type value 'http://mhaairs-aws-qa.tegrity.com' to Input 'name=txtServiceLocation'<br>
+<br/>
+2016-11-07 15:13:11,546  INFO root - Type value '1S89-S6PK-S7K3' to Input 'name=txtCustomerID'<br>
+<br/>
+2016-11-07 15:13:11,923  INFO root - Type value 'provider_IqQIu' to Input 'name=txtProviderID'<br>
+<br/>
+2016-11-07 15:13:12,137  INFO root - Type value '43821' to Input 'name=txtAssignmentID'<br>
+<br/>
+2016-11-07 15:13:12,329  INFO root - Type value 'Course1Pe6X8' to Input 'name=txtCourseID'<br>
+<br/>
+2016-11-07 15:13:12,529  INFO root - Type value 'Student22i4rW' to Input 'name=txtUserID'<br>
+<br/>
+2016-11-07 15:13:12,723  INFO root - Type value 'comment_HHMQz' to Input 'name=txtComment'<br>
+<br/>
+2016-11-07 15:13:12,913  INFO root - Type value '10/25/2012' to Input 'name=txtDatetimeSubmitted'<br>
+<br/>
+2016-11-07 15:13:13,108  INFO root - Type value '14' to Input 'name=txtScoreReceived'<br>
+<br/>
+2016-11-07 15:13:14,045  INFO root - Value of Result field is: OK: {&quot;ExtendedInfo&quot;:[{&quot;AssignmentID&quot;:null,&quot;ErrorCode&quot;:&quot;&quot;,&quot;ErrorDescription&quot;:null,&quot;Name&quot;:&quot;Blackboard&quot;,&quot;Status&quot;:&quot;updated&quot;}],&quot;Message&quot;:&quot;Blackboard:updated;&quot;,&quot;RequestID&quot;:&quot;Req02o026t02407lm9yuemhf4e&quot;,&quot;Status&quot;:&quot;Success&quot;}<br>
+<br/>
+2016-11-07 15:13:14,669  INFO root - Value of State field is: {&quot;txtServiceLocation&quot;:&quot;http://mhaairs-aws-qa.tegrity.com&quot;,&quot;txtCustomerID&quot;:&quot;1S89-S6PK-S7K3&quot;,&quot;txtProviderID&quot;:&quot;provider_IqQIu&quot;,&quot;txtAssignmentID&quot;:&quot;43821&quot;,&quot;txtCourseID&quot;:&quot;Course1Pe6X8&quot;,&quot;txtUserID&quot;:&quot;Student22i4rW&quot;,&quot;txtComment&quot;:&quot;comment_HHMQz&quot;,&quot;txtCurrentAttempt&quot;:&quot;&quot;,&quot;txtDatetimeSubmitted&quot;:&quot;10/25/2012&quot;,&quot;txtScoreReceived&quot;:&quot;14&quot;,&quot;txtToolID&quot;:&quot;&quot;,&quot;cbEncrypt&quot;:&quot;False&quot;,&quot;cbAsync&quot;:&quot;False&quot;,&quot;txtCallback&quot;:&quot;&quot;,&quot;cbMultiple&quot;:&quot;False&quot;,&quot;txtThreads&quot;:&quot;&quot;,&quot;txtCallsPerThread&quot;:&quot;&quot;,&quot;txtSourceDid&quot;:&quot;&quot;,&quot;txtOutcomeUrl&quot;:&quot;&quot;,&quot;txtLink&quot;:&quot;http://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=1S89-S6PK-S7K3&amp;providerID=provider_IqQIu&amp;courseID=Course1Pe6X8&amp;assignmentID=43821&amp;userID=Student22i4rW&amp;comment=comment_HHMQz&amp;currentAttempt=&amp;datetimeSubmitted=10%2f25%2f2012&amp;scoreReceived=14&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MTQxMDMxOTQ4MjQ1Mjgy&amp;oauth_timestamp=1478524395&amp;oauth_signature=0sxsEgsGXKe236W8pbuGa7At%2Fl8%3D&quot;,&quot;txtRequestBody&quot;:&quot;&quot;,&quot;txtReqDump&quot;:&quot;Request:GEThttp://mhaairs-aws-qa.tegrity.com/v1/Scores/UpdateScore?customer_number=1S89-S6PK-S7K3&amp;providerID=provider_IqQIu&amp;courseID=Course1Pe6X8&amp;assignmentID=43821&amp;userID=Student22i4rW&amp;comment=comment_HHMQz&amp;currentAttempt=&amp;datetimeSubmitted=10%2f25%2f2012&amp;scoreReceived=14&amp;toolID=&amp;oauth_signature_method=HMAC-SHA1&amp;oauth_consumer_key=ADDAFE4E-86FF-428C-A6B2-7E3FF05BB474&amp;oauth_nonce=NjM2MTQxMDMxOTQ4MjQ1Mjgy&amp;oauth_timestamp=1478524395&amp;oauth_signature=0sxsEgsGXKe236W8pbuGa7At%2Fl8%3Dmhaairs-aws-qa.tegrity.comLevel:BypassCache-------------  Http Headers --------------------------------  Body -------------------&quot;,&quot;txtResult&quot;:&quot;OK: {\&quot;ExtendedInfo\&quot;:[{\&quot;AssignmentID\&quot;:null,\&quot;ErrorCode\&quot;:\&quot;\&quot;,\&quot;ErrorDescription\&quot;:null,\&quot;Name\&quot;:\&quot;Blackboard\&quot;,\&quot;Status\&quot;:\&quot;updated\&quot;}],\&quot;Message\&quot;:\&quot;Blackboard:updated;\&quot;,\&quot;RequestID\&quot;:\&quot;Req02o026t02407lm9yuemhf4e\&quot;,\&quot;Status\&quot;:\&quot;Success\&quot;}&quot;,&quot;txtState&quot;:&quot;&quot;}<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.mcgraw.test.automation.tests.blackboard.TegrityGradebook@27b47740</td></tr>
+</table><p>
+</body>
+</html>

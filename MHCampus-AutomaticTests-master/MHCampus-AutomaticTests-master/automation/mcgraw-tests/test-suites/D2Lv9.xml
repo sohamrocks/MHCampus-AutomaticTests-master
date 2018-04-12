@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="D2L V9 Tests" verbose="1">
+
+	<test verbose="1" name="D2L V9 Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.Gradebook" />
+		</classes>
+	</test>	
+	
+	 <test verbose="1" name="D2L V9 SSO Link Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.SSOlink" />
+		</classes>
+	</test>
+	
+</suite>

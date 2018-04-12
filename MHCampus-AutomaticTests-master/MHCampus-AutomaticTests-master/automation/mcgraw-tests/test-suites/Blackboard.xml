@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BlackBoard Tests" verbose="1">
+
+	<test verbose="1" name="BlackBoard Direct Login Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.DirectLoginTest" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.Gradebook" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Default Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.DefaultFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Exclude All Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.ExcludeAllFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard CSV Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.CsvFilter" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="BlackBoard Include All Filter Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.IncludeAllFilter" />
+		</classes>
+	</test>	
+	
+	<test verbose="1" name="BlackBoard Check Connector Buttons Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.blackboard.TestConnectors" />
+		</classes>
+	</test>	
+		 
+</suite>

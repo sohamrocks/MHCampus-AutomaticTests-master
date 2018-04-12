@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<import resource="classpath:spring/properties-context.xml" />
+	<import resource="classpath:spring/angel-rest-api-context.xml" />
+	<import resource="classpath:spring/moodle-rest-api-context.xml" />
+	<import resource="classpath:spring/canvas-rest-api-context.xml" />
+	<import resource="classpath:spring/blackboard-api-context.xml" />
+	<import resource="classpath:spring/d2lvalence-rest-api-context.xml" />
+	<import resource="classpath:spring/sakai-api-context.xml" />
+	
+	<bean id="serviceInstanceUtils" class = "com.mcgraw.test.automation.ui.service.InstanceUtils">
+	</bean>
+	
+	<bean id="tegrityAdministrationApplication"
+		class="com.mcgraw.test.automation.ui.applications.TegrityAdministrationApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+		<property name="emailClient" ref="qaEmailClient" />
+		<property name="instanceUtils" ref="serviceInstanceUtils" />
+	</bean>
+
+	<bean id="mhCampusInstanceApplication"
+		class="com.mcgraw.test.automation.ui.applications.MhCampusInstanceApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="angelApplication"
+		class="com.mcgraw.test.automation.ui.applications.AngelApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="blackboardApplication"
+		class="com.mcgraw.test.automation.ui.applications.BlackboardApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="canvasApplication"
+		class="com.mcgraw.test.automation.ui.applications.CanvasApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="gradebookApplication"
+		class="com.mcgraw.test.automation.ui.applications.GradebookApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="lTIApplication"
+		class="com.mcgraw.test.automation.ui.applications.LTIApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+	
+	<bean id="ExternalToolsApplication"
+		class="com.mcgraw.test.automation.ui.applications.ExternalToolsApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="moodleApplication"
+		class="com.mcgraw.test.automation.ui.applications.MoodleApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="sakaiApplication"
+		class="com.mcgraw.test.automation.ui.applications.SakaiApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="qaEmailClient" class="com.mcgraw.test.automation.ui.service.EmailClient"
+		scope="prototype">
+		<property name="mailbox" ref="filledMailBox"/>
+		<property name="mailReceiver">
+			<bean
+				class="com.mcgraw.test.automation.framework.core.common.remote_access.mail.IMAPMailReceiver">
+			</bean>
+		</property>		
+	</bean>
+	
+	<bean id="filledMailBox" class="com.mcgraw.test.automation.framework.core.common.remote_access.mail.Mailbox"
+		scope="prototype">
+		<constructor-arg name="host" value="${email.host}" />
+		<constructor-arg name="login" value="${email.login}" />
+		<constructor-arg name="password" value="${email.password}" />
+	</bean>
+	
+	<bean id="browserBean"
+		class="com.mcgraw.test.automation.framework.selenium2.ui.Browser"
+		factory-method="getBrowser" scope="prototype">
+	</bean>
+
+	<bean id="d2lApplication"
+		class="com.mcgraw.test.automation.ui.applications.D2lApplicationV10"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<bean id="eCollegeApplication"
+		class="com.mcgraw.test.automation.ui.applications.ECollegeApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+	
+	<bean id="RestApplication"
+		class="com.mcgraw.test.automation.ui.applications.RestApplication"
+		scope="prototype">
+		<constructor-arg name="browser" ref="browserBean" />
+	</bean>
+
+	<beans profile="d2lV9">
+		<bean id="d2lApplication"
+			class="com.mcgraw.test.automation.ui.applications.D2lApplicationV9"
+			scope="prototype">
+			<constructor-arg name="browser" ref="browserBean" />
+		</bean>
+	</beans>
+</beans>

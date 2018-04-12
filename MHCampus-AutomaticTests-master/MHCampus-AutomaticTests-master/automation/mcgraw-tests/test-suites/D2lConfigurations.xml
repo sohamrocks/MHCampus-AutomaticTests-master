@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Configurations Tests" verbose="1">
+
+	<test verbose="1" name="D2L Configurtaion Number 91">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration91" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 92">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration92" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 93">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration93" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 94">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration94" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 95">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration95" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 96">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration96" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 98">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration98" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 99">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration99" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 100">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration100" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 101">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration101" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 102">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration102" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 103">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration103" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 104">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration104" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 105">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration105" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 106">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration106" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 107">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration107" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 108">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration108" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 109">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration109" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 110">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration110" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 111">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration111" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 112">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration112" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 113">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration113" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 114">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration114" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 115">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration115" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 116">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration116" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 117">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration117" />
+		</classes>
+	</test>
+		
+	<test verbose="1" name="D2L Configurtaion Number 120">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration120" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 122">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration122" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 123">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration123" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 124">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration124" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 125">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration125" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 126">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration126" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 127">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration127" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 128">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration128" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L Configurtaion Number 131">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.configurations.CustomD2LConfiguration131" />
+		</classes>
+	</test>
+	
+</suite>

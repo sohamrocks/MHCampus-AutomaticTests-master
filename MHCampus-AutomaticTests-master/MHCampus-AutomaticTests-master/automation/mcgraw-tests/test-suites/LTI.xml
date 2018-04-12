@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LTI Tests" verbose="1">
+	
+	<test verbose="1" name="LTI Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.lti.LtiTest" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Gradebook Services">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.lti.GradebookServices" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="LTI1.1 Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.lti.LTI1_1Test" />
+		</classes>
+	</test>
+		 
+</suite>

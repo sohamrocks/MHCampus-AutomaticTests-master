@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>TestNG:  Canvas Csv list Filter Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Canvas Csv list Filter Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 17 13:56:05 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>239 seconds (239317 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.CsvFilter.checkMHCampusLinkIsPresentInInstructorsCoursesAccordingToCsvFilter()'><b>checkMHCampusLinkIsPresentInInstructorsCoursesAccordingToCsvFilter</b><br>Test class: com.mcgraw.test.automation.tests.canvas.CsvFilter<br>Test method: For Canvas instructor MH Campus link is only present for CSV courses<br/>
+<a href="#Output-1512551916" onClick='toggleBox("Output-1512551916", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1512551916" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1512551916">
+2016-08-17 13:58:48,722  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-08-17 13:58:48,722  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-08-17 13:58:53,789  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@5af824d7<br>
+<br/>
+2016-08-17 13:58:58,613  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-08-17 13:58:58,778  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-08-17 13:59:01,094  INFO root - Type value 'instructor1uYiS' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-08-17 13:59:01,622  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-08-17 13:59:02,033 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135902030.png'>screenshot-20160817-135902030.png</a><br>
+<br/>
+2016-08-17 13:59:02,034  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-08-17 13:59:11,156  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-08-17 13:59:11,423  INFO root - Going to the created course CourseName12YV2G...<br>
+<br/>
+2016-08-17 13:59:11,423  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2016-08-17 13:59:11,813  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseName12YV2G')]<br>
+<br/>
+2016-08-17 13:59:12,124  INFO root - Clicking element by using Javascript: 'CourseName12YV2G'<br>
+<br/>
+2016-08-17 13:59:12,299  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-08-17 13:59:15,422 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135915420.png'>screenshot-20160817-135915420.png</a><br>
+<br/>
+2016-08-17 13:59:15,583 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135915567.png'>screenshot-20160817-135915567.png</a><br>
+<br/>
+2016-08-17 13:59:15,619  INFO root - Going to the created course CourseName28Ypen...<br>
+<br/>
+2016-08-17 13:59:15,620  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2016-08-17 13:59:16,021  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseName28Ypen')]<br>
+<br/>
+2016-08-17 13:59:16,312  INFO root - Clicking element by using Javascript: 'CourseName28Ypen'<br>
+<br/>
+2016-08-17 13:59:16,529  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-08-17 13:59:20,316 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135920314.png'>screenshot-20160817-135920314.png</a><br>
+<br/>
+2016-08-17 13:59:20,535 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135920469.png'>screenshot-20160817-135920469.png</a><br>
+<br/>
+2016-08-17 13:59:20,605  INFO root - Logout from Canvas...<br>
+<br/>
+2016-08-17 13:59:20,605  INFO root - Wait for element By: By.id: global_nav_profile_link<br>
+<br/>
+2016-08-17 13:59:21,235  INFO root - Wait for element By: By.xpath: //button[contains(text(),'Logout')]<br>
+<br/>
+2016-08-17 13:59:24,097  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-08-17 13:59:25,097  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.mcgraw.test.automation.tests.canvas.CsvFilter@3765e140</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.canvas.CsvFilter.checkMHCampusLinkIsPresentInStudentsCoursesAccordingToCsvFilter()'><b>checkMHCampusLinkIsPresentInStudentsCoursesAccordingToCsvFilter</b><br>Test class: com.mcgraw.test.automation.tests.canvas.CsvFilter<br>Test method: For Canvas student MH Campus link is only present for CSV courses<br/>
+<a href="#Output-2077143710" onClick='toggleBox("Output-2077143710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2077143710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2077143710">
+2016-08-17 13:59:25,308  INFO root - Logging in to Canvas...<br>
+<br/>
+2016-08-17 13:59:25,308  INFO root - Pause for '5000' millis<br>
+<br/>
+2016-08-17 13:59:30,357  INFO root - Opening URL: https://mcgraw-hill2.instructure.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@5af824d7<br>
+<br/>
+2016-08-17 13:59:32,706  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+2016-08-17 13:59:32,770  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-08-17 13:59:35,170  INFO root - Type value 'studentT1N1b' to Input 'name=pseudonym_session[unique_id]'<br>
+<br/>
+2016-08-17 13:59:35,670  INFO root - Type value '123qweA@' to Input 'name=pseudonym_session[password]'<br>
+<br/>
+2016-08-17 13:59:36,028 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135936026.png'>screenshot-20160817-135936026.png</a><br>
+<br/>
+2016-08-17 13:59:36,028  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-08-17 13:59:45,312  INFO root - Waiting for CanvasHomeScreen page...<br>
+<br/>
+2016-08-17 13:59:45,397  INFO root - Going to the created course CourseName12YV2G...<br>
+<br/>
+2016-08-17 13:59:45,397  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2016-08-17 13:59:45,890  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseName12YV2G')]<br>
+<br/>
+2016-08-17 13:59:46,251  INFO root - Clicking element by using Javascript: 'CourseName12YV2G'<br>
+<br/>
+2016-08-17 13:59:46,399  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-08-17 13:59:50,099 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135950096.png'>screenshot-20160817-135950096.png</a><br>
+<br/>
+2016-08-17 13:59:50,245 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135950243.png'>screenshot-20160817-135950243.png</a><br>
+<br/>
+2016-08-17 13:59:50,277  INFO root - Going to the created course CourseName28Ypen...<br>
+<br/>
+2016-08-17 13:59:50,277  INFO root - Wait for element By: By.id: global_nav_courses_link<br>
+<br/>
+2016-08-17 13:59:50,681  INFO root - Wait for element By: By.xpath: //a[contains(text(),'CourseName28Ypen')]<br>
+<br/>
+2016-08-17 13:59:50,976  INFO root - Clicking element by using Javascript: 'CourseName28Ypen'<br>
+<br/>
+2016-08-17 13:59:51,211  INFO root - Waiting for CanvasCourseDetailsScreen page...<br>
+<br/>
+2016-08-17 13:59:53,959 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135953947.png'>screenshot-20160817-135953947.png</a><br>
+<br/>
+2016-08-17 13:59:54,100 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160817-135954094.png'>screenshot-20160817-135954094.png</a><br>
+<br/>
+2016-08-17 13:59:54,132  INFO root - Logout from Canvas...<br>
+<br/>
+2016-08-17 13:59:54,132  INFO root - Wait for element By: By.id: global_nav_profile_link<br>
+<br/>
+2016-08-17 13:59:54,527  INFO root - Wait for element By: By.xpath: //button[contains(text(),'Logout')]<br>
+<br/>
+2016-08-17 13:59:57,521  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-08-17 13:59:58,523  INFO root - Waiting for CanvasLoginScreen page...<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.mcgraw.test.automation.tests.canvas.CsvFilter@3765e140</td></tr>
+</table><p>
+</body>
+</html>

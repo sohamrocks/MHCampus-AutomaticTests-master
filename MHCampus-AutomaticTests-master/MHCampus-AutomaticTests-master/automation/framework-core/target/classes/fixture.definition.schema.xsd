@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.krux.com/selenium2-framework/fixture.definition.schema"
+	xmlns:tns="http://www.krux.com/selenium2-framework/fixture.definition.schema"
+	elementFormDefault="qualified">
+	<xsd:element name="fixtures">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="fixture" maxOccurs="unbounded" type="tns:fixture" />
+			</xsd:sequence>
+		</xsd:complexType>
+
+		<xsd:unique name="fixtureNamePk">
+			<xsd:selector xpath=".//tns:fixture" />
+			<xsd:field xpath="@name" />
+		</xsd:unique>
+		<xsd:keyref name="dependRestricture" refer="tns:fixtureNamePk">
+			<xsd:selector xpath=".//tns:fixture/tns:dependOn" />
+			<xsd:field xpath="." />
+		</xsd:keyref>
+	</xsd:element>
+
+	<xsd:complexType name="fixture">
+		<xsd:sequence>
+			<xsd:element name="dependOn" type="xsd:string" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xsd:sequence>
+		<xsd:attribute name="name" use="required" type="xsd:string" />
+		<xsd:attribute name="type" use="required" type="tns:fixtureType" />
+		<xsd:attribute name="path" use="required" type="xsd:string" />
+		<xsd:attribute name="template" type="xsd:boolean"
+			default="false" />
+	</xsd:complexType>
+
+	<xsd:simpleType name="fixtureType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="JSON" />
+			<xsd:enumeration value="SCRIPT" />
+			<xsd:enumeration value="SQL" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

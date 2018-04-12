@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Configurations Tests" verbose="1">
+
+	<test verbose="1" name="Moodle Configurtaion Number 137">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.configurations.CustomMoodleConfiguration137" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Configurtaion Number 141">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.configurations.CustomMoodleConfiguration141" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Configurtaion Number 142">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.configurations.CustomMoodleConfiguration142" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Configurtaion Number 166">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.configurations.CustomMoodleConfiguration166" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Configurtaion Number 167">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.configurations.CustomMoodleConfiguration167" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Configurtaion Number 178">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.configurations.CustomMoodleConfiguration178" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="Moodle Configurtaion Number 190">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.moodle.configurations.CustomMoodleConfiguration190" />
+		</classes>
+	</test>
+		
+</suite>

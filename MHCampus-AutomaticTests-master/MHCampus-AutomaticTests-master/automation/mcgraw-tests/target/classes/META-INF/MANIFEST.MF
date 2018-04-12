@@ -1,0 +1,80 @@
+Manifest-Version: 1.0
+mode: development
+Package: com.mcgraw.test.automation.tests
+Built-By: 976158
+Class-Path: lib/mcgraw-ui-1.0.jar lib/framework-selenium-1.0.jar lib/s
+ elenium-api-2.53.0.jar lib/gson-2.3.1.jar lib/selenium-java-2.53.0.ja
+ r lib/selenium-chrome-driver-2.53.0.jar lib/selenium-edge-driver-2.53
+ .0.jar lib/selenium-ie-driver-2.53.0.jar lib/jna-platform-4.1.0.jar l
+ ib/selenium-safari-driver-2.53.0.jar lib/netty-3.5.7.Final.jar lib/se
+ lenium-leg-rc-2.53.0.jar lib/selenium-support-2.53.0.jar lib/selenium
+ -remote-driver-2.53.0.jar lib/cglib-nodep-2.1_3.jar lib/selenium-fire
+ fox-driver-2.53.0.jar lib/commons-exec-1.3.jar lib/selenium-htmlunit-
+ driver-2.52.0.jar lib/htmlunit-2.18.jar lib/htmlunit-core-js-2.17.jar
+  lib/nekohtml-1.9.22.jar lib/cssparser-0.9.16.jar lib/sac-1.3.jar lib
+ /websocket-client-9.2.12.v20150709.jar lib/jetty-util-9.2.12.v2015070
+ 9.jar lib/jetty-io-9.2.12.v20150709.jar lib/websocket-common-9.2.12.v
+ 20150709.jar lib/websocket-api-9.2.12.v20150709.jar lib/httpclient-4.
+ 4.1.jar lib/httpcore-4.4.1.jar lib/jna-4.0.0.jar lib/guice-3.0.jar li
+ b/javax.inject-1.jar lib/aopalliance-1.0.jar lib/phantomjsdriver-1.0.
+ 3.jar lib/browsermob-proxy-2.0-beta-6.jar lib/sitebricks-0.8.3.jar li
+ b/mvel2-2.0.18.jar lib/annotations-7.0.3.jar lib/commons-lang-2.5.jar
+  lib/dom4j-1.6.1.jar lib/saxpath-1.0-FCS.jar lib/xstream-1.3.1.jar li
+ b/xpp3_min-1.1.4c.jar lib/jsoup-1.4.1.jar lib/freemarker-2.3.10.jar l
+ ib/guice-multibindings-3.0.jar lib/jackson-core-asl-1.7.1.jar lib/jac
+ kson-mapper-asl-1.7.1.jar lib/commons-httpclient-3.1.jar lib/jopt-sim
+ ple-3.2.jar lib/ant-1.8.2.jar lib/ant-launcher-1.8.2.jar lib/bcprov-j
+ dk15-135.jar lib/jetty-server-7.3.0.v20110203.jar lib/jetty-continuat
+ ion-7.3.0.v20110203.jar lib/jetty-http-7.3.0.v20110203.jar lib/jetty-
+ servlet-7.3.0.v20110203.jar lib/jetty-security-7.3.0.v20110203.jar li
+ b/guice-servlet-3.0.jar lib/jcip-annotations-1.0.jar lib/sikuli-api-1
+ .1.0.jar lib/sikuli-core-1.1.3.jar lib/javacpp-0.1.jar lib/javacv-0.1
+ .jar lib/javacv-0.1-macosx-x86_64.jar lib/javacv-0.1-windows-x86.jar 
+ lib/javacv-0.1-windows-x86_64.jar lib/javacv-0.1-linux-x86_64.jar lib
+ /javacv-0.1-linux-x86.jar lib/stringtemplate-4.0.2.jar lib/antlr-runt
+ ime-3.3.jar lib/piccolo2d-extras-1.3.1.jar lib/piccolo2d-core-1.3.1.j
+ ar lib/looks-2.2.2.jar lib/mcgraw-api-1.0.jar lib/framework-core-1.0.
+ jar lib/commons-lang3-3.1.jar lib/commons-io-2.4.jar lib/commons-pool
+ -1.6.jar lib/commons-collections-3.2.1.jar lib/commons-dbcp-1.4.jar l
+ ib/commons-codec-1.8.jar lib/log4j-1.2.17.jar lib/slf4j-nop-1.7.5.jar
+  lib/slf4j-api-1.7.5.jar lib/testng-6.8.5.jar lib/junit-4.10.jar lib/
+ hamcrest-core-1.1.jar lib/bsh-2.0b4.jar lib/jcommander-1.27.jar lib/s
+ nakeyaml-1.6.jar lib/args4j-2.0.23.jar lib/javax.mail-1.5.0.jar lib/a
+ ctivation-1.1.jar lib/reportng-1.1.2.jar lib/velocity-1.4.jar lib/vel
+ ocity-dep-1.4.jar lib/jaxb-xjc-2.2.7.jar lib/jaxb-core-2.2.7.jar lib/
+ istack-commons-runtime-2.16.jar lib/jaxb-impl-2.2.7.jar lib/FastInfos
+ et-1.2.12.jar lib/jsr173_api-1.0.jar lib/jaxb-api-2.2.9.jar lib/j-int
+ erop-2.0.4.jar lib/j-interopdeps-2.0.4.jar lib/jcifs-1.2.19.jar lib/s
+ pring-jdbc-3.2.2.RELEASE.jar lib/spring-beans-3.2.2.RELEASE.jar lib/s
+ pring-core-3.2.2.RELEASE.jar lib/spring-tx-3.2.2.RELEASE.jar lib/spri
+ ng-web-3.2.2.RELEASE.jar lib/spring-aop-3.2.2.RELEASE.jar lib/spring-
+ context-3.2.2.RELEASE.jar lib/spring-expression-3.2.2.RELEASE.jar lib
+ /spring-test-3.2.2.RELEASE.jar lib/jsch-0.1.50.jar lib/jsr305-2.0.1.j
+ ar lib/guava-14.0.1.jar lib/hamcrest-all-1.3.jar lib/axis2-codegen-1.
+ 5.1.jar lib/axis2-kernel-1.5.1.jar lib/geronimo-ws-metadata_2.0_spec-
+ 1.1.2.jar lib/geronimo-jta_1.1_spec-1.1.jar lib/axis2-adb-1.5.1.jar l
+ ib/geronimo-activation_1.1_spec-1.0.1.jar lib/axiom-api-1.2.8.jar lib
+ /geronimo-javamail_1.4_spec-1.2.jar lib/axiom-impl-1.2.8.jar lib/axio
+ m-dom-1.2.8.jar lib/mail-1.4.jar lib/xalan-2.7.0.jar lib/wstx-asl-3.2
+ .4.jar lib/geronimo-stax-api_1.0_spec-1.0.1.jar lib/axis2-adb-codegen
+ -1.5.1.jar lib/XmlSchema-1.4.3.jar lib/axis2-transport-http-1.5.1.jar
+  lib/axis2-transport-local-1.5.1.jar lib/rampart-core-1.4.jar lib/ram
+ part-policy-1.4.jar lib/rampart-trust-1.4.jar lib/axis2-xmlbeans-1.4.
+ jar lib/xmlbeans-2.3.0.jar lib/mex-1.4-impl.jar lib/axis2-mtompolicy-
+ 1.4.jar lib/commons-discovery-0.2.jar lib/stax-api-1.0.1.jar lib/wode
+ n-api-1.0M8.jar lib/xmlParserAPIs-2.6.0.jar lib/woden-impl-dom-1.0M8.
+ jar lib/wsdl4j-1.6.2.jar lib/xbean-2.1.0.jar lib/wss4j-1.5.4.jar lib/
+ axis-ant-1.4.jar lib/jaxen-1.1.1.jar lib/jdom-1.0.jar lib/xom-1.0.jar
+  lib/icu4j-2.6.1.jar lib/backport-util-concurrent-3.1.jar lib/servlet
+ -api-2.3.jar lib/annogen-0.1.0.jar lib/ant-nodeps-1.7.0.jar lib/neeth
+ i-2.0.4.jar lib/commons-fileupload-1.2.jar lib/xercesImpl-2.9.1.jar l
+ ib/xml-apis-1.3.04.jar lib/bcprov-jdk15-1.44.jar lib/opensaml-1.1.jar
+  lib/xmlsec-1.4.3.jar lib/commons-logging-1.1.jar lib/logkit-1.0.1.ja
+ r lib/avalon-framework-4.1.3.jar lib/httpmime-4.2.5.jar lib/jackson-j
+ axrs-json-provider-2.2.0.jar lib/jackson-jaxrs-base-2.2.0.jar lib/jac
+ kson-core-2.2.0.jar lib/jackson-databind-2.2.0.jar lib/jackson-annota
+ tions-2.2.0.jar lib/jackson-module-jaxb-annotations-2.2.0.jar
+Build-Jdk: 1.8.0_161
+Created-By: Maven Integration for Eclipse
+Main-Class: com.mcgraw.test.automation.tests.base.TestNgRunner
+

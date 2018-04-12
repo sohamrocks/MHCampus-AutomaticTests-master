@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>TestNG:  Connect Tool Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Connect Tool Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 10 13:56:18 IDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>122 seconds (122485 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.ConnectToolTest.testAddConnectForStudent()'><b>testAddConnectForStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.ConnectToolTest<br>Test method: Add 'Connect' for student<br/>
+<a href="#Output-1239574494" onClick='toggleBox("Output-1239574494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1239574494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1239574494">
+2016-04-10 13:57:10,647  INFO root - Perform steps to adopt Connect for course courseName61991<br>
+<br/>
+2016-04-10 13:57:10,647  INFO root - Expand course name=courseName61991<br>
+<br/>
+2016-04-10 13:57:10,647  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 13:57:10,833  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 13:57:12,851  INFO root - Open Connect<br>
+<br/>
+2016-04-10 13:57:12,948  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME61991')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='Connect']<br>
+<br/>
+2016-04-10 13:57:13,510  INFO root - Create new account...<br>
+<br/>
+2016-04-10 13:57:13,790 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135713789.png'>screenshot-20160410-135713789.png</a><br>
+<br/>
+2016-04-10 13:57:13,791  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 13:57:15,309 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135715308.png'>screenshot-20160410-135715308.png</a><br>
+<br/>
+2016-04-10 13:57:15,957 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135715955.png'>screenshot-20160410-135715955.png</a><br>
+<br/>
+2016-04-10 13:57:15,957  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 13:57:16,433 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135716431.png'>screenshot-20160410-135716431.png</a><br>
+<br/>
+2016-04-10 13:57:16,589  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 13:57:16,589  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 13:57:17,864  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 13:57:18,040  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 13:57:18,325  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 13:57:18,615  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 13:57:19,148 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135719146.png'>screenshot-20160410-135719146.png</a><br>
+<br/>
+2016-04-10 13:57:19,149  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 13:57:19,176  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 13:57:20,562  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 13:57:27,762  INFO root - Current URL before switching is : http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewConnect.aspx?isbn=0000011111&amp;course=id61991<br>
+<br/>
+2016-04-10 13:57:27,770  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 13:57:27,786  INFO root - Switched to Last window with URL: http://epaminstance-20160403-125112826.mhcampus.com/Pages/Digital/ViewConnect.aspx?isbn=0000011111&amp;course=id61991<br>
+<br/>
+2016-04-10 13:57:27,920 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135727914.png'>screenshot-20160410-135727914.png</a><br>
+<br/>
+2016-04-10 13:57:27,976  INFO root - Waiting for MhCampusConnectScreen page...<br>
+<br/>
+2016-04-10 13:57:29,730  INFO root - Check if error message present<br>
+<br/>
+2016-04-10 13:57:36,173 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135736172.png'>screenshot-20160410-135736172.png</a><br>
+<br/>
+2016-04-10 13:57:36,252  INFO root - Click iWantThisForMyStudentsButton<br>
+<br/>
+2016-04-10 13:57:36,763  INFO root - Click adoptConnectButton<br>
+<br/>
+2016-04-10 13:57:38,500  INFO root - Waiting for MhCampusConnectCourseSectionPairScreen page...<br>
+<br/>
+2016-04-10 13:57:41,375  INFO root - Wait for element By: By.xpath: //span[@class='left course_name' and contains(.,'courseName61991')]/ancestor::li[1]//input<br>
+<br/>
+2016-04-10 13:57:44,450  INFO root - Waiting for MhCampusConnectSaveCourseSectionPair page...<br>
+<br/>
+2016-04-10 13:57:44,471  INFO root - Check the success message present<br>
+<br/>
+2016-04-10 13:57:44,634 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135744633.png'>screenshot-20160410-135744633.png</a><br>
+<br/>
+2016-04-10 13:57:44,703  INFO root - Check the success message present<br>
+<br/>
+2016-04-10 13:57:44,851 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135744850.png'>screenshot-20160410-135744850.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.mcgraw.test.automation.tests.externaltools.ConnectToolTest@4039563d</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.ConnectToolTest.testConnctStudentRegistrationOpenedUnderStudent()'><b>testConnctStudentRegistrationOpenedUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.ConnectToolTest<br>Test method: Test if 'Connect' studen registration opened<br/>
+<a href="#Output-127481604" onClick='toggleBox("Output-127481604", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-127481604" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-127481604">
+2016-04-10 13:58:04,310  INFO root - Open Connect<br>
+<br/>
+2016-04-10 13:58:04,384  INFO root - Wait for element By: By.xpath: //a[contains(text(),'COURSENAME61991')]/ancestor::div[1]//div[@class='featured']//a/img[@alt='Connect']<br>
+<br/>
+2016-04-10 13:58:04,978  INFO root - Create new account...<br>
+<br/>
+2016-04-10 13:58:05,244 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135805243.png'>screenshot-20160410-135805243.png</a><br>
+<br/>
+2016-04-10 13:58:05,245  INFO root - Check if user does not exist in the system already...<br>
+<br/>
+2016-04-10 13:58:06,728 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135806727.png'>screenshot-20160410-135806727.png</a><br>
+<br/>
+2016-04-10 13:58:07,311 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135807309.png'>screenshot-20160410-135807309.png</a><br>
+<br/>
+2016-04-10 13:58:07,311  INFO root - Click on 'createNewAccount' link...<br>
+<br/>
+2016-04-10 13:58:07,728 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135807727.png'>screenshot-20160410-135807727.png</a><br>
+<br/>
+2016-04-10 13:58:07,885  INFO root - Fill the form for creating a new account...<br>
+<br/>
+2016-04-10 13:58:07,886  INFO root - Wait for element By: By.id: pw<br>
+<br/>
+2016-04-10 13:58:09,229  INFO root - Wait for element By: By.id: pw2<br>
+<br/>
+2016-04-10 13:58:09,531  INFO root - Wait for element By: By.xpath: //*[@id='SecurityQuestions']/option[2]<br>
+<br/>
+2016-04-10 13:58:09,845  INFO root - Wait for element By: By.name: securityanswer<br>
+<br/>
+2016-04-10 13:58:10,130  INFO root - Wait for element By: By.xpath: //input[@class='chkAgreeTerms']<br>
+<br/>
+2016-04-10 13:58:10,633 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135810631.png'>screenshot-20160410-135810631.png</a><br>
+<br/>
+2016-04-10 13:58:10,633  INFO root - Wait for element By: By.className: text16boldbluebutton<br>
+<br/>
+2016-04-10 13:58:10,668  INFO root - Submit the form...<br>
+<br/>
+2016-04-10 13:58:12,196  INFO root - Selecting OK in alert: 'To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.'<br>
+<br/>
+2016-04-10 13:58:19,470  INFO root - Current URL before switching is : https://paris.mheducation.com/paris/codevalidationview.do<br>
+<br/>
+2016-04-10 13:58:19,492  INFO root - Now opened : 2 windows!<br>
+<br/>
+2016-04-10 13:58:19,547  INFO root - Switched to Last window with URL: https://paris.mheducation.com/paris/codevalidationview.do<br>
+<br/>
+2016-04-10 13:58:19,770 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135819768.png'>screenshot-20160410-135819768.png</a><br>
+<br/>
+2016-04-10 13:58:19,825  INFO root - Waiting for MhCampusConnectStudentRegistrationScreen page...<br>
+<br/>
+2016-04-10 13:58:19,849  INFO root - Check if 'Create Success' is present<br>
+<br/>
+2016-04-10 13:58:20,101 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135820099.png'>screenshot-20160410-135820099.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.mcgraw.test.automation.tests.externaltools.ConnectToolTest@4039563d</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.externaltools.ConnectToolTest.testConnectAdoptedUnderStudent()'><b>testConnectAdoptedUnderStudent</b><br>Test class: com.mcgraw.test.automation.tests.externaltools.ConnectToolTest<br>Test method: Test if 'Connect' available under student<br/>
+<a href="#Output-178481384" onClick='toggleBox("Output-178481384", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-178481384" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-178481384">
+2016-04-10 13:57:45,325  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20160403-125112826.mhcampus.com as user: username=student32448, password=123qweA@<br>
+<br/>
+2016-04-10 13:57:45,335  INFO root - Opening URL: http://epamInstance-20160403-125112826.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@5a0b7479<br>
+<br/>
+2016-04-10 13:57:46,418  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-04-10 13:57:46,925  INFO root - Type value 'student32448' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-04-10 13:57:47,307  INFO root - Type value '123qweA@' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-04-10 13:57:47,516 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135747515.png'>screenshot-20160410-135747515.png</a><br>
+<br/>
+2016-04-10 13:57:47,516  INFO root - Clicking Login button...<br>
+<br/>
+2016-04-10 13:57:49,291  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 13:57:49,604 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135749601.png'>screenshot-20160410-135749601.png</a><br>
+<br/>
+2016-04-10 13:57:49,654  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-04-10 13:57:55,655  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-04-10 13:57:55,710  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:57:55,722  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 13:57:55,753  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:57:58,087 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-04-10 13:58:01,492  INFO root - Current URL before switching is : https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:58:01,519  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-04-10 13:58:01,772  INFO root - Switched to Last window with URL: https://epaminstance-20160403-125112826.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-04-10 13:58:01,797  INFO root - Expand course name=courseName61991<br>
+<br/>
+2016-04-10 13:58:01,797  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-04-10 13:58:01,955  INFO root - Waiting for MhCampusCourseBlock page...<br>
+<br/>
+2016-04-10 13:58:03,969  INFO root - Check elements present Connect  for course: courseName61991<br>
+<br/>
+2016-04-10 13:58:04,154 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20160410-135804152.png'>screenshot-20160410-135804152.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.mcgraw.test.automation.tests.externaltools.ConnectToolTest@4039563d</td></tr>
+</table><p>
+</body>
+</html>

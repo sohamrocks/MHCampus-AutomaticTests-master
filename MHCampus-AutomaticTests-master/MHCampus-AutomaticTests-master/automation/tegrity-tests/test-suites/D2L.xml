@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="D2L Tests" verbose="1">
+
+	<test verbose="1" name="D2L Gradebook Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.TegrityGradebook" />
+		</classes>
+	</test>	
+	
+	<test verbose="1" name="D2L SSO Link With Lti Connector Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.TegritySSOlinkWithLtiConnector" />
+		</classes>
+	</test>
+	
+	<test verbose="1" name="D2L SSO Link With Data Connector Test">
+		<classes>
+			<class name="com.mcgraw.test.automation.tests.d2l.TegritySSOlinkWithDataConnector" />
+		</classes>
+	</test>
+		 
+</suite>

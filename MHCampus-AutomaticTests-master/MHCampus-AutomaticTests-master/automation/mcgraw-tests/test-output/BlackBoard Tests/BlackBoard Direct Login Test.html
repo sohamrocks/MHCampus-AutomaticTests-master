@@ -1,0 +1,342 @@
+<html>
+<head>
+<title>TestNG:  BlackBoard Direct Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlackBoard Direct Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 06 15:42:43 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>408 seconds (408284 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.DirectLoginTest.checkAuthenticationAndAuthorizationConnectorsAreAvailable()'><b>checkAuthenticationAndAuthorizationConnectorsAreAvailable</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.DirectLoginTest<br>Test method: Check connectors are availiable<br/>
+<a href="#Output-149850904" onClick='toggleBox("Output-149850904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-149850904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-149850904">
+2016-11-06 15:48:22,425  INFO root - Clicking manage aairs link...<br>
+<br/>
+2016-11-06 15:48:22,750  INFO root - Wait for element By: By.xpath: .//div[@id='DATASET_MAIN']/a[@class='Section_Link editLink']<br>
+<br/>
+2016-11-06 15:48:25,760 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154825698.png'>screenshot-20161106-154825698.png</a><br>
+<br/>
+2016-11-06 15:48:25,760  INFO root - Waiting for MhCampusInstanceConnectorsScreen page...<br>
+<br/>
+2016-11-06 15:48:25,794  INFO root - Wait for element By: By.id: ContentPlaceHolder1_iFrameServiceAdmin<br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.mcgraw.test.automation.tests.blackboard.DirectLoginTest@6427d489</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.DirectLoginTest.checkMHCampusLinkBahavesCorrectlyForBlackBoardInstructor()'><b>checkMHCampusLinkBahavesCorrectlyForBlackBoardInstructor</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.DirectLoginTest<br>Test method: For BlackBoard instructor MH Campus link bahaves correctly<br/>
+<a href="#Output-597852730" onClick='toggleBox("Output-597852730", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-597852730" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-597852730">
+2016-11-06 15:48:26,280  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20161106-154308144.mhcampus.com as user: username=InstructorU0N03, password=InstructorU0N03<br>
+<br/>
+2016-11-06 15:48:26,292  INFO root - Opening URL: http://epamInstance-20161106-154308144.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1aef138b<br>
+<br/>
+2016-11-06 15:48:27,968  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 15:48:28,438  INFO root - Type value 'InstructorU0N03' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 15:48:28,732  INFO root - Type value 'InstructorU0N03' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 15:48:28,956 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154828954.png'>screenshot-20161106-154828954.png</a><br>
+<br/>
+2016-11-06 15:48:28,956  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 15:48:30,781  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-11-06 15:48:31,482 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154831241.png'>screenshot-20161106-154831241.png</a><br>
+<br/>
+2016-11-06 15:48:31,573  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-11-06 15:48:31,573  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 15:48:37,628  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:37,641  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:37,672  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:37,691  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:48:39,908  INFO root - Greeting text in Welcome dialog is: 'Hi InstructorNameU0N03 InstructorSurnameU0N03 -'<br>
+<br/>
+2016-11-06 15:48:40,030 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154840028.png'>screenshot-20161106-154840028.png</a><br>
+<br/>
+2016-11-06 15:48:40,044  INFO root - Checking if welcome text for instructor is shown<br>
+<br/>
+2016-11-06 15:48:40,062  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:40,068  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:40,083  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:40,091  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:48:42,312  INFO root - Rules text in Welcome dialog is: 'As an instructor you have full access to all of our products and content. Feel free to look around and use whatever you like in your courses.'<br>
+<br/>
+2016-11-06 15:48:42,322  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-11-06 15:48:42,338  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:42,344  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:42,357  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:42,365  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:48:44,628 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-11-06 15:48:44,802  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-11-06 15:48:45,966  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+<br/>
+2016-11-06 15:48:46,067  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:48:48,128  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:48,140  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:48,169  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:48,199  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 15:48:54,265  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:54,280  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:54,319  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:54,447  INFO root - User name text is: 'INSTRUCTORNAMEU0N03 INSTRUCTORSURNAMEU0N03'<br>
+<br/>
+2016-11-06 15:48:54,447  INFO root - Checking if course CourseHuFqB is present on the page<br>
+<br/>
+2016-11-06 15:48:54,464  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:54,470  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:54,485  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:54,629 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154854628.png'>screenshot-20161106-154854628.png</a><br>
+<br/>
+2016-11-06 15:48:54,655  INFO root - Checking if course Course2iNRD is present on the page<br>
+<br/>
+2016-11-06 15:48:54,672  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:54,677  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:54,692  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:54,848 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154854846.png'>screenshot-20161106-154854846.png</a><br>
+<br/>
+2016-11-06 15:48:54,875  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+<br/>
+2016-11-06 15:48:54,891  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:54,897  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:48:54,916  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:48:55,055 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154855054.png'>screenshot-20161106-154855054.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.mcgraw.test.automation.tests.blackboard.DirectLoginTest@6427d489</td></tr>
+<tr>
+<td title='com.mcgraw.test.automation.tests.blackboard.DirectLoginTest.checkMHCampusLinkBahavesCorrectlyForBlackBoardStudent()'><b>checkMHCampusLinkBahavesCorrectlyForBlackBoardStudent</b><br>Test class: com.mcgraw.test.automation.tests.blackboard.DirectLoginTest<br>Test method: For BlackBoard student MH Campus link bahaves correctly<br/>
+<a href="#Output-899520006" onClick='toggleBox("Output-899520006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-899520006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-899520006">
+2016-11-06 15:48:55,202  INFO root - Logging in to MH Campus instance: URL=http://epamInstance-20161106-154308144.mhcampus.com as user: username=Studentol4k8, password=Studentol4k8<br>
+<br/>
+2016-11-06 15:48:55,212  INFO root - Opening URL: http://epamInstance-20161106-154308144.mhcampus.com. Thread ID: 1 Browser: com.mcgraw.test.automation.framework.selenium2.ui.Browser@1aef138b<br>
+<br/>
+2016-11-06 15:48:56,548  INFO root - Waiting for MhCampusInstanceLoginScreen page...<br>
+<br/>
+2016-11-06 15:48:57,081  INFO root - Type value 'Studentol4k8' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxName'<br>
+<br/>
+2016-11-06 15:48:57,361  INFO root - Type value 'Studentol4k8' to Input 'name=ctl00$ContentPlaceHolder1$LoginCustomerControl$TextBoxPassword'<br>
+<br/>
+2016-11-06 15:48:57,584 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154857579.png'>screenshot-20161106-154857579.png</a><br>
+<br/>
+2016-11-06 15:48:57,584  INFO root - Clicking Login button...<br>
+<br/>
+2016-11-06 15:49:00,010  INFO root - Waiting for MhCampusIntroductionScreen page...<br>
+<br/>
+2016-11-06 15:49:00,430 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154900428.png'>screenshot-20161106-154900428.png</a><br>
+<br/>
+2016-11-06 15:49:00,493  INFO root - Welcome Frame is opened<br>
+<br/>
+2016-11-06 15:49:00,493  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 15:49:06,573  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:06,597  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:06,675  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:06,696  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:49:08,895  INFO root - Greeting text in Welcome dialog is: 'Hi StudentNameol4k8 StudentSurnameol4k8 -'<br>
+<br/>
+2016-11-06 15:49:09,020 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154909014.png'>screenshot-20161106-154909014.png</a><br>
+<br/>
+2016-11-06 15:49:09,030  INFO root - Checking if welcome text for student is shown<br>
+<br/>
+2016-11-06 15:49:09,048  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:09,054  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:09,068  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:09,076  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:49:11,293  INFO root - Rules text in Welcome dialog is: 'Welcome to McGraw-Hill Campus, where you can easily access McGraw-Hill products and services you use in your courses.'<br>
+<br/>
+2016-11-06 15:49:11,304  INFO root - Accepting MH Campus terms and clicking Get Started<br>
+<br/>
+2016-11-06 15:49:11,321  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:11,327  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:11,340  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:11,348  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:49:13,645 OPERATION root - Checking 'id=chkAgreeTerms' checkbox.<br>
+<br/>
+2016-11-06 15:49:13,830  INFO root - Pause for '1000' millis<br>
+<br/>
+2016-11-06 15:49:14,953  INFO root - Clicking element by using Javascript: 'name=btnGetStarted'<br>
+<br/>
+2016-11-06 15:49:15,028  INFO root - Pause for '2000' millis<br>
+<br/>
+2016-11-06 15:49:17,086  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:17,103  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:17,130  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:17,176  INFO root - Pause for '6000' millis<br>
+<br/>
+2016-11-06 15:49:23,229  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,236  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:23,254  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,346  INFO root - User name text is: 'STUDENTNAMEOL4K8 STUDENTSURNAMEOL4K8'<br>
+<br/>
+2016-11-06 15:49:23,346  INFO root - Checking if course CourseHuFqB is present on the page<br>
+<br/>
+2016-11-06 15:49:23,364  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,373  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:23,388  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,513 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154923507.png'>screenshot-20161106-154923507.png</a><br>
+<br/>
+2016-11-06 15:49:23,542  INFO root - Checking if course Course2iNRD is present on the page<br>
+<br/>
+2016-11-06 15:49:23,559  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,565  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:23,578  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,705 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154923699.png'>screenshot-20161106-154923699.png</a><br>
+<br/>
+2016-11-06 15:49:23,726  INFO root - Checking if 'FIND YOUR TEXTBOOK' option is present on the page<br>
+<br/>
+2016-11-06 15:49:23,743  INFO root - Current URL before switching is : https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,748  INFO root - Now opened : 1 windows!<br>
+<br/>
+2016-11-06 15:49:23,763  INFO root - Switched to Last window with URL: https://epaminstance-20161106-154308144.mhcampus.com/Pages/MyClasses.aspx?ReturnUrl=%2f&amp;AspxAutoDetectCookieSupport=1<br>
+<br/>
+2016-11-06 15:49:23,891 HTML_OUTPUT root - Taken screenshoot <a href='screenshoots/screenshot-20161106-154923886.png'>screenshot-20161106-154923886.png</a><br>
+<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.mcgraw.test.automation.tests.blackboard.DirectLoginTest@6427d489</td></tr>
+</table><p>
+</body>
+</html>

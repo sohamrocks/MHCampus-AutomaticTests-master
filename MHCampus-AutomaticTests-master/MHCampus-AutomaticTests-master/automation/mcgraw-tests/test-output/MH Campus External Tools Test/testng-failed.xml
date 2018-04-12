@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MH Campus External Tools Test]">
+  <listeners>
+    <listener class-name="com.mcgraw.test.automation.tests.externaltools.AnnotationTransformer"/>
+  </listeners>
+  <test name="ActiveSim Tool Test(failed)">
+    <classes>
+      <class name="com.mcgraw.test.automation.tests.externaltools.ActiveSimToolTest">
+        <methods>
+          <include name="closeExtraBrowserWindows"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="prepareTest"/>
+          <include name="makeScreenshot"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="closeAllThreads"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testSuiteSetup"/>
+          <include name="checkActiveSimToolForInstructor"/>
+          <include name="testSuiteTearDown"/>
+        </methods>
+      </class> <!-- com.mcgraw.test.automation.tests.externaltools.ActiveSimToolTest -->
+    </classes>
+  </test> <!-- ActiveSim Tool Test(failed) -->
+</suite> <!-- Failed suite [MH Campus External Tools Test] -->
